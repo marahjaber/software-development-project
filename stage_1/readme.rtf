@@ -1,0 +1,44 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 * Execution Method\
+module unload python/2.7.15\
+module load pythonconda3/4.5.4\
+python3 run.py  \
+\
+* Version History\
+\
+20191117\
+first draft\
+\
+20191118\
+1) run program with original logs, without copy all logs from original directory to a new folder\
+2) output the predction result into files\
+\
+20191119\
+1) change search_error function into insert_label\
+2) do shuffle to randomize the input logs instead of using train_test_split with random feature before labeling and vectorizing the text\
+   therefore, we can know the test string is located in the back of the all input logs (for example the first 80% is train string and last 20% is test string)\
+   to prevent large program execution time for finding the each test string from all input logs\
+\
+20191120\
+1) read all logs input list instead of csv\
+2) remove copy_data and read_data function\
+\
+20191121\
+1) add more types of abnormal events\
+2) add gen_artificial_log function for text augmentation\
+3) put output file into a new directory\
+\
+20191122\
+1) add more types of abnormal events\
+2) output file with original file name and line number\
+\
+20191128\
+1) change validation_split from 0.1 to 0.2\
+2) add more artificial log\
+3) filter artificial log in test string during output phase}
