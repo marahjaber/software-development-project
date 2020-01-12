@@ -1,0 +1,307 @@
+From ali@durham.ac.uk Wed Oct 23 03:17:09 2019 +0100
+MIME-Version: 1.0
+Received: from AM0PR0602MB3521.eurprd06.prod.outlook.com
+ (2603:10a6:802:59::18) by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS
+ via VI1P195CA0065.EURP195.PROD.OUTLOOK.COM; Wed, 23 Oct 2019 02:17:09 +0000
+Received: from AM5PR0602CA0008.eurprd06.prod.outlook.com
+ (2603:10a6:203:a3::18) by AM0PR0602MB3521.eurprd06.prod.outlook.com
+ (2603:10a6:208:1c::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.24; Wed, 23 Oct
+ 2019 02:17:08 +0000
+Received: from VE1EUR01FT004.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::200) by AM5PR0602CA0008.outlook.office365.com
+ (2603:10a6:203:a3::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2387.20 via Frontend
+ Transport; Wed, 23 Oct 2019 02:17:08 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ VE1EUR01FT004.mail.protection.outlook.com (10.152.2.101) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Wed, 23 Oct 2019 02:17:07 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 23 Oct 2019 03:15:40 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N2FU1r005610;	Wed, 23 Oct
+ 2019 03:15:35 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9N2FOxC010868;	Wed, 23 Oct 2019 03:15:24 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9N2FOJ6010867;	Wed, 23 Oct 2019 03:15:24 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N2FGU1010230	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 23 Oct 2019 03:15:16
+ +0100
+Received: from smtphost2.dur.ac.uk (smtphost2.dur.ac.uk [129.234.7.144])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N2F4U5005407	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 23 Oct 2019 03:15:08
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9N2EwoI020656	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Wed, 23 Oct 2019 03:14:58 +0100
+Received: from console51.cosma (localhost [127.0.0.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N2Ero5025531	for
+ <root@console51.cosma>; Wed, 23 Oct 2019 03:14:53 +0100
+Received: (from root@localhost)	by console51.cosma (8.14.4/8.14.4/Submit) id
+ x9N2EGDC024868;	Wed, 23 Oct 2019 03:14:16 +0100
+Date: Wed, 23 Oct 2019 03:14:16 +0100
+Message-ID: <201910230214.x9N2EGDC024868@console51.cosma>
+To: <root@console51.cosma>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: cosma-system: Logwatch for console51 (Linux)
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9N2FU1r005610
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2019 02:17:08.0295
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e58f43e0-10a8-4df7-2d5b-08d7575f1adb
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ VE1EUR01FT004.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ VE1EUR01FT004.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(199004)(189003)(7192003)(63364002)(106002)(305945005)(23756003)(8676002)(7846003)(8936002)(1096003)(450100002)(4006050)(1076003)(9686003)(356004)(50466002)(87636003)(47776003)(26005)(8276002)(246002)(4001150100001)(126002)(186003)(156004)(486006)(6862004)(75640400001)(476003)(37006003)(5660300002)(2876002)(36486004)(230700001)(6392003)(14444005)(336012)(2351001)(42882007)(42186006);DIR:INB;SFP:;SCL:1;SRVR:AM0PR0602MB3521;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: e58f43e0-10a8-4df7-2d5b-08d7575f1adb
+X-MS-TrafficTypeDiagnostic: AM0PR0602MB3521:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:257;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2019 02:17:07.7113
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e58f43e0-10a8-4df7-2d5b-08d7575f1adb
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR0602MB3521
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5154755
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?tq3Q1PY30HZGVDV0zfUroD3TZI8ODx/Bf4qcJblUPD2QKrHuQq6GSPiQHW?=
+ =?iso-8859-1?Q?YFjTxwDrVolfWlaZaDhwXidHVNX7unvXvyH6Pzs/ZlNbeLUJZpit9EpjTX?=
+ =?iso-8859-1?Q?1Onqh91OV3a/IbkIq5H8dVGvahyE9PKUh11JCQC8jkyC/kpMOkLvEmiah3?=
+ =?iso-8859-1?Q?/LfLovY7g2cgUy1ppN/Y5zaXOHTRAtGaYGpoz0RoXjWXa4X9ln4vSqfBCQ?=
+ =?iso-8859-1?Q?aZgj+WOaPkhq7p/icdergft+dAGoRs6G4rJ8Uy0BWyIVnDfPzhx7QG4CDW?=
+ =?iso-8859-1?Q?+yEQkJcXJDexgRAwyKUdU5zoBvO1w0oE+Re/saB7APl4TTi7MfnAcXwKpR?=
+ =?iso-8859-1?Q?islDNb8dkKvGPTRlCxXh90xw79v6nIFAjdmqrrBfP8UJek9MrdCvru3ZhM?=
+ =?iso-8859-1?Q?EKb1hLw4ODFpatYMZ/QQtxtgQbQXlb4r9XaO/1doyKMCoQLCZfvBDQNwMM?=
+ =?iso-8859-1?Q?DW6oG23GbZcYCdyFKJkLS9p2ENbbWZbgTO2P4iQxC9VSOu+IuipJMMqlFH?=
+ =?iso-8859-1?Q?3A1Kbm7vjSMkVJ49bbwmZWTJZgI83qYFmTYQVpklqei3Y21UoaevWSqDvN?=
+ =?iso-8859-1?Q?Zpe8RiHh5GEV3PjejaISe3EzH6f+tw+TbLL8osHplxAag5Ntw7TnTS76S+?=
+ =?iso-8859-1?Q?s2tyd9WMBRSfMtYYOxfG8VCQj4NDR2uCGP8Xxx9ZKSE+7QWYY8ChbIxox/?=
+ =?iso-8859-1?Q?5+iR7aHV5w1b3qC5Rp909uEwgi81tgB1yW0Txs38vYRW1mQ6WrHMwklmLn?=
+ =?iso-8859-1?Q?OKJnxgvwWvChoe6fxiqs563mTTLSjwmVsASvP9nm4rdYnB8VyQGlCdcb+t?=
+ =?iso-8859-1?Q?rVKuoZTks3b5K+AKA94Jo3JN7QF8ajN/0u0EV02q2vZnJvQTqE6662Hf7q?=
+ =?iso-8859-1?Q?6MSkYiie9rJs0eHwFUEUCOeVVq0OBf+UcwCYUhF9De6AD2mf7tP4d6oiqD?=
+ =?iso-8859-1?Q?1fd07aystlj+L/U7D0jJT9IIeU7HQADcbIBr2ngqnyqVyDWHyoEVBV3Zbr?=
+ =?iso-8859-1?Q?dg0LZZNHkF0Z8V2hEONUVUolorP4sX/JLAcf1JDbtkkUwKCfdF2HXhuMM2?=
+ =?iso-8859-1?Q?iu6ZUDK++cklvjrZGuRMi+nsBHZJYXtY+lGv8Fo+0DBJclTpOghLbF1A9H?=
+ =?iso-8859-1?Q?IAUy5Ac3cgXuk6y+yCsZSS+/aDoas=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 752
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Oct 23 03:14:16 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-22 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: console51
+  ################################################################## 
+ 
+ --------------------- DDN logs Begin ------------------------ 
+
+ 113819 2019-10-22 04:51:18:4632299  G=56 S=0 T=1 RP=0 VP=11                         LOG_ST_ALIVE  STATE KEEP ALIVE EVENT 0x       a000001fc 0x 440000080000000 0x8000000010000002
+ 113820 2019-10-22 10:07:22:5373916  G=62 S=0 T=1 RP=1 VP=04     LOG_AMPD_MPI_DSK_SCSI_SENSE_DATA   AMPD IOC04 WWN:5000cca01f0aaad0 ES:50001ff21197c000:1. RspCode:f0 SK:03 Info:0609b063 AL:18 CS:00000000 ASCQ:1100 FRU:00 SKS:80004d 0000f72d00 PD:01352
+ 113821 2019-10-22 10:07:22:5373982  G=62 S=0 T=1 RP=1 VP=04  LOG_AMPD_MPI_SCSI_SENSE_DATA_EXT_EVT   AMPD IOC04 WWN:5000cca01f0aaad0 SN:            J9V5VVUN RspCode:70 SK:03 ASCQ:1100 UEC:f72d
+ 113822 2019-10-22 10:07:22:5374041  G=56 S=0 T=1 RP=1 VP=05                LOG_IOF_AUTO_QUIESCED    IOF AUTO QUI PD:01352 STS:JS_AMPD_MEDIUM_ERROR
+ 113823 2019-10-22 10:07:23:3917652  G=62 S=0 T=1 RP=1 VP=04     LOG_AMPD_MPI_DSK_SCSI_SENSE_DATA   AMPD IOC04 WWN:5000cca01f0aaad0 ES:50001ff21197c000:1. RspCode:f0 SK:03 Info:0609b063 AL:18 CS:00000000 ASCQ:1100 FRU:00 SKS:80004d 0000f72d00 PD:01352
+ 113824 2019-10-22 10:07:23:3917715  G=62 S=0 T=1 RP=1 VP=04  LOG_AMPD_MPI_SCSI_SENSE_DATA_EXT_EVT   AMPD IOC04 WWN:5000cca01f0aaad0 SN:            J9V5VVUN RspCode:70 SK:03 ASCQ:1100 UEC:f72d
+ 113825 2019-10-22 10:07:23:4079793  G=56 S=2 T=1 RP=1 VP=05       LOG_RAID_CORRECTED_BLOCK_RANGE   RAID IO:1136ae8bc0 RS:00053 LBA:05f1e800@512 BLKS:0800@512 MEMBER:00 PBA:0609afa0@512 BLKS:0820@512 VSC
+ 089625 2019-10-22 13:43:15:1323282  G=56 S=0 T=1 RP=0 VP=11                         LOG_ST_ALIVE  STATE KEEP ALIVE EVENT 0x       a000003ff 0x 440000080000000 0xc000000210000142
+ 089626 2019-10-22 17:32:52:5446261  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0012 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089627 2019-10-22 17:32:52:5446447  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0001 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089628 2019-10-22 17:32:52:5446498  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0002 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089629 2019-10-22 17:32:52:5446550  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0003 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089630 2019-10-22 17:32:52:5446606  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0004 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089631 2019-10-22 17:32:52:5446741  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0005 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089632 2019-10-22 17:32:52:5446918  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0006 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089633 2019-10-22 17:32:52:5446973  G=56 S=0 T=1 RP=1 VP=04              LOG_IB_INITIATOR_LOGOUT IBCTRL IB INITIATOR LOGOUT RP:01 PORT:0 INIT_INDEX:0007 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089634 2019-10-22 17:32:52:5459430  G=56 S=0 T=1 RP=1 VP=04               LOG_IB_INITIATOR_LOGIN IBCTRL IB INITIATOR LOGIN RP:01 PORT:0 INIT_INDEX:0008 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089635 2019-10-22 17:32:52:6579578  G=56 S=0 T=1 RP=1 VP=04               LOG_IB_INITIATOR_LOGIN IBCTRL IB INITIATOR LOGIN RP:01 PORT:0 INIT_INDEX:0001 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089636 2019-10-22 17:32:52:6893759  G=56 S=0 T=1 RP=1 VP=04               LOG_IB_INITIATOR_LOGIN IBCTRL IB INITIATOR LOGIN RP:01 PORT:0 INIT_INDEX:0002 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 089637 2019-10-22 17:32:52:7209478  G=56 S=0 T=1 RP=1 VP=04               LOG_IB_INITIATOR_LOGIN IBCTRL IB INITIATOR LOGIN RP:01 PORT:0 INIT_INDEX:0003 NGUID: 0002c903 00e517b0 PGUID:0002c903 00e517b1
+ 
+ ---------------------- DDN logs End ------------------------- 
+
+ 
+ --------------------- iptables firewall Begin ------------------------ 
+
+ 
+ Listed by source hosts:
+ Logged 37 packets on interface eth1
+   From 27.210.143.2 - 1 packet to tcp(22) 
+   From 34.76.251.103 - 1 packet to tcp(22) 
+   From 45.95.168.102 - 1 packet to tcp(22) 
+   From 45.136.109.83 - 2 packets to tcp(22) 
+   From 45.227.254.30 - 1 packet to tcp(22) 
+   From 45.227.255.173 - 1 packet to tcp(22) 
+   From 49.48.129.125 - 1 packet to tcp(22) 
+   From 49.69.200.63 - 1 packet to tcp(22) 
+   From 60.12.215.85 - 1 packet to tcp(22) 
+   From 64.44.40.210 - 3 packets to tcp(22) 
+   From 80.82.65.74 - 1 packet to tcp(22) 
+   From 92.63.194.47 - 1 packet to tcp(22) 
+   From 92.118.161.17 - 1 packet to tcp(22) 
+   From 104.244.72.98 - 1 packet to tcp(22) 
+   From 104.244.73.176 - 2 packets to tcp(22) 
+   From 104.244.77.210 - 1 packet to tcp(22) 
+   From 112.85.42.176 - 1 packet to tcp(22) 
+   From 115.213.138.35 - 1 packet to tcp(22) 
+   From 119.137.3.71 - 1 packet to tcp(22) 
+   From 122.233.117.105 - 1 packet to tcp(22) 
+   From 125.123.157.249 - 1 packet to tcp(22) 
+   From 129.204.2.194 - 1 packet to tcp(22) 
+   From 129.226.73.186 - 1 packet to tcp(22) 
+   From 139.220.192.57 - 1 packet to tcp(22) 
+   From 171.67.70.85 - 1 packet to tcp(22) 
+   From 183.136.236.43 - 1 packet to tcp(22) 
+   From 185.197.74.201 - 1 packet to tcp(22) 
+   From 193.32.163.123 - 1 packet to tcp(22) 
+   From 196.52.43.63 - 1 packet to tcp(22) 
+   From 198.108.67.96 - 1 packet to tcp(22) 
+   From 202.75.216.136 - 2 packets to tcp(22) 
+   From 221.4.154.196 - 1 packet to tcp(22) 
+ 
+ ---------------------- iptables firewall End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    rkhunter: Rootkit hunter check started (version 1.4.4): 1 Time(s)
+    rkhunter: Scanning took 3 minutes and 3 seconds: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Sendmail was started 1 time(s)
+ 
+ Messages To Recipients:  636
+ Addressed Recipients:    651
+ Bytes Transferred:       1330833
+ Messages No Valid Rcpts: 28
+ 
+ SMTP SESSION, MESSAGE, OR RECIPIENT ERRORS
+ ------------------------------------------
+ 
+ Client quit before communicating: [Occurrences >= 1]
+ 	Total:  144
+ 
+ Unresolveable or non-existent domains: [Occurrences >= 1]
+ 	Total:  28
+ 
+ Total SMTP Session, Message, and Recipient Errors handled by Sendmail:  172
+ 
+ **Unmatched Entries**
+    gethostbyaddr(169.254.95.120) failed: 1: 3 Time(s)
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    root:
+       172.17.100.24 (cosma-a): 48 times
+       172.17.170.22: 16 times
+       172.17.110.1 (console51): 4 times
+ 
+ 
+ Received disconnect:
+    disconnected by user : 68 Time(s)
+ 
+ **Unmatched Entries**
+ userauth_hostbased mismatch: client sends console51, but we resolve 172.17.110.1 to console51.cosma : 8 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Sudo (secure-log) Begin ------------------------ 
+
+ 
+ ==============================================================================
+ 
+ rpcuser => root
+ ---------------
+ /etc/ctdb/statd-callout - 239 Times.
+ 
+ ---------------------- Sudo (secure-log) End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/mapper/systemvg-root
+                        20G   17G  2.4G  88% /
+ /dev/sda1              97M   28M   65M  30% /boot
+ /dev/mapper/systemvg-install
+                        99G   90G  3.6G  97% /install
+ /dev/mapper/systemvg-var
+                       148G   32G  109G  23% /var
+ /dev/gpfs             2.4P  2.2P  227T  91% /cosma5
+ 
+ /dev/gpfs => 91% Used. Warning. Disk Filling up.
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
+

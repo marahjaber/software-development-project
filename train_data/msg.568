@@ -1,0 +1,176 @@
+From ali@durham.ac.uk Mon Oct 21 07:25:56 2019 +0100
+MIME-Version: 1.0
+Received: from DB7PR06MB4918.eurprd06.prod.outlook.com (2603:10a6:800:d3::22)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR08CA0096.EURPRD08.PROD.OUTLOOK.COM; Mon, 21 Oct 2019 06:25:55 +0000
+Received: from DB6PR0601CA0031.eurprd06.prod.outlook.com (2603:10a6:4:17::17)
+ by DB7PR06MB4918.eurprd06.prod.outlook.com (2603:10a6:10:59::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.22; Mon, 21 Oct
+ 2019 06:25:37 +0000
+Received: from DB5EUR01FT020.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::203) by DB6PR0601CA0031.outlook.office365.com
+ (2603:10a6:4:17::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.20 via Frontend
+ Transport; Mon, 21 Oct 2019 06:25:37 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT020.mail.protection.outlook.com (10.152.4.247) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Mon, 21 Oct 2019 06:25:36 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Mon, 21 Oct 2019 07:25:33 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9L6PM2e022995;	Mon, 21 Oct
+ 2019 07:25:26 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9L6PEZT027516;	Mon, 21 Oct 2019 07:25:14 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9L6PEM6027511;	Mon, 21 Oct 2019 07:25:14 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9L6P1Go025824	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Mon, 21 Oct 2019 07:25:01
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9L6On8l022732	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Mon, 21 Oct 2019 07:24:53
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9L6OhAE005972	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Mon, 21 Oct 2019 07:24:43 +0100
+Received: from tsmtape.cosma (tsmtape [172.17.202.11])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9L6OcgP031215	for
+ <root@console51>; Mon, 21 Oct 2019 07:24:38 +0100
+Received: from tsmtape.cosma (localhost.localdomain [127.0.0.1])	by
+ tsmtape.cosma (8.14.4/8.13.8) with ESMTP id x9L6OcBY028255	for
+ <root@tsmtape.cosma>; Mon, 21 Oct 2019 07:24:38 +0100
+Received: (from root@localhost)	by tsmtape.cosma (8.14.4/8.14.4/Submit) id
+ x9L6OcHn028252	for root@localhost; Mon, 21 Oct 2019 07:24:38 +0100
+From: root <cosma-support@durham.ac.uk>
+Message-ID: <201910210624.x9L6OcHn028252@tsmtape.cosma>
+Date: Mon, 21 Oct 2019 07:24:38 +0100
+To: <root@console51.cosma>
+Subject: cosma-system: Schedule event from TSM client
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9L6PM2e022995
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 21 Oct 2019 06:25:36.6195
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 83173fb3-0ffb-4290-f8b3-08d755ef7c3d
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT020.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT020.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(199004)(189003)(7192003)(450100002)(156004)(47776003)(36486004)(26005)(106002)(186003)(42186006)(1076003)(126002)(336012)(14444005)(8676002)(58126008)(476003)(486006)(230700001)(2351001)(50466002)(97756001)(1096003)(8936002)(6862004)(246002)(23726003)(9686003)(8276002)(7846003)(6392003)(75640400001)(305945005)(5660300002)(46406003)(4006050)(87636003)(356004);DIR:INB;SFP:;SCL:1;SRVR:DB7PR06MB4918;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 83173fb3-0ffb-4290-f8b3-08d755ef7c3d
+X-MS-TrafficTypeDiagnostic: DB7PR06MB4918:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:316;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 21 Oct 2019 06:25:36.3823
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 83173fb3-0ffb-4290-f8b3-08d755ef7c3d
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR06MB4918
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:19.5170316
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?dxDncGqrtskcLGBkzWX6LEK+fia5V2lXrB2p3kvd9YhUwKjE0fIMjWyWVS4x?=
+ =?us-ascii?Q?MLZcvB0O2qJvCyJKMK5GTJTl+a/IbNYVPbqETkHpxLJoFnEOs92Y1CvG9B2F?=
+ =?us-ascii?Q?efbFPzFPtEXBm8jw0LO4+JBvbgsMdpee7uFeombthgUkWxemkRmokHKvqekC?=
+ =?us-ascii?Q?xFmQcAlfHRr9MmCpd4/B9Emb8RfE1UBrNPCHD/QVBkh1M6n7II77UnHsVZ9Z?=
+ =?us-ascii?Q?d0/sAB3ii8KLY43a8kYTrnRWngIzrso4vvWlrlM7COOw+7UCmp5yHziPoo4q?=
+ =?us-ascii?Q?pnYfKHooUrGLOhZEqVztF71KCCYtfnZ6t6VdhzacG4KrE1rb+ON0u4xV5BX7?=
+ =?us-ascii?Q?8FDOgyB2iESanVOac7vE74uFxCmDAqVMhgzKT5es4rloO2TFtL/EGF0gAnn6?=
+ =?us-ascii?Q?l9LeRrkpVfrp6ylm9S1LOWTZzcFLAmLHTnMt5D+0CX/+a63Suq4hoOg3tXJL?=
+ =?us-ascii?Q?BYd619O5ICqWaFU1RoAl9cD8OQ/uiJ6ACsw5duPqs17aOv34vm64Fy94l/2Y?=
+ =?us-ascii?Q?2H2x0mJrcHAnQk5WRRmkDxIyN9lsjSykJHFHASYRUl7Bt4C9UBQLA6RpBm9a?=
+ =?us-ascii?Q?0jGvoHkjrlHu4JnIE8pCtzaH5vK1UM2moU7llm06iYhNyOTvtBlb+kzC2Baj?=
+ =?us-ascii?Q?5A8toXFeNaF7hPmY+OyvcnpNrRxGBiiDHv/+fUuZ5jr1BtBbnG4zXMviLls/?=
+ =?us-ascii?Q?9+/H4+WzFGVV65LAdBxB/pzZvyvnYglgTdxHBpWqT4BrIXZ1gUPVcyd4aEQg?=
+ =?us-ascii?Q?6s0KEdpg8M2qUEVZu96HWER0N2ABC/pREiivQE6SZGsct2ehsibi2/DG/Bud?=
+ =?us-ascii?Q?3U0KaSVNSCUvWR3ptB2lQhP4QEcw1MTt0ZxHu1diNFka7WlNtNam1s1vLjjy?=
+ =?us-ascii?Q?mSAF0GRyXacGGbBYI28eK1kgvmt0GTgQAdTz7LwJqWaI0z1BD7dNJqOg/8Y6?=
+ =?us-ascii?Q?O/ts01zlBDRrYhai5yhJ3Pf6uS/+Yc+RFqMNiZoWBY+USlyQKofpdVwA10qG?=
+ =?us-ascii?Q?omUnoLSKtVNiD6b73bekX2D9J6mB2EpLqIKYR/kpiS/9Ffqfv3q9IEhUKhUc?=
+ =?us-ascii?Q?PFIe6aZtwJIFJvBLJUBVFXYSvf26sy6YVEhhsPXFfVP2hLj4R20=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 568
+
+
+---- Checking TSMTAPE log file for scheduled backups on 21/10/19 ----
+
+21/10/19   02:02:33 Incremental backup of volume '/cosma/home'
+21/10/19   02:02:33 Incremental backup of volume '/cosma/local'
+21/10/19   02:17:02 ANS1802E Incremental backup of '/cosma/local' finished with 1 failure(s)
+21/10/19   07:24:09 ANS1802E Incremental backup of '/cosma/home' finished with 20 failure(s)
+21/10/19   07:24:09 --- SCHEDULEREC STATUS BEGIN
+21/10/19   07:24:09 Session established with server TSMTAPE: Linux/x86_64
+21/10/19   07:24:09   Server Version 7, Release 1, Level 5.0
+21/10/19   07:24:09   Server date/time: 21/10/19   07:24:09  Last access: 21/10/19   02:14:05
+
+21/10/19   07:24:09 Total number of objects inspected:   16,946,799
+21/10/19   07:24:09 Total number of objects backed up:        7,168
+21/10/19   07:24:09 Total number of objects updated:              0
+21/10/19   07:24:09 Total number of objects rebound:              0
+21/10/19   07:24:09 Total number of objects deleted:              0
+21/10/19   07:24:09 Total number of objects expired:          1,116
+21/10/19   07:24:09 Total number of objects failed:              21
+21/10/19   07:24:09 Total number of objects encrypted:            0
+21/10/19   07:24:09 Total number of objects grew:                 0
+21/10/19   07:24:09 Total number of retries:                  1,479
+21/10/19   07:24:09 Total number of bytes inspected:           1.92 TB
+21/10/19   07:24:09 Total number of bytes transferred:         9.66 GB
+21/10/19   07:24:09 Data transfer time:                    3,404.37 sec
+21/10/19   07:24:09 Network data transfer rate:            2,974.61 KB/sec
+21/10/19   07:24:09 Aggregate data transfer rate:            524.81 KB/sec
+21/10/19   07:24:09 Objects compressed by:                        0%
+21/10/19   07:24:09 Total data reduction ratio:               99.51%
+21/10/19   07:24:09 Elapsed processing time:               05:21:35
+21/10/19   07:24:09 --- SCHEDULEREC STATUS END
+21/10/19   07:24:09 --- SCHEDULEREC OBJECT END DAILY_GPFS_BACKUP 21/10/19   02:00:00
+21/10/19   07:24:09 
+
+-------------------------------------------------------------------
+
+

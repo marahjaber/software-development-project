@@ -1,0 +1,276 @@
+From ali@durham.ac.uk Tue Dec  3 03:59:50 2019 +0000
+MIME-Version: 1.0
+Received: from AM5PR0601MB2561.eurprd06.prod.outlook.com
+ (2603:10a6:800:7d::27) by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS
+ via VI1PR0801CA0083.EURPRD08.PROD.OUTLOOK.COM; Tue, 3 Dec 2019 03:59:50 +0000
+Received: from AM0PR06CA0013.eurprd06.prod.outlook.com (2603:10a6:208:ab::26)
+ by AM5PR0601MB2561.eurprd06.prod.outlook.com (2603:10a6:203:42::9) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.18; Tue, 3 Dec
+ 2019 03:59:48 +0000
+Received: from DB5EUR01FT040.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::204) by AM0PR06CA0013.outlook.office365.com
+ (2603:10a6:208:ab::26) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.18 via Frontend
+ Transport; Tue, 3 Dec 2019 03:59:48 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT040.mail.protection.outlook.com (10.152.5.25) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Tue, 3 Dec 2019 03:59:47 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Tue, 3 Dec 2019 03:59:19 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB33x92J015172;	Tue, 3 Dec
+ 2019 03:59:13 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB33x3ok003468;	Tue, 3 Dec 2019 03:59:03 GMT
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id xB33x3C3003467;	Tue, 3 Dec 2019 03:59:03 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB33wnUM003392	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Tue, 3 Dec 2019 03:58:49 GMT
+Received: from smtphost1.dur.ac.uk (smtphost1.dur.ac.uk [129.234.7.143])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB33wSWh014936	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Tue, 3 Dec 2019 03:58:32 GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB33wHae001150	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Tue, 3 Dec 2019 03:58:21 GMT
+Received: from virgodb.cosma (virgodb [172.17.1.1])	by cosma-x.cosma.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB33wHGk018766	for <root@console51>; Tue, 3 Dec
+ 2019 03:58:17 GMT
+Received: from virgodb.cosma (localhost [127.0.0.1])	by virgodb.cosma
+ (8.14.4/8.14.4) with ESMTP id xB33fBOj025706	for <root@virgodb.cosma>; Tue, 3
+ Dec 2019 03:41:11 GMT
+Received: (from root@localhost)	by virgodb.cosma (8.14.4/8.14.4/Submit) id
+ xB33f7tH025400;	Tue, 3 Dec 2019 03:41:07 GMT
+Date: Tue, 3 Dec 2019 03:41:07 +0000
+Message-ID: <201912030341.xB33f7tH025400@virgodb.cosma>
+To: <root@console51.cosma>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: cosma-system: Logwatch for virgodb (Linux)
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xB33x92J015172
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 03 Dec 2019 03:59:48.0774
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4496c084-4bf4-49e9-a3b5-08d777a53d77
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT040.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT040.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:AM5PR0601MB2561;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 4496c084-4bf4-49e9-a3b5-08d777a53d77
+X-MS-TrafficTypeDiagnostic: AM5PR0601MB2561:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:3383;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 03 Dec 2019 03:59:47.7752
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4496c084-4bf4-49e9-a3b5-08d777a53d77
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM5PR0601MB2561
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6001647
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2495.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?SpdMVNW/eaL3QZpLqs0I1AZlnzAOt8Bd5Wn7N+4CsxyHJ7kLkhl3Ik6BM0?=
+ =?iso-8859-1?Q?zNZzZuKPvWch5vaFyRSXocg3Uo6+Bj/AoB9uPlMyS/+jTtUZv1rZKlCOLL?=
+ =?iso-8859-1?Q?sge/P2e7TChSp9R3XEhPwTzGc/W6flxofvR2lSxZAhjUAFKvctwLb1tqsy?=
+ =?iso-8859-1?Q?Hy++frSlgweUFo4MOk04j+YNmtPwfNf1e3SPFs1gaHPtk0L3g0RzpmS480?=
+ =?iso-8859-1?Q?OCxQmuwIDBRagcSxGZ+V/mDhh2I6lfqn8vgccF/BQPTrP/8lM2DGn35Ysc?=
+ =?iso-8859-1?Q?CPW9JJvXUfEJ/igX+4k6vcE35ehQ3dlQnKiY/4TvSrnNGG1Eyg+Otx8s5c?=
+ =?iso-8859-1?Q?a0qBmOpwI6QCa5AuPxBh3+xMaEDt5Vpua1lHJbPadQPfIOvnAlRSprzngH?=
+ =?iso-8859-1?Q?F3r/XVpxw7dQGW0ReqnDQUgst+Xvhg8oEduUHQ7mliXOfeMnZdUuo5If8S?=
+ =?iso-8859-1?Q?WhjQYKS6EjLClstMdjlm7XziipS8ombCR874nLs1JWa05hxqiTXNgqp3zO?=
+ =?iso-8859-1?Q?k62WCiGR7BntQNgoKGO4j6lr8iJqg1gyp9TnfW6AOlgzxv3aY733O1Tdo7?=
+ =?iso-8859-1?Q?JErFJS43zqMcxjFiRpn0kmaIywAM/waj4xVJTZvUESE3MFpEihjzh2kx/+?=
+ =?iso-8859-1?Q?rODEDQ5WaaK0+14cy+RjyL8Vujanyrx7gXFHCbid7gW48OO7xlT/vdjtgY?=
+ =?iso-8859-1?Q?o5vKShy0jUMUEPRCN5/xeYeGl10ZFiwUJdYNhBqEPBbOTHmFWlhv8GMSeo?=
+ =?iso-8859-1?Q?3OxARqTvcbVXGlsjqik+ghYV8h64ij0zwmcYpuIxOiSKOgZkq7PISZAwOe?=
+ =?iso-8859-1?Q?32y4shrjaXaBIp+HtGoJ0YCKfjgSOVITvS8wsEoubSK4KZJIzxLsAKefVO?=
+ =?iso-8859-1?Q?TqrNnRDK1bXoRQSPrF4AUImRxj5JfhfuVjY/Xu0uMUaGZuQRyn6gwaWtrK?=
+ =?iso-8859-1?Q?SLely4om743OcW7NLDUBURc5hHdToM1b6zfeNb4PfVizGCCzYXh+qX01uT?=
+ =?iso-8859-1?Q?+qx7E98IDrv6/TVbMukGKQ+duYZcdDL8otRUklaADR38c+mzsXGnUtX9JH?=
+ =?iso-8859-1?Q?C2EfHddLYIfJ2JZ3Kc/yQeAq2asA5xhSGJzDrKjTkbUFh5/m5LcZOh/QoK?=
+ =?iso-8859-1?Q?CWy0qYm0pdV4bxeDMHNyw/+qNfstH1N/MmOiNjdyDeg4f+Uz4JC4eI4ZJf?=
+ =?iso-8859-1?Q?rDMf50aLsXwhzfaqXTGAtYhfTgUMvcp7Fw8W0Ulq2C4Ajs+qT8B9Sy1+B0?=
+ =?iso-8859-1?Q?sblxpmYDvsdO74siSPYRfKXLpQge9DU83q/yj0sWk64eMI1IFL/CygNY0C?=
+ =?iso-8859-1?Q?9BzAa5WbdpeMFGohHup+wkWZJw=3D=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 12
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Tue Dec  3 03:41:07 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-02 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: virgodb
+  ################################################################## 
+ 
+ --------------------- Selinux Audit Begin ------------------------ 
+
+  Number of audit daemon stops: 1 
+ 
+ ---------------------- Selinux Audit End ------------------------- 
+
+ 
+ --------------------- Cron Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ INFO (Shutting down)
+ INFO (RANDOM_DELAY will be scaled with factor 23% if used.)
+ 
+ ---------------------- Cron End ------------------------- 
+
+ 
+ --------------------- Init Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+ Disconnected from system bus
+ 
+ ---------------------- Init End ------------------------- 
+
+ 
+ --------------------- iptables firewall Begin ------------------------ 
+
+ 
+ Listed by source hosts:
+ Logged 15 packets on interface eth3
+   From 14.239.253.210 - 2 packets to tcp(22) 
+   From 24.229.156.211 - 1 packet to tcp(22) 
+   From 45.67.15.137 - 1 packet to tcp(22) 
+   From 51.75.28.70 - 1 packet to tcp(22) 
+   From 92.53.53.149 - 1 packet to tcp(22) 
+   From 104.244.72.98 - 1 packet to tcp(22) 
+   From 107.189.10.141 - 1 packet to tcp(22) 
+   From 107.189.10.174 - 1 packet to tcp(22) 
+   From 107.189.11.11 - 1 packet to tcp(22) 
+   From 129.211.119.36 - 1 packet to tcp(22) 
+   From 139.220.192.57 - 1 packet to tcp(22) 
+   From 163.172.62.21 - 1 packet to tcp(22) 
+   From 178.73.215.171 - 1 packet to tcp(22) 
+   From 193.32.163.123 - 1 packet to tcp(22) 
+ 
+ ---------------------- iptables firewall End ------------------------- 
+
+ 
+ --------------------- Kernel Begin ------------------------ 
+
+ 
+ WARNING:  Kernel Errors Present
+    ERST: Failed to get Error Log Address Rang ...:  1 Time(s)
+    [Firmware Warn]: GHES: Poll interval is 0 for generic hardware error source: 1, disab ...:  1 Time(s)
+ 
+ ---------------------- Kernel End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    rkhunter: Rootkit hunter check started (version 1.4.4): 1 Time(s)
+    rkhunter: Scanning took 45 minutes and 10 seconds: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Sendmail was started 1 time(s)
+ 
+ Messages To Recipients:  8
+ Addressed Recipients:    8
+ Bytes Transferred:       34645
+ Messages No Valid Rcpts: 2
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 1 Time(s)
+ 
+ SSHD Started: 2 Time(s)
+ 
+ Users logging in through sshd:
+    pdraper:
+       172.17.170.21: 3 times
+    root:
+       172.17.110.1 (console51): 3 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 5 Time(s)
+ 
+ **Unmatched Entries**
+ Exiting on signal 15 : 2 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/sda2        20G  3.5G   16G  19% /
+ /dev/sda1       190M   69M  112M  39% /boot
+ /dev/sdb1       135G  110G   19G  86% /usr/local
+ /dev/sda5       111G  1.5G  104G   2% /var
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
+

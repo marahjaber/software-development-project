@@ -1,0 +1,46 @@
+From a.g.basden@durham.ac.uk  Mon Dec 16 09:36:57 2019
+Return-Path: <a.g.basden@durham.ac.uk>
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB3IALPu019213	for
+ <cosma-support@durham.ac.uk>; Tue, 3 Dec 2019 18:11:14 GMT
+Received: from 127.0.0.1 (delloss13.pri.cosma7.alces.network [172.17.175.13])
+	by controller.pri.cosma7.alces.network (Postfix) with SMTP id 19B4222352E	for
+ <cosma-support@durham.ac.uk>; Tue,  3 Dec 2019 18:10:21 +0000 (GMT)
+MIME-Version: 1.0
+Subject: Critical Alert Message For ossary2
+To: <cosma-support@durham.ac.uk>
+From: <a.g.basden@durham.ac.uk>
+Date: Tue, 3 Dec 2019 18:10:21 +0000
+Content-Type: multipart/mixed; boundary="DataSeparatorString"
+Message-ID: <20191203181021.19B4222352E@controller.pri.cosma7.alces.network>
+
+--DataSeparatorString
+Content-Type: text/plain; charset="UTF-8"
+
+
+User-Supplied Information
+Name: Alastair Basden
+Title: Senior Computer Manager
+Company: Durham University, The Institute for Computational Cosmology
+Phone: 0191 334 2229
+Cell phone:
+Pager:
+Email:cosma-support@durham.ac.uk
+Fax: 0191 334 3645
+Additional info:
+
+Summary
+Node ID: ossary2
+Host IP Address: fe80:0:0:0:526b:4b03:2:f5f2%6
+Host ID: fe80:0:0:0:526b:4b03:2:f5f2%6
+Event Error Code: 226c
+Event occurred: Dec 3, 2019 6:02:33 PM
+Event Message: Physical disk failed
+Event Priority: Critical
+Component Type: Physical Disk
+Component Location: Enclosure 1, Drawer 2, Slot 2
+
+--DataSeparatorString--
+
+--xB3M23RP011502.1575411706/cosma-x.cosma.dur.ac.uk--
+

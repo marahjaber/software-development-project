@@ -1,0 +1,262 @@
+From ali@durham.ac.uk Thu Oct 24 03:34:00 2019 +0100
+MIME-Version: 1.0
+Received: from VI1PR0602MB3359.eurprd06.prod.outlook.com
+ (2603:10a6:800:d3::19) by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS
+ via VI1PR08CA0093.EURPRD08.PROD.OUTLOOK.COM; Thu, 24 Oct 2019 02:34:00 +0000
+Received: from VI1PR06CA0113.eurprd06.prod.outlook.com (2603:10a6:803:8c::42)
+ by VI1PR0602MB3359.eurprd06.prod.outlook.com (2603:10a6:803:5::33) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.22; Thu, 24 Oct
+ 2019 02:33:58 +0000
+Received: from DB5EUR01FT048.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::201) by VI1PR06CA0113.outlook.office365.com
+ (2603:10a6:803:8c::42) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2387.22 via Frontend
+ Transport; Thu, 24 Oct 2019 02:33:58 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT048.mail.protection.outlook.com (10.152.5.166) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2387.20 via Frontend Transport; Thu, 24 Oct 2019 02:33:58 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Thu, 24 Oct 2019 03:33:56 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O2XgYH007377;	Thu, 24 Oct
+ 2019 03:33:46 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9O2XXOD028539;	Thu, 24 Oct 2019 03:33:33 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9O2XXue028538;	Thu, 24 Oct 2019 03:33:33 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O2XP2I028455	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 24 Oct 2019 03:33:25
+ +0100
+Received: from smtphost4.dur.ac.uk (smtphost4.dur.ac.uk [129.234.7.146])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O2XDl7007212	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 24 Oct 2019 03:33:17
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost4.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9O2X7h9019095	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Thu, 24 Oct 2019 03:33:07 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O2X2cZ031202	for
+ <cosma-support@durham.ac.uk>; Thu, 24 Oct 2019 03:33:02 +0100
+Received: from rome1.pri.cosma7.alces.network (rome1.pri.cosma7.alces.network
+ [172.17.170.36])	by controller.pri.cosma7.alces.network (Postfix) with ESMTP
+ id 4A4C02237D9	for <cosma-support@durham.ac.uk>; Thu, 24 Oct 2019 03:33:02
+ +0100 (BST)
+Received: by rome1.pri.cosma7.alces.network (Postfix)	id 4837CE024D; Thu, 24
+ Oct 2019 03:33:02 +0100 (BST)
+Delivered-To: root@rome1.pri.cosma7.alces.network
+Received: by rome1.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ 45F4FE0250; Thu, 24 Oct 2019 03:33:02 +0100 (BST)
+To: <root@rome1.pri.cosma7.alces.network>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: Logwatch for rome1.pri.cosma7.alces.network (Linux)
+Auto-Submitted: auto-generated
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-ID: <20191024023302.45F4FE0250@rome1.pri.cosma7.alces.network>
+Date: Thu, 24 Oct 2019 03:33:01 +0100
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9O2XgYH007377
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2019 02:33:58.3149
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 07031fc7-34b6-42f8-3e47-08d7582a9f72
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT048.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT048.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(10001)(979002)(4636009)(189003)(199004)(63364002)(7192003)(450100002)(6392003)(486006)(7846003)(26005)(156004)(2876002)(14444005)(37006003)(9686003)(2351001)(230700001)(336012)(50466002)(6266002)(126002)(476003)(6862004)(8266002)(106002)(246002)(1096003)(8676002)(8936002)(356004)(1076003)(4006050)(75640400001)(186003)(42882007)(36486004)(5660300002)(97876018)(42186006)(33656002)(23756003)(70486001)(47776003)(305945005)(969003)(989001)(999001)(1009001)(1019001);DIR:INB;SFP:;SCL:1;SRVR:VI1PR0602MB3359;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 07031fc7-34b6-42f8-3e47-08d7582a9f72
+X-MS-TrafficTypeDiagnostic: VI1PR0602MB3359:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:538;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2019 02:33:58.0807
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 07031fc7-34b6-42f8-3e47-08d7582a9f72
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR0602MB3359
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.9419863
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?moJ9TfBVf64deBo9zMNL2pBx/6V1asjZh3vyjeVSYnxp2ypTKf4n1F/i0/?=
+ =?iso-8859-1?Q?rLwAjgdEnh1NBTItwnzLD5qc7A1r8sZTFpk5xstnh0OiJawoDT1Xq4tSs9?=
+ =?iso-8859-1?Q?RyEablycnxUzCYJ66dAigpIfPxWA6qcseTGsgXf0OBXqv80mESK7nw5zcB?=
+ =?iso-8859-1?Q?5WKLJQ/9SAueLpFRvOoAG3PuHhagICE/Z7P89fvBgg3ymxfDM8+AcFXP1z?=
+ =?iso-8859-1?Q?q4GbWsTzThFZXKZ+/ZsQAFY/17czFXYPYLIsztY4WU7/IE5l7uqcQhJPb2?=
+ =?iso-8859-1?Q?es9pgsmeWNtoAQgAvGSZieiC2hwND8VFRi87iNtmNac3nPQLrVkgRY6giH?=
+ =?iso-8859-1?Q?WBabqVxnpgj+g9fgtUnU5aG2Lk3bmlWw8qIJT7a+3FnmyQqBsHwAuH5uPm?=
+ =?iso-8859-1?Q?46A9X1ACNzaKbbvRBOyGb8phgAw3ZVBl+zYLFX5a41qFGg+H00rW6Zk/bK?=
+ =?iso-8859-1?Q?GDwI4aKyHEahYhXi/1jyHrjEB1LnhrWgT5KteajfPor6+08T1G9J0Xfvd1?=
+ =?iso-8859-1?Q?WJZRueeUO6Dc+MiozyUt8tz3DJef9Ma6VC689uwTY4t7gbZUHG1OPOI1tr?=
+ =?iso-8859-1?Q?f6RpGJ8NrXNaKp6l/ns+Xuf1HGkcb3/KtrekyJIbq9QD8dhno+e2ygoYE4?=
+ =?iso-8859-1?Q?Xvo+irspo+dULezSTK888u1DMCHX6osWdeIUaflFPVOvduf3PbaKX+AmbE?=
+ =?iso-8859-1?Q?yhPrz2St+d9w9XlzXiEIsjqkl8DDxRjGYB8XtEB9jdzAH8KixRCrE0rOWh?=
+ =?iso-8859-1?Q?fu9TsMlxQUYt7K1WfC28lEuqmqMXJ1mTWIU3oKqgtEWZQOz2jRUQLOun5a?=
+ =?iso-8859-1?Q?Tsvy9P1az/gOMmYknkvsVXjR3dPtNHigtHmkCJrKHxvkJwj/PE7qHubVEv?=
+ =?iso-8859-1?Q?FfR7QRFQER4mioffukvVZHU6GLgnHNzKN2jrZ4b/cAiVaAJSY52cu6aWeb?=
+ =?iso-8859-1?Q?ipicYuvIGrAO0tWAnNrZDiYLuiGxhy84glYhbTfA8e9sOusmqfdhtRRa1Z?=
+ =?iso-8859-1?Q?53o5H9aff5rUHb7ua/wbB6BaHhuDErTfIxUDEH8HPepAcs8S/rVi0jKt7r?=
+ =?iso-8859-1?Q?ljg9HaZEmfDh7sNRVTAqLsoUYkSRJ2ZfWlRjT4JKfp0t?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 818
+
+ 
+ ################### Logwatch 7.4.0 (03/01/11) #################### 
+        Processing Initiated: Thu Oct 24 03:33:01 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-23 )
+                              Period is day.
+        Detail Level of Output: 0
+        Type of Output/Format: mail / text
+        Logfiles for Host: rome1.pri.cosma7.alces.network
+ ################################################################## 
+ 
+ --------------------- Automount Begin ------------------------ 
+
+ **Unmatched Entries**
+ add_host_addrs: hostname lookup failed: Name or service not known: 48 Time(s)
+ 
+ ---------------------- Automount End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+        1   *Warning: Database is older than source file 
+ 
+    3.705K  Bytes accepted                               3,794
+    3.862K  Bytes sent via SMTP                          3,955
+    3.705K  Bytes forwarded                              3,794
+ ========   ==================================================
+ 
+        1   Accepted                                   100.00%
+ --------   --------------------------------------------------
+        1   Total                                      100.00%
+ ========   ==================================================
+ 
+        2   Removed from queue      
+        1   Sent via SMTP           
+        1   Forwarded               
+        1   Deferred                
+        7   Deferrals               
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ Root logins on ttys: 1 Time(s).
+ 
+ **Unmatched Entries**
+    polkitd: Registered Authentication Agent for unix-process:55878:8075105 (system bus name :1.892 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:55920:8075439 (system bus name :1.895 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:55926:8075440 (system bus name :1.896 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:55972:8075464 (system bus name :1.897 [/usr/bin/pkttyagent --notify-fd 23 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:55992:8075469 (system bus name :1.898 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56006:8075481 (system bus name :1.899 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56029:8075494 (system bus name :1.900 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56040:8075506 (system bus name :1.901 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56055:8076113 (system bus name :1.902 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56069:8076725 (system bus name :1.903 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56578:8128146 (system bus name :1.910 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Registered Authentication Agent for unix-process:56598:8128150 (system bus name :1.911 [/usr/bin/pkttyagent --notify-fd 5 --fallback], object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:55878:8075105 (system bus name :1.892, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:55920:8075439 (system bus name :1.895, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:55926:8075440 (system bus name :1.896, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:55972:8075464 (system bus name :1.897, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:55992:8075469 (system bus name :1.898, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56006:8075481 (system bus name :1.899, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56029:8075494 (system bus name :1.900, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56040:8075506 (system bus name :1.901, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56055:8076113 (system bus name :1.902, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56069:8076725 (system bus name :1.903, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56578:8128146 (system bus name :1.910, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+    polkitd: Unregistered Authentication Agent for unix-process:56598:8128150 (system bus name :1.911, object path /org/freedesktop/PolicyKit1/AuthenticationAgent, locale en_GB.UTF-8) (disconnected from bus): 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ SSHD Killed: 2 Time(s)
+ 
+ SSHD Started: 4 Time(s)
+ 
+ Users logging in through sshd:
+    root:
+       172.17.170.1 (controller.pri.cosma7.alces.network): 3 times
+       172.17.170.11 (console71.pri.cosma7.alces.network): 3 times
+       172.17.100.25 (cosma-b.pri.cosma7.alces.network): 1 time
+       172.17.170.23 (login7c.pri.cosma7.alces.network): 1 time
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 8 Time(s)
+ 
+ **Unmatched Entries**
+ error: AuthorizedKeysCommand /usr/bin/sss_ssh_authorizedkeys root failed, status 1 : 7 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem               Size  Used Avail Use% Mounted on
+ /dev/mapper/system-root   16G  6.0G  8.9G  41% /
+ devtmpfs                 126G     0  126G   0% /dev
+ /dev/sda1                3.9G  187M  3.5G   6% /boot
+ /dev/mapper/system-var    16G  758M   15G   5% /var
+ /dev/mapper/system-tmp   837G   78M  795G   1% /tmp
+ 172.17.110.38:/cosma5    2.4P  2.2P  228T  91% /cosma5
+ 
+ 172.17.110.38:/cosma5 => 91% Used. Warning. Disk Filling up.
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+

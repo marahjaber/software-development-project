@@ -1,0 +1,217 @@
+From ali@durham.ac.uk Thu Oct 24 10:11:00 2019 +0100
+MIME-Version: 1.0
+Received: from AM0PR06MB5300.eurprd06.prod.outlook.com (2603:10a6:800:7d::22)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR0801CA0078.EURPRD08.PROD.OUTLOOK.COM; Thu, 24 Oct 2019 09:11:00 +0000
+Received: from AM0PR06CA0107.eurprd06.prod.outlook.com (2603:10a6:208:fa::48)
+ by AM0PR06MB5300.eurprd06.prod.outlook.com (2603:10a6:208:101::15) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.20; Thu, 24 Oct
+ 2019 09:10:59 +0000
+Received: from DB5EUR01FT011.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::207) by AM0PR06CA0107.outlook.office365.com
+ (2603:10a6:208:fa::48) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2387.22 via Frontend
+ Transport; Thu, 24 Oct 2019 09:10:59 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=fail action=none header.from=epcc.ed.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ DB5EUR01FT011.mail.protection.outlook.com (10.152.5.3) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2387.20 via Frontend Transport; Thu, 24 Oct 2019 09:10:58 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Thu, 24 Oct 2019 10:10:57 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O9Airq016115;	Thu, 24 Oct
+ 2019 10:10:48 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9O9AaUQ019198;	Thu, 24 Oct 2019 10:10:36 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9O9AaJ4019197;	Thu, 24 Oct 2019 10:10:36 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from mailrelay5.dur.ac.uk (mailrelay5.dur.ac.uk [129.234.7.154])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O9AQds019124	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 24 Oct 2019 10:10:26
+ +0100
+Received: from EUR01-VE1-obe.outbound.protection.outlook.com
+ (mail-ve1eur01lp2050.outbound.protection.outlook.com [104.47.1.50])	by
+ mailrelay5.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9O9AA4h001440
+	(version=TLSv1/SSLv3 cipher=AES256-GCM-SHA384 bits=256 verify=FAIL)	for
+ <cosma-support@durham.ac.uk>; Thu, 24 Oct 2019 10:10:14 +0100
+Received: from VI1PR06CA0185.eurprd06.prod.outlook.com (2603:10a6:803:c8::42)
+ by AM6PR06MB4613.eurprd06.prod.outlook.com (2603:10a6:20b:3f::17) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.22; Thu, 24 Oct
+ 2019 09:10:09 +0000
+Received: from VE1EUR01FT027.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::207) by VI1PR06CA0185.outlook.office365.com
+ (2603:10a6:803:c8::42) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.22 via Frontend
+ Transport; Thu, 24 Oct 2019 09:10:09 +0000
+Authentication-Results-Original: spf=neutral (sender IP is 129.215.10.66)
+ smtp.mailfrom=epcc.ed.ac.uk; durham.ac.uk; dkim=none (message not signed)
+ header.d=none;durham.ac.uk; dmarc=fail action=none
+ header.from=epcc.ed.ac.uk;compauth=pass reason=105
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+Received-SPF: Neutral (protection.outlook.com: 129.215.10.66 is neither
+ permitted nor denied by domain of epcc.ed.ac.uk)
+Received: from safe.epcc.ed.ac.uk (129.215.10.66) by
+ VE1EUR01FT027.mail.protection.outlook.com (10.152.2.216) with Microsoft SMTP
+ Server id 15.20.2387.20 via Frontend Transport; Thu, 24 Oct 2019 09:10:09
+ +0000
+Received: from epcc-safe-prod.epcc.ed.ac.uk (localhost [127.0.0.1])	by
+ safe.epcc.ed.ac.uk (Postfix) with ESMTP id 3FE11405C0DA	for
+ <cosma-support@durham.ac.uk>; Thu, 24 Oct 2019 10:10:09 +0100 (BST)
+Date: Thu, 24 Oct 2019 10:10:09 +0100
+From: Dirac Administration <diracmail@epcc.ed.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Message-ID: <1512089690.171.1571908209098@epcc-safe-prod.epcc.ed.ac.uk>
+Subject: Please create an account for dc-resc1 on cosma
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-Helpdesk: Saf
+X-Saf-service: DIRAC
+X-Saf-Type: New User
+X-Saf-Machine: cosma
+X-Saf-Originator: federica.rescigno@durham.ac.uk
+X-Saf-QueryID: 6153
+Auto-Submitted: auto-generated
+X-EOPAttributedMessage: 1
+X-Forefront-Antispam-Report-Untrusted:
+ CIP:129.215.10.66;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(189003)(199004)(33003)(486006)(55016002)(26005)(14444005)(7126003)(6306002)(230700001)(15650500001)(23726003)(6916009)(2351001)(426003)(336012)(966005)(50466002)(6266002)(126002)(476003)(356004)(246002)(1096003)(8676002)(4006050)(76506006)(2361001)(75640400001)(5660300002)(88526003)(7696005)(47776003)(305945005)(86362001);DIR:INB;SFP:;SCL:1;SRVR:AM6PR06MB4613;H:safe.epcc.ed.ac.uk;FPR:;SPF:Neutral;LANG:en;PTR:epcc-safe-prod.epcc.ed.ac.uk;MX:1;A:0;
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: e42ef03e-5537-4013-3504-08d7586215ab
+X-MS-TrafficTypeDiagnostic: AM6PR06MB4613:|AM0PR06MB5300:
+X-MS-Exchange-PUrlCount: 2
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;OLM:8882;
+X-Microsoft-Antispam-Untrusted: BCL:0;
+X-Microsoft-Antispam-Message-Info-Original:
+ =?us-ascii?Q?j39iUNxPSeRCaIssy6uNmkTlQ27EjCcBecwkOqUtRGdAPRcwe62xRp4GAu4E?=
+ =?us-ascii?Q?cHwme17cJsu3Em4hNnjmK0gSW/in5gO02sCxW/A2gglfmDg5AhOvb6kMpM84?=
+ =?us-ascii?Q?H+SBpQb67SsoiOPOWpg7DilWuqRhKa5LdPXsL4+sOq61jG1dE/gqiEvWwHum?=
+ =?us-ascii?Q?Zb3phKspGx75pOL01T52dMfm7V4g3mMHBz8VOG2pWti3RNHC/gXY2dbf1dUi?=
+ =?us-ascii?Q?VEJCl/dE1QnyvmIUIly4aE807a0LlvqnU8R/SkvkVm2bMMXpQPxpDVhgeJPt?=
+ =?us-ascii?Q?GhNSROEAdhsDi5xWNMcPLDy7GD8ghaTFDRgTyR4hVGgqWEQsHm5lGc+H43AQ?=
+ =?us-ascii?Q?WmCon/+1KRggEa5pSci9FWwP9OF2l+PraKBa9lN9HKl9rV/uPg+cjk6Qg3YL?=
+ =?us-ascii?Q?ZAJDia4m/uYOUgCHxYtsGTVR+CpHu87pglgsbKdm0CVOyH+4iG7PgOEZ2lAx?=
+ =?us-ascii?Q?qn/aWmt4Ys8QJLhK4kXLhSNuP2YHuaKXqtyBnL8phQCV9G9M8VCxXdCvdV0U?=
+ =?us-ascii?Q?g4zVV92KRB72Nr3j6yrSBuVbdQ2ZrIdA16iuyea8drYswLSnE6T5Aq/5fW24?=
+ =?us-ascii?Q?MFqV52X61uCy9bWsUv9N/hevBXVLw+SwbbXtG0bn8WN7jh6qAILCObaTSSKc?=
+ =?us-ascii?Q?S1wVf4W492x4jiKj9tEvgzo/UrgVqzDTaQRfj9rCi0ALgCcLPmSuD6l1ud9a?=
+ =?us-ascii?Q?gHcuFZK7Htm8l2DlV/KL8EhjkHxXsojD3hymN1k5h4ZHHR2SdDC0S6YzDLNz?=
+ =?us-ascii?Q?arU5dVqzCwRxrsexyrSc7Tb1Y7Fc+W+BBpmnmB4zPczvR9EWrra/SzicYfAO?=
+ =?us-ascii?Q?Yt+XtnGHsnwLYx/HtTetywZUlC3BxkpzDBbUdIZd0s4jjxYXcXEZ2Fd3gr5x?=
+ =?us-ascii?Q?2XaquYLnmHRjQHC/aPrL9l3fnXR3ezMaR8hk2fv9qAWXDYDALAXK+cucdGhR?=
+ =?us-ascii?Q?iHInSxmN+YPbxM8fDghoYnIc6YitM0xm5L67aq0im5Q=3D?=
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM6PR06MB4613
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9O9Airq016115
+Return-Path: owner-cosma-support@durham.ac.uk
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 24 Oct 2019 09:10:58.9795
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e42ef03e-5537-4013-3504-08d7586215ab
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT011.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT011.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Transport-CrossTenantHeadersStripped:
+ DB5EUR01FT011.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(189003)(199004)(14444005)(450100002)(6306002)(476003)(186003)(7126003)(4006050)(75640400001)(305945005)(486006)(966005)(156004)(55016002)(97756001)(23726003)(5660300002)(336012)(6266002)(15650500001)(36486004)(6862004)(426003)(26005)(42882007)(7846003)(1096003)(8936002)(7696005)(76506006)(50466002)(88526003)(126002)(230700001)(6392003)(246002)(106002)(2351001)(8676002)(46406003)(47776003);DIR:INB;SFP:;SCL:1;SRVR:AM0PR06MB5300;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-Office365-Filtering-Correlation-Id-Prvs:
+ 9f39aac7-7d91-48f8-e719-08d75861f84a
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 24 Oct 2019 09:10:58.7243
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e42ef03e-5537-4013-3504-08d7586215ab
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR06MB5300
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6066674
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?6xBEJilBO9w3NrnJ3BNm1ApO5YZ/9FGARRH68IRS1Un61X28vK09ly/Mtqu8?=
+ =?us-ascii?Q?uzxDArXvHaziSuugtAlo2iL0sgrv87rh+Cd/0lGNyqMw5tYZfoL9aGT/1NGR?=
+ =?us-ascii?Q?wv26sU6k0oLi/mv3MkzoAx9FWwRww2dXr8w20ZbvedCxrgbXQxEAiuBPljw0?=
+ =?us-ascii?Q?i6x7iNDScr9tuNyBcb6dPV3WY0Fm0A7gimELGvRCThX6EEZ2DQsk+PHSivSh?=
+ =?us-ascii?Q?TtCRWXwqq/yUTMaQUq/KBoOlaBmsvLTduhPO1aiRMPQ27sg5kE9/quIUV4Tl?=
+ =?us-ascii?Q?uFZXZ0XMLDI1RXo0zwKx2lp7XG1N4zT0DI5+JrvRftUc6WgvoVRtIrfi+K9Q?=
+ =?us-ascii?Q?/CJoT+nQU9xbE8jP4otA5FKIh2nDBpmaoL7cIagbkz5l1uAl62vhIthUsMTa?=
+ =?us-ascii?Q?VqCKyBToTnwJj+p3//VUfElsll56vNQ2v7lWE0ZgfKMEC06vjAiQNC+0wOy8?=
+ =?us-ascii?Q?pNQfsScF7Bua+UzFnEHBPXT7gnf9DPQ5n5h288g2Ip0DsY9mA0cPz3ZRz3RN?=
+ =?us-ascii?Q?6Of+H/yLx1d9oeFoWHN+a2d/5rIG0p9dd2XXPotWKne/C+a7kwO6OIKNKo0B?=
+ =?us-ascii?Q?cxMmnSWx5NQ9I67EIc2DZ04frJD5HLQ4+w9OJ54rlgXNpRqKemY1FKK2CPUT?=
+ =?us-ascii?Q?JuP3H4nOH4jq5B+qEDorKUydKL36ATRqwgk2EHY3ew9InMxEm6Vlc85Uuq8X?=
+ =?us-ascii?Q?dXSMkv2oLhVBJ0NhE+RSMjDlPU/S+48D9r7jEaBKDkOvGaVfqfLIXSWQJvjs?=
+ =?us-ascii?Q?eaQ6SzM6TTH8VLYzgm0b4zPqx167CsoPGDAuiwt95Oh5Rr9KkBjDD91lb9MJ?=
+ =?us-ascii?Q?dN8KD7e0YEeAV5opqz5XFz0w0MLQImeVmTd3qwTTekQ4SJbn16IvIf6xsLYl?=
+ =?us-ascii?Q?EPiKc0d8MEHQ0xnNoVhRcozCW+rD5AAbmCMq7GyTpqPMoI+EVcuLCXf9nnmc?=
+ =?us-ascii?Q?9l/zFyExMksCrFF2rePhA4KqWlrekcYabSUX7kvWCpThMuDk4Rm6tlDvfaYg?=
+ =?us-ascii?Q?DV2UJSOMSSaqamngIrjeeAWW1iY8cyjr28FdN9F/lWPCwLv4EbxAoicsmY3I?=
+ =?us-ascii?Q?ScvQlRaCEyV6qZgvOMT2EfJsK2Dqy+cr+AbbCPBTi09SO9NiRtf4zANs1JRa?=
+ =?us-ascii?Q?6iZ1axhbAiXa?=
+Status: 
+X-Status: 
+X-Keywords:                   
+X-UID: 845
+
+
+Hi Support,
+
+This user has been authorised to have an account on one of our machines.  
+Please create a new user account for them using the following information.
+
+Task ID:              6153
+Machine:              cosma
+Username:             dc-resc1
+Email:                federica.rescigno@durham.ac.uk
+User's Name:          Federica Rescigno
+Consortium:           hpcicc - Durham
+Project Group(s):     hpcicc
+UID:                  21254
+GID:                  20127
+IpRange:			  0.0.0.0/24
+PublicKey:			  ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDIt3Oub2NQBCD7VpAuSPGEESqpJBppoIqC/WlFMg5LFtTqKJp2S0hCejGDbsxbwb91CRfMyVf7vkTPDSi2L/5OvyiG2DTq8Ag9JQjEsRa3QgBK2UXzgvbJVdQjIMhPGVCFKvyJxaMXU33Emu6SaHNVldCJG1Z3HkOpHoVzQqaSj1MdoxXuoSdyGqY0DvEj6s8Spc04NpeR7rkGdSpWbaFltagjAqGWqV6Isw1twoZxPDmNNb5gWd64w8SgFughN8zw91VbknRNXGLs1RzF1t4b0rRKtxu6vpU9DxiEhNkTRiHMpJI17GVDaUEGYHnrOxyyOkdTbHWym10UpDEDrMe4xdGTKFre3JrcF+wfUuYZ4LNcNKnJL+JkCkao0LtYpbnGNBcBJcHz3Hmsn12+etvj9DKipXoh81hKDhF2OFRrPOA8YCPPfdanjOwmqD+EHy7/EyOcC/1YObjTcd+l0KxsN8uuH6JvwhKNDWOBqyM8iRo/ZSxTMzWR5Yq11mBrE05ejR1K/uJQf1Rf7YROtnXO9Wm+Ep6nmosGUjIwXxMq24DuVXYH25ShgOBQbmirPUqius0YadXMd40hfY+d3QHrg/g0jBoV8pLBCQspKFa4nYTnLdZEmG54OLjxiIF0hdo9IiBMt6gmWh/am3pZJKmIb1Mali/avL4BwtjJkvgHyQ==
+Existing accounts:    
+Identifiers:          Email->federica.rescigno@durham.ac.uk, GlobalName->dc-resc1, WikiName->Frescig
+					
+
+
+
+Please update the status of the ticket afterwards via the urls below.
+
+Thanks,
+  The SAFE.
+
+P.S. You can see the current pending queue by looking at 
+https://safe.epcc.ed.ac.uk/dirac/servlet/ViewTicketServlet (Personal SAFE login)
+https://safe.epcc.ed.ac.uk/dirac/servlet/SysAdminServlet (Ticket handler password)
+

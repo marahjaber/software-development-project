@@ -1,0 +1,383 @@
+From ali@durham.ac.uk Wed Oct 23 01:02:20 2019 +0100
+MIME-Version: 1.0
+Received: from DB6PR06MB3013.eurprd06.prod.outlook.com (2603:10a6:801::34) by
+ VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1P18901CA0024.EURP189.PROD.OUTLOOK.COM; Wed, 23 Oct 2019 00:02:20 +0000
+Received: from AM0PR06CA0103.eurprd06.prod.outlook.com (2603:10a6:208:fa::44)
+ by DB6PR06MB3013.eurprd06.prod.outlook.com (2603:10a6:6:d::18) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2347.16; Wed, 23 Oct 2019 00:02:16 +0000
+Received: from HE1EUR01FT008.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::207) by AM0PR06CA0103.outlook.office365.com
+ (2603:10a6:208:fa::44) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.21 via Frontend
+ Transport; Wed, 23 Oct 2019 00:02:16 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ HE1EUR01FT008.mail.protection.outlook.com (10.152.1.250) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Wed, 23 Oct 2019 00:02:16 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 23 Oct 2019 01:02:06 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N01sbT019662;	Wed, 23 Oct
+ 2019 01:01:58 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9N01mBd008720;	Wed, 23 Oct 2019 01:01:48 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9N01mam008719;	Wed, 23 Oct 2019 01:01:48 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N01dpu008691	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 23 Oct 2019 01:01:39
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N01RRT009779	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 23 Oct 2019 01:01:31
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9N01I6X003214	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Wed, 23 Oct 2019 01:01:18 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9N01DxO030661	for
+ <cosma-support@durham.ac.uk>; Wed, 23 Oct 2019 01:01:13 +0100
+Received: from c6mds1.pri.cosma7.alces.network
+ (c6mds1.pri.cosma7.alces.network [172.17.165.100])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id 0E9782237D8	for
+ <cosma-support@durham.ac.uk>; Wed, 23 Oct 2019 01:01:13 +0100 (BST)
+Received: by c6mds1.pri.cosma7.alces.network (Postfix)	id 05392E0074; Wed, 23
+ Oct 2019 01:01:13 +0100 (BST)
+Delivered-To: root@c6mds1.pri.cosma7.alces.network
+Received: by c6mds1.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ F1AC5E011D; Wed, 23 Oct 2019 01:01:12 +0100 (BST)
+From: "(Cron Daemon)" <cosma-support@durham.ac.uk>
+To: <root@c6mds1.pri.cosma7.alces.network>
+Subject: Cron <root@c6mds1> /root/statuscheck
+Content-Type: text/plain; charset="UTF-8"
+Auto-Submitted: auto-generated
+X-Cron-Env: <XDG_SESSION_ID=4494>
+X-Cron-Env: <XDG_RUNTIME_DIR=/run/user/0>
+X-Cron-Env: <LANG=en_GB.UTF-8>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=root>
+X-Cron-Env: <USER=root>
+Message-ID: <20191023000112.F1AC5E011D@c6mds1.pri.cosma7.alces.network>
+Date: Wed, 23 Oct 2019 01:00:01 +0100
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9N01sbT019662
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 23 Oct 2019 00:02:16.7143
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 436a759c-555f-4f2c-74a6-08d7574c440e
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT008.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT008.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(979002)(4636009)(217263001)(199004)(189003)(7192003)(5660300002)(486006)(36486004)(75640400001)(356004)(42186006)(4006050)(305945005)(16586007)(106002)(476003)(8266002)(246002)(8676002)(23676004)(26005)(126002)(336012)(6666004)(186003)(156004)(14444005)(97876018)(37006003)(6392003)(7846003)(70486001)(5820100001)(33656002)(50466002)(2351001)(6862004)(1076003)(6266002)(30864003)(9686003)(8936002)(450100002)(1096003)(47776003)(449214003)(969003)(989001)(999001)(1009001)(1019001);DIR:INB;SFP:;SCL:1;SRVR:DB6PR06MB3013;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 436a759c-555f-4f2c-74a6-08d7574c440e
+X-MS-TrafficTypeDiagnostic: DB6PR06MB3013:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:5236;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 23 Oct 2019 00:02:16.3810
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 436a759c-555f-4f2c-74a6-08d7574c440e
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB6PR06MB3013
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.9615022
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?U2V0dHVSYWpTRE9acExDR1VvQWVkUHdLdzdKTTJ2UmQvRklXSURady9Jc0J3?=
+ =?utf-8?B?aVhZcUxWNDVxMEQxYW5LSzBKQ0cvS2tqb3VvWElNTVQvWGNRN1p2TGpUNnoz?=
+ =?utf-8?B?aXhETHJ0NURmZkhhR1E1SnRpcEc4RFAwUVRScEk3Z1F5aFQ3b3pDNnlyU2o2?=
+ =?utf-8?B?dXNkZzhKejYrNFhrSTNYemlUL3BvMUFqS05xY2p5cmR3c3lUZmd6OWU1TVBr?=
+ =?utf-8?B?bWF6VzRVcDhuVDcwN1dqV1pQNzZoOUVjVmFaemg3WXJEM2V4RjU2K0hxd1ZZ?=
+ =?utf-8?B?dnNjdnorYythd1RqQXNyKzdKNlBHY1lIaktqNXUwZ1p0TFp5ZjJXUFZqNDFq?=
+ =?utf-8?B?M1V1dkpYZkM0S1pvUEhnYXRBdzZ1dURkZC9UZ0hGWEFqY2dJc28xMThDYytY?=
+ =?utf-8?B?N3B1eEJibmNpc21TRjJrZkZWd0hhWnJQem12UFNTb2tMOU5zQnZ1NG9kUk1o?=
+ =?utf-8?B?emFEVHdOeGpyRW9yaU84WnJHZVU0NVc2RVI0QXEvcUFwdlVKd04wQ3RVVVVU?=
+ =?utf-8?B?OW9vamY5L2FlbHRLUWNoeWNKQ09wcGhpMjJHbjBXT1R1NDluaE5wenNjV1do?=
+ =?utf-8?B?dE1aZjNtaHpaL0dacWJwdU5UMWNGTzVERExWbkpDdEVaMVFMY1R1dUgyYzVP?=
+ =?utf-8?B?VHBIajc0YURVb1RxRlR1Y2NhZ3VrSHAvay9zMGxpVFRRZEtBNS8yTzUzcTVV?=
+ =?utf-8?B?d3JldGZCbDZTcHlKcDU0b1VpN0JNOERHcmtibi9PTXFLdzlMcGV4VEMyVkQ0?=
+ =?utf-8?B?eHp1YUJpOWdBUFgwc0Y3eW91NmZCWWc4d0pYR0RNdnRxYXhrcGxwNnphdHZ6?=
+ =?utf-8?B?cFFRMWU4WERtTzVGdEx0K0xwdUplNkhrWERxNjN6QnZNbmlMMUtockszWVgy?=
+ =?utf-8?B?K3NrM1NiOXg5MmZhekhrUlJDU0U1bDZsbEFKeHFRekZRdEU3NGRET3BzdmRM?=
+ =?utf-8?B?a0ZPTE9LL1NKSWZ2cjhsOWRsWTNiMkpvcFFSazZlQTZaUDE5U1RQbnlsUE5H?=
+ =?utf-8?B?dUFxWnhtRlZtNjRqMkNxT0UvTTc5d1N4enlmZFQ4Y2tWK0FWVVZrOXo3R2JR?=
+ =?utf-8?B?UVVOU2w4MkVwQUxGL3o4UHN1ekxFR1RaUmJTNmZvL1Q0UjJGb09yNXZhVHJE?=
+ =?utf-8?B?U0twUTJiYlIzZ1pDNVk3SmJYcHNObTNSOWhkVEFjZlJJanpLSjBUKzlhN1NN?=
+ =?utf-8?B?UmJob09hZ3ExUzNUK08xVWRUYlQ3UlQ4SGJsMzlVYm9WU0tSQnhsakJrMmhr?=
+ =?utf-8?B?ZUlPRE9tWTY5L210SWUwZnE4STFpRStFSkVVNW84ZnR2Zm8vQllVTEdKQUov?=
+ =?utf-8?B?NUp4WWttb0ZUTnVXQVZnbUlsb3c5bHo2Wk8weTRjdWJleWNrNXdZMnc0cks5?=
+ =?utf-8?Q?Hha7lZkc7CJ1nrKozyZkv2FcKLgXVwxs=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 778
+
+Lustre mounts:
+c6mds1:  2
+c6mds2:  1
+c6oss01: 7
+c6oss02: 7
+c6oss03: 7
+c6oss04: 7
+  scan: scrub repaired 0B in 0h15m with 0 errors on Tue Oct  1 01:15:35 2019
+  scan: scrub repaired 0B in 0h52m with 0 errors on Wed Oct  2 01:52:51 2019
+  scan: scrub repaired 0B in 2h26m with 0 errors on Thu Oct  3 03:26:50 2019
+  scan: scrub repaired 0B in 5h30m with 0 errors on Fri Oct  4 06:30:57 2019
+  scan: scrub repaired 0B in 9h0m with 0 errors on Sat Oct  5 10:00:34 2019
+  scan: scrub repaired 0B in 11h38m with 0 errors on Sun Oct  6 12:38:34 2019
+  scan: scrub repaired 0B in 13h36m with 0 errors on Mon Oct  7 14:36:16 2019
+  scan: scrub repaired 0B in 13h43m with 0 errors on Fri Oct 11 14:43:20 2019
+  scan: scrub repaired 0B in 13h48m with 0 errors on Sat Oct 12 14:48:44 2019
+  scan: scrub repaired 0B in 13h31m with 0 errors on Sun Oct 13 14:31:48 2019
+  scan: scrub repaired 0B in 13h31m with 0 errors on Mon Oct 14 14:31:52 2019
+  scan: scrub repaired 0B in 13h43m with 0 errors on Tue Oct  8 14:43:10 2019
+  scan: scrub repaired 0B in 13h38m with 0 errors on Wed Oct  9 14:38:09 2019
+  scan: scrub repaired 0B in 13h32m with 0 errors on Thu Oct 10 14:32:49 2019
+  scan: scrub repaired 0B in 13h36m with 0 errors on Tue Oct 15 14:36:22 2019
+  scan: scrub repaired 0B in 14h1m with 0 errors on Wed Oct 16 15:01:34 2019
+  scan: scrub repaired 0B in 13h30m with 0 errors on Thu Oct 17 14:30:51 2019
+  scan: scrub repaired 0B in 13h28m with 0 errors on Fri Oct 18 14:28:18 2019
+  scan: scrub repaired 0B in 13h45m with 0 errors on Sat Oct 19 14:45:33 2019
+  scan: scrub repaired 0B in 13h34m with 0 errors on Sun Oct 20 14:34:11 2019
+  scan: scrub repaired 0B in 13h36m with 0 errors on Mon Oct 21 14:36:03 2019
+  scan: scrub repaired 0B in 13h21m with 0 errors on Mon Oct 21 14:21:37 2019
+  scan: scrub repaired 0B in 13h30m with 0 errors on Tue Oct 22 14:30:21 2019
+  scan: scrub in progress since Wed Oct 23 01:00:02 2019
+	27.1M scanned out of 10.3T at 27.1M/s, 110h57m to go
+  scan: scrub repaired 0B in 0h4m with 0 errors on Tue Sep 24 01:04:56 2019
+  scan: scrub repaired 0B in 0h4m with 0 errors on Wed Sep 25 01:04:43 2019
+  scan: scrub repaired 0B in 0h4m with 0 errors on Mon Aug 26 01:04:27 2019
+  scan: scrub repaired 0B in 0h4m with 0 errors on Tue Aug 27 01:04:31 2019
+
+zpools all okay
+zpools all okay
+zpools all okay
+zpools all okay
+
+CHECKING ENCLOSURES
+
+Status Information:
+	Status: OK                       
+	Overall Drawer Status: UNSUPPORTED              
+	Overall Drive Status: OK                       
+	Overall Temp Sensor Status: OK                       
+	Overall Power Supply Status: OK                       
+	Overall Current Sensor Status: OK                       
+	Overall Voltage Sensor Status: OK                       
+
+Status Information:
+	Status: OK                       
+	Overall Drawer Status: UNSUPPORTED              
+	Overall Drive Status: OK                       
+	Overall Temp Sensor Status: OK                       
+	Overall Power Supply Status: OK                       
+	Overall Current Sensor Status: OK                       
+	Overall Voltage Sensor Status: OK                       
+
+Status Information:
+	Status: OK                       
+	Overall Drawer Status: UNSUPPORTED              
+	Overall Drive Status: OK                       
+	Overall Temp Sensor Status: OK                       
+	Overall Power Supply Status: OK                       
+	Overall Current Sensor Status: OK                       
+	Overall Voltage Sensor Status: OK                       
+
+Status Information:
+	Status: OK                       
+	Overall Drawer Status: UNSUPPORTED              
+	Overall Drive Status: OK                       
+	Overall Temp Sensor Status: OK                       
+	Overall Power Supply Status: OK                       
+	Overall Current Sensor Status: OK                       
+	Overall Voltage Sensor Status: OK                       
+
+
+Cluster name: mds12
+Stack: corosync
+Current DC: c6mds2.pri.cosma7.alces.network (version 1.1.19-8.el7_6.4-c3c624ea3d) - partition with quorum
+Last updated: Wed Oct 23 01:01:11 2019
+Last change: Fri Sep 27 19:17:17 2019 by root via crm_resource on c6mds1.pri.cosma7.alces.network
+
+2 nodes configured
+5 resources configured
+
+Online: [ c6mds1.pri.cosma7.alces.network c6mds2.pri.cosma7.alces.network ]
+
+Full list of resources:
+
+ c6mds1_ipmi	(stonith:fence_ipmilan):	Started c6mds1.pri.cosma7.alces.network
+ c6mds2_ipmi	(stonith:fence_ipmilan):	Started c6mds2.pri.cosma7.alces.network
+ resource-cos6-mdt0	(ocf::lustre:Lustre):	Started c6mds1.pri.cosma7.alces.network
+ resource-cos6-mdt1	(ocf::lustre:Lustre):	Started c6mds2.pri.cosma7.alces.network
+ resource-mgs	(ocf::lustre:Lustre):	Started c6mds1.pri.cosma7.alces.network
+
+Daemon Status:
+  corosync: active/disabled
+  pacemaker: active/disabled
+  pcsd: active/enabled
+Cluster name: oss0102
+Stack: corosync
+Current DC: c6oss01.pri.cosma7.alces.network (version 1.1.19-8.el7_6.4-c3c624ea3d) - partition with quorum
+Last updated: Wed Oct 23 01:01:11 2019
+Last change: Fri Sep 27 19:18:40 2019 by hacluster via crmd on c6oss02.pri.cosma7.alces.network
+
+2 nodes configured
+30 resources configured
+
+Online: [ c6oss01.pri.cosma7.alces.network c6oss02.pri.cosma7.alces.network ]
+
+Full list of resources:
+
+ c6oss01_ipmi	(stonith:fence_ipmilan):	Started c6oss01.pri.cosma7.alces.network
+ c6oss02_ipmi	(stonith:fence_ipmilan):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost0
+     resource-zfspool-ost0	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost0	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost1
+     resource-zfspool-ost1	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost1	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost2
+     resource-zfspool-ost2	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost2	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost3
+     resource-zfspool-ost3	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost3	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost4
+     resource-zfspool-ost4	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost4	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost5
+     resource-zfspool-ost5	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost5	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost6
+     resource-zfspool-ost6	(ocf::heartbeat:ZFS):	Started c6oss01.pri.cosma7.alces.network
+     resource-cos6-ost6	(ocf::lustre:Lustre):	Started c6oss01.pri.cosma7.alces.network
+ Resource Group: group-ost7
+     resource-zfspool-ost7	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost7	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost8
+     resource-zfspool-ost8	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost8	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost9
+     resource-zfspool-ost9	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost9	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost10
+     resource-zfspool-ost10	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost10	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost11
+     resource-zfspool-ost11	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost11	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost12
+     resource-zfspool-ost12	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost12	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+ Resource Group: group-ost13
+     resource-zfspool-ost13	(ocf::heartbeat:ZFS):	Started c6oss02.pri.cosma7.alces.network
+     resource-cos6-ost13	(ocf::lustre:Lustre):	Started c6oss02.pri.cosma7.alces.network
+
+Daemon Status:
+  corosync: active/disabled
+  pacemaker: active/disabled
+  pcsd: active/enabled
+Cluster name: oss0304
+Stack: corosync
+Current DC: c6oss04.pri.cosma7.alces.network (version 1.1.19-8.el7_6.4-c3c624ea3d) - partition with quorum
+Last updated: Wed Oct 23 01:01:12 2019
+Last change: Fri Sep 27 19:19:05 2019 by hacluster via crmd on c6oss03.pri.cosma7.alces.network
+
+2 nodes configured
+30 resources configured
+
+Online: [ c6oss03.pri.cosma7.alces.network c6oss04.pri.cosma7.alces.network ]
+
+Full list of resources:
+
+ c6oss03_ipmi	(stonith:fence_ipmilan):	Started c6oss03.pri.cosma7.alces.network
+ c6oss04_ipmi	(stonith:fence_ipmilan):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost14
+     resource-zfspool-ost14	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost14	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost15
+     resource-zfspool-ost15	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost15	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost16
+     resource-zfspool-ost16	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost16	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost17
+     resource-zfspool-ost17	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost17	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost18
+     resource-zfspool-ost18	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost18	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost19
+     resource-zfspool-ost19	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost19	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost20
+     resource-zfspool-ost20	(ocf::heartbeat:ZFS):	Started c6oss03.pri.cosma7.alces.network
+     resource-cos6-ost20	(ocf::lustre:Lustre):	Started c6oss03.pri.cosma7.alces.network
+ Resource Group: group-ost21
+     resource-zfspool-ost21	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost21	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost22
+     resource-zfspool-ost22	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost22	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost23
+     resource-zfspool-ost23	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost23	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost24
+     resource-zfspool-ost24	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost24	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost25
+     resource-zfspool-ost25	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost25	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost26
+     resource-zfspool-ost26	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost26	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+ Resource Group: group-ost27
+     resource-zfspool-ost27	(ocf::heartbeat:ZFS):	Started c6oss04.pri.cosma7.alces.network
+     resource-cos6-ost27	(ocf::lustre:Lustre):	Started c6oss04.pri.cosma7.alces.network
+
+Daemon Status:
+  corosync: active/disabled
+  pacemaker: active/disabled
+  pcsd: active/enabled
+

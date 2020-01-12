@@ -1,0 +1,162 @@
+From ali@durham.ac.uk Sat Oct 19 03:54:35 2019 +0100
+MIME-Version: 1.0
+Received: from DB7PR06MB5561.eurprd06.prod.outlook.com (2603:10a6:803:b4::36)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR07CA0269.EURPRD07.PROD.OUTLOOK.COM; Sat, 19 Oct 2019 02:54:35 +0000
+Received: from DB8PR06CA0003.eurprd06.prod.outlook.com (2603:10a6:10:100::16)
+ by DB7PR06MB5561.eurprd06.prod.outlook.com (2603:10a6:10:8f::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.16; Sat, 19 Oct
+ 2019 02:54:34 +0000
+Received: from HE1EUR01FT021.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::208) by DB8PR06CA0003.outlook.office365.com
+ (2603:10a6:10:100::16) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2367.20 via Frontend
+ Transport; Sat, 19 Oct 2019 02:54:34 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ HE1EUR01FT021.mail.protection.outlook.com (10.152.0.167) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Sat, 19 Oct 2019 02:54:33 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Sat, 19 Oct 2019 03:54:31 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2sMKG022420;	Sat, 19 Oct
+ 2019 03:54:26 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9J2sGQY021440;	Sat, 19 Oct 2019 03:54:16 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9J2sGU9021439;	Sat, 19 Oct 2019 03:54:16 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2s8xc021358	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 03:54:09
+ +0100
+Received: from smtphost2.dur.ac.uk (smtphost2.dur.ac.uk [129.234.7.144])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2rt7Y022227	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 03:53:59
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9J2rnF3005764	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:53:49 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2ripl016629	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:53:44 +0100
+Received: from login7a.pri.cosma7.alces.network
+ (login7a.pri.cosma7.alces.network [172.17.170.21])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id 210CD221274	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:53:44 +0100 (BST)
+Received: by login7a.pri.cosma7.alces.network (Postfix)	id 18514E0046; Sat, 19
+ Oct 2019 03:53:44 +0100 (BST)
+Delivered-To: root@login7a.pri.cosma7.alces.network
+Received: by login7a.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ 13C1EE004E; Sat, 19 Oct 2019 03:53:44 +0100 (BST)
+From: Anacron <cosma-support@durham.ac.uk>
+To: <root@login7a.pri.cosma7.alces.network>
+Content-Type: text/plain; charset="UTF-8"
+Subject: Anacron job 'cron.daily' on login7a.pri.cosma7.alces.network
+Message-ID: <20191019025344.13C1EE004E@login7a.pri.cosma7.alces.network>
+Date: Sat, 19 Oct 2019 03:53:44 +0100
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9J2sMKG022420
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2019 02:54:33.8256
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ aa683a83-a98d-41ec-7764-08d7543fabcd
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT021.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT021.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(4423002)(199004)(189003)(336012)(37006003)(8676002)(450100002)(6392003)(47776003)(7846003)(8266002)(70486001)(246002)(2351001)(16586007)(42186006)(126002)(476003)(106002)(486006)(8936002)(1096003)(36486004)(356004)(26005)(33656002)(50466002)(5660300002)(5820100001)(4744005)(966005)(23676004)(156004)(97876018)(6862004)(6266002)(4006050)(1076003)(186003)(6306002)(9686003)(305945005)(75640400001);DIR:INB;SFP:;SCL:1;SRVR:DB7PR06MB5561;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: aa683a83-a98d-41ec-7764-08d7543fabcd
+X-MS-TrafficTypeDiagnostic: DB7PR06MB5561:
+X-MS-Exchange-PUrlCount: 4
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:8882;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2019 02:54:33.4863
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: aa683a83-a98d-41ec-7764-08d7543fabcd
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR06MB5561
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.7577719
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?UzlsSWFqTENMYUkwK0puS3UvbC9NdlV6ZTR4b0s3dkdac1YyUkFwZ0dab25R?=
+ =?utf-8?B?UittdXJpVGczRG5WZDk5QnZkTWpjTllhaWlUUHpqV05VM2VaQzNkV0dOOHBV?=
+ =?utf-8?B?S1ZybHZCa0JHSC9oV1lrWnpHT1p4UHJ6K2RsVFRLTHhWUEpvWE9lU0VKZ09o?=
+ =?utf-8?B?NnpBRWp6ZllxRGxXMHNTeU9pR1B6RjVmTUFodjdFTG5ISENoZit5SWdiejZF?=
+ =?utf-8?B?SWV3TXloTXFHbk1nK0J3TFdqZzVJNGVOWlZIbjZkYnhzY3pickxabHorUTM0?=
+ =?utf-8?B?Vjl4c3ZrZ0VoQlI0VTZ4THdQdFdISEsvQWVqZEJxaWtFblZ5NFJuMW5XQXYy?=
+ =?utf-8?B?aUEzcHc1SmVUVkYwU2RTek4rdWttSUI3UC9FdFJBN2FxWWUveTYyUEk2Mmo1?=
+ =?utf-8?B?YnRnWWh4TVd3TWIybjEyQWJLSkR5OFJBWEhiT3lhYkJ4d2dGMmg2VFdKT2lR?=
+ =?utf-8?B?eEw0NStjN1ZDb1NFYkdqS0swSUhkeGNJVXJZaXBqQ0Z3YXRRTzRjYk40cTNP?=
+ =?utf-8?B?enV6Q29mR2RqbklPZHlVSmpSbnoxVFFSdks5eEdZQzduSFEzVlZwL2ZNdlR5?=
+ =?utf-8?B?eDh1bXZGUi9paThsczB3cmlxQzBZYXFGaWxZeVdEUk1pdDhlZzNDT21WZTlh?=
+ =?utf-8?B?aXJQZFIzakxzbUVJVjhtUGYvVmZUc0U3N2FQS2lTVXk0dFFMUEYrcVpzUzR4?=
+ =?utf-8?B?eFNMNlcxWThHYkJpUSs4cXM3eHRtVHFZZ1hXeWwzNHE0VzQ4d3diMkpUWnBa?=
+ =?utf-8?B?WW1zd1hlR2lwSVBvcjNlQTFsa1VxdXB2QTN1NkJ0S0tLVys0TFJLN2lYT2ZM?=
+ =?utf-8?B?by9PemIrQWpJR0NvSURFRTFDN01RMVk4MDhld3lyYnVaT0JtYTg0MzdJNTBF?=
+ =?utf-8?B?ZjlEbnJNWmcxTmpGcjFHZnVLbHREMDRUeEI1NElEV25Ta1dpcnVIYyt0VlRF?=
+ =?utf-8?B?ZXhYSFVUQllid1hUUFNtVDNvcVhjTU5pVW55R1l2eWJEcURiZE5aZmZlNHpp?=
+ =?utf-8?B?RTVKYkl6VUlzSFF6S2phdVlNVkZ4U0tNc2QvdmFlc0NrekhORWQ2MHRoMzgv?=
+ =?utf-8?B?TkoxU2RyNlQ5bEk4U0NlWW5xRlhQYUtON3gvWGtoK3JyTHB4N0N0NVE3S3FO?=
+ =?utf-8?B?K2swSXJjbTZFVk0zNzBRY2RsZHZRTm9OTHpoT0l6eTJqblhNUHpmWUdaSnpC?=
+ =?utf-8?B?MEVDcmdSTW5TcmQwa3hteGNaaTZiYkhXSmo2VnFPV1kvVHpHRWtldkFKZDFl?=
+ =?utf-8?B?eHIvaktWalh1c2NmZWhSZEhHVDZiVWxJdGczQ0xOekc3bmpJUGsrZXc2YTh4?=
+ =?utf-8?B?bzcxZm1oTE9mVW1SYjRMSkdIcGdWanc0VG9OZVRXOUkwckt3b041eU9YQTc2?=
+ =?utf-8?B?VHZ2Nko5K2k4d2xSaEl3blNQODIvbEYveXVlaVFzTE1GeitBYVVtS2NIczVI?=
+ =?utf-8?Q?cgUST5QF?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 355
+
+/etc/cron.daily/lynis:
+
+Infiniband hardware address can be incorrect! Please read BUGS section in ifconfig(8).
+http://mirror.bytemark.co.uk/fedora/epel/7/x86_64/repodata/d1cfd9f156b3878f89627b2916169665d5504f34ee93c9125244615e379a6239-primary.sqlite.bz2: [Errno 14] HTTP Error 404 - Not Found
+Trying other mirror.
+To address this issue please refer to the below wiki article 
+
+https://wiki.centos.org/yum-errors
+
+If above article doesn't help to resolve this issue please use https://bugs.centos.org/.
+
+https://mirror.netsite.dk/epel/7/x86_64/repodata/d1cfd9f156b3878f89627b2916169665d5504f34ee93c9125244615e379a6239-primary.sqlite.bz2: [Errno 14] HTTPS Error 404 - Not Found
+Trying other mirror.
+

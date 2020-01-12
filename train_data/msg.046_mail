@@ -1,0 +1,79 @@
+From cosma-support@durham.ac.uk  Mon Dec 16 09:36:57 2019
+Return-Path: <cosma-support@durham.ac.uk>
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB3N7sup022675	for
+ <cosma-support@durham.ac.uk>; Tue, 3 Dec 2019 23:09:40 GMT
+Received: from localhost.localdomain (atempo1.pri.cosma7.alces.network
+ [172.17.175.101])	by controller.pri.cosma7.alces.network (Postfix) with ESMTP
+ id 46B5C2237FC	for <cosma-support@durham.ac.uk>; Tue,  3 Dec 2019 23:07:54
+ +0000 (GMT)
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+X-Mailer: MIME::Lite 3.022 (F2.76; T1.24; A2.04; B3.07_01; Q3.07)
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: Atempo message - DatabaseBackup to Pax format - OK
+Date: Tue, 3 Dec 2019 23:07:54 +0000
+Message-ID: <20191203230754.46B5C2237FC@controller.pri.cosma7.alces.network>
+
+Task                                     : DatabaseBackup to Pax format
+ADA Instance Name                        : ADA
+Execution Platform                       : atempo1.pri.cosma7.alces.network
+Job Id/Sub Job Id                        : 4082/6567
+
+Information                              :=20
+- processing database ADA...
+- Check medium ADA_DATA_Backup
+- Move file /opt/atempo/dbBackup/ADA_DATA_Backup to /opt/atempo/dbBackup/AD=
+A_DATA_Backup.old
+- initiating full data backup for database ADA to directory /opt/atempo/dbB=
+ackup, Compression 1, Parallel Mode 0, Block Size 64 Pages
+- full data backup completed successfully for database ADA
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/=
+ADA.knl
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/=
+ADA/dbm.knl
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/=
+ADA.mdf
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/=
+ADA/dbm.mdf
+- >db_connect
+- OK
+-=20
+- ---
+- >backup_start ADA_DATA_Backup DATA
+- OK
+- Returncode           0
+- Date                 20191203
+- Time                 00190009
+- Server               atempo1.pri.cosma7.alces.network
+- Database             ADA
+- Kernel Version       Kernel    7.9.08   Build 036-123-255-240
+- Pages Transferred    56380608
+- Pages Left           0
+- Volumes              1
+- Medianame            ADA_DATA_Backup
+- Location             /opt/atempo/dbBackup/ADA_DATA_Backup
+- Errortext=20=20=20=20=20=20=20=20=20=20=20=20
+- Label                DAT_000000219
+- Is Consistent        true
+- First LOG Page       189472150
+- Last LOG Page=20=20=20=20=20=20=20=20
+- DB Stamp 1 Date      20191203
+- DB Stamp 1 Time      00190006
+- DB Stamp 2 Date=20=20=20=20=20=20
+- DB Stamp 2 Time=20=20=20=20=20=20
+- Page Count           55667121
+- Devices Used         1
+- Database ID          atempo1.pri.cosma7.alces.network:ADA_20191203_190006
+- Max Used Data Page   0
+- Converter Page Count 32665
+-=20
+- ---
+- database ADA backed up successfully
+- Archiving Job 4085 (Media used : 016477M8, Tapefile : 64)
+
+--xB43236j016318.1575429798/cosma-x.cosma.dur.ac.uk--
+

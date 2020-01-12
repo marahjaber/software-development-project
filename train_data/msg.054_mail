@@ -1,0 +1,35 @@
+From root@console51.cosma  Mon Dec 16 09:36:57 2019
+Return-Path: <root@console51.cosma>
+Received: from console51.cosma (localhost [127.0.0.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB432uKw017054	for
+ <root@console51.cosma>; Wed, 4 Dec 2019 03:02:56 GMT
+Received: (from root@localhost)	by console51.cosma (8.14.4/8.14.4/Submit) id
+ xB4302eQ014997;	Wed, 4 Dec 2019 03:00:02 GMT
+Date: Wed, 4 Dec 2019 03:00:02 +0000
+Message-ID: <201912040300.xB4302eQ014997@console51.cosma>
+From: Cron Daemon <root@console51.cosma>
+To: <root@console51.cosma>
+Subject: Cron <root@console51> /cosma/local/admin/cronjobs/cosma5-nightly-cronjob
+Content-Type: text/plain; charset="UTF-8"
+Auto-Submitted: auto-generated
+X-Cron-Env: <PATH=/sbin:/bin:/usr/sbin:/usr/bin>
+X-Cron-Env: <MAILTO=root@console51.cosma>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <LOGNAME=root>
+X-Cron-Env: <USER=root>
+MIME-Version: 1.0
+
+Running nighly updates to diskusage stats
+Getting current disk-usage statistics
+Processing user disk-usage statistics
+Processing group disk-usage statistics
+Getting current file-usage histories
+Completed
+Running nighly over quota checks
+Processing /cosma6
+Processing /cosma5
+Completed
+
+--xB4723Yr017496.1575444938/cosma-x.cosma.dur.ac.uk--
+

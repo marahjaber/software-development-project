@@ -1,0 +1,167 @@
+From ali@durham.ac.uk Sat Oct 19 03:41:06 2019 +0100
+MIME-Version: 1.0
+Received: from HE1PR06MB4041.eurprd06.prod.outlook.com (2603:10a6:800:92::15)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR0501CA0005.EURPRD05.PROD.OUTLOOK.COM; Sat, 19 Oct 2019 02:41:06 +0000
+Received: from DB6PR06CA0016.eurprd06.prod.outlook.com (2603:10a6:6:1::29) by
+ HE1PR06MB4041.eurprd06.prod.outlook.com (2603:10a6:7:9c::30) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2347.16; Sat, 19 Oct 2019 02:41:05 +0000
+Received: from VE1EUR01FT016.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::202) by DB6PR06CA0016.outlook.office365.com
+ (2603:10a6:6:1::29) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.21 via Frontend
+ Transport; Sat, 19 Oct 2019 02:41:05 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ VE1EUR01FT016.mail.protection.outlook.com (10.152.2.227) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Sat, 19 Oct 2019 02:41:04 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Sat, 19 Oct 2019 03:41:00 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2eplv016963;	Sat, 19 Oct
+ 2019 03:40:55 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9J2ej8s016490;	Sat, 19 Oct 2019 03:40:45 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9J2ejCw016489;	Sat, 19 Oct 2019 03:40:45 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2ebBD016419	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 03:40:37
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2eRud014730	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 03:40:31
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9J2eK8d012305	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:40:20 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J2eFZC007556	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:40:15 +0100
+Received: from login5b.pri.cosma7.alces.network
+ (login5b.pri.cosma7.alces.network [172.17.100.25])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id 9658B221274	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 03:40:15 +0100 (BST)
+Received: by login5b.pri.cosma7.alces.network (Postfix)	id 8B92CE0122; Sat, 19
+ Oct 2019 03:40:15 +0100 (BST)
+Delivered-To: root@localhost.pri.cosma7.alces.network
+Received: by login5b.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ 7CDADE0159; Sat, 19 Oct 2019 03:40:15 +0100 (BST)
+Date: Sat, 19 Oct 2019 03:40:15 +0100
+To: <root@localhost.pri.cosma7.alces.network>
+Subject: rkhunter Daily Run on login5b.pri.cosma7.alces.network
+User-Agent: Heirloom mailx 12.5 7/5/10
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-ID: <20191019024015.7CDADE0159@login5b.pri.cosma7.alces.network>
+From: root <cosma-support@durham.ac.uk>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9J2eplv016963
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2019 02:41:05.2095
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ b662ede8-dd5e-42a3-6f3c-08d7543dc9d4
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ VE1EUR01FT016.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ VE1EUR01FT016.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(199004)(189003)(4423002)(23726003)(1076003)(356004)(8676002)(2351001)(5660300002)(450100002)(70486001)(4744005)(4006050)(97876018)(1096003)(33656002)(97756001)(50466002)(8936002)(75640400001)(186003)(305945005)(156004)(46406003)(106002)(476003)(246002)(36486004)(336012)(14444005)(6266002)(26005)(58126008)(6862004)(42186006)(6392003)(7846003)(9686003)(8266002)(230700001)(486006)(126002)(47776003)(32563001);DIR:INB;SFP:;SCL:1;SRVR:HE1PR06MB4041;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: b662ede8-dd5e-42a3-6f3c-08d7543dc9d4
+X-MS-TrafficTypeDiagnostic: HE1PR06MB4041:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:4502;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2019 02:41:04.9282
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: b662ede8-dd5e-42a3-6f3c-08d7543dc9d4
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: HE1PR06MB4041
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6319722
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?SnVlLlzvMLavwTz3ibEzrWRVgIMbtqbHLw+NmXgU58fGZswiwgfkM9WIJOwH?=
+ =?us-ascii?Q?DEbO4c3R1vCZrcXoI7EdH07YK/yi37Q603XOqsa5FRZ3lhknDjkVMQX3LUbT?=
+ =?us-ascii?Q?KCQ57BvjJc3cq1eOd9VmVX+hpWUe3qvTaa+jQJ0b4+o27eKvm7P2Ov+ikUQ3?=
+ =?us-ascii?Q?X2NZiGdMoQ/n0LTcxrgKiqHIcr2xDVUhll2aDB6LREnF4TycJAPueUd6YfDs?=
+ =?us-ascii?Q?V317//plbuY7HUPHizWA3BedKQPBo08a9WV3tlwEUVSqEmhYZ7cUPbs0v9ez?=
+ =?us-ascii?Q?VYVKbCxsF7RBwG9kB8qtfMsxF2YqlTyTaHAdXIQqRmb0sicFVDRitJFwKUa5?=
+ =?us-ascii?Q?xhFSBIIRaQeoFBAydkZoA/AQ9XJ7CYp0sx03wlBTThfHY9b80tLRwpFwFsnj?=
+ =?us-ascii?Q?LfOG7Ok5bDbIgK1I/0JY/72h2N/MDbzCZPmZxIFMAYXbQUxv0hxKCgmXjEAY?=
+ =?us-ascii?Q?zkK5+c08mleZiTvaEyKeZyLaxQi7EDHTSc7vtG+odolUTvT7WIwmTfRDKc7G?=
+ =?us-ascii?Q?I7/Bba8QAhcb7kxHehAWHO2TQpUIqbJ+tOe7VpEI5VTOiKgflScqJgvPSYr2?=
+ =?us-ascii?Q?d6rl9lk0lZZu/3iv2CRvBK2lMsSeIZj+CPKmVltQPSqPn2IOnv0t2aXTg13q?=
+ =?us-ascii?Q?xix4Bvj/ObWzaNkMDJDealgipVcCDfWCkMlNwyYzPIdXJr+SZw/QVPTy0VNj?=
+ =?us-ascii?Q?is3IyoKMdpIhjyBQSvzfva9FrbZIyESJQxrUIuZjOgtpYgFbbcv56Aeqwe3x?=
+ =?us-ascii?Q?tlhjiQQsano9RO42LB/aJg5wItUK+C8PsWAB67yZbBkIMD7gY8BDrCHyKXZE?=
+ =?us-ascii?Q?SxSpnv4uZLqgg3WTxLul1gJKTDbSHv32GTCLbf0I4Z7XcYS4f3+ccuMUaa1m?=
+ =?us-ascii?Q?Q8DaQr/nfV270xtg1jMrlU8InmmJrgDQlFUJAP8n8ZGE/ddwSqWVAeDXy4vk?=
+ =?us-ascii?Q?LiZC2lr7MybE07MOHdO9H4nftI0kkySwo+Dvkf7/hR4rdxg8ZLY5b6gfvxq6?=
+ =?us-ascii?Q?hRG4XPTOeB5GONFTbAo7K0zCI5HDjF1KYb5qFPD3vijfNtqlCQuH4/89gsVw?=
+ =?us-ascii?Q?Awq8IHtv?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 421
+
+
+--------------------- Start Rootkit Hunter Update ---------------------
+[ Rootkit Hunter version 1.4.6 ]
+
+Checking rkhunter data files...
+  Checking file mirrors.dat                                  [ No update ]
+  Checking file programs_bad.dat                             [ No update ]
+  Checking file backdoorports.dat                            [ No update ]
+  Checking file suspscan.dat                                 [ No update ]
+  Checking file i18n/cn                                      [ No update ]
+  Checking file i18n/de                                      [ No update ]
+  Checking file i18n/en                                      [ No update ]
+  Checking file i18n/tr                                      [ No update ]
+  Checking file i18n/tr.utf8                                 [ No update ]
+  Checking file i18n/zh                                      [ No update ]
+  Checking file i18n/zh.utf8                                 [ No update ]
+  Checking file i18n/ja                                      [ No update ]
+
+---------------------- Start Rootkit Hunter Scan ----------------------
+Warning: The SSH and rkhunter configuration options should be the same:
+         SSH configuration option 'PermitRootLogin': yes
+         Rkhunter configuration option 'ALLOW_SSH_ROOT_USER': unset
+
+----------------------- End Rootkit Hunter Scan -----------------------
+

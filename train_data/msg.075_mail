@@ -1,0 +1,202 @@
+From ali@durham.ac.uk Wed Dec  4 23:08:32 2019 +0000
+MIME-Version: 1.0
+Received: from VI1PR06MB5296.eurprd06.prod.outlook.com (2603:10a6:803:78::49)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR09CA0126.EURPRD09.PROD.OUTLOOK.COM; Wed, 4 Dec 2019 23:08:31 +0000
+Received: from VI1PR0601CA0020.eurprd06.prod.outlook.com
+ (2603:10a6:800:1e::30) by VI1PR06MB5296.eurprd06.prod.outlook.com
+ (2603:10a6:803:b7::22) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.12; Wed, 4 Dec
+ 2019 23:08:30 +0000
+Received: from HE1EUR01FT042.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::209) by VI1PR0601CA0020.outlook.office365.com
+ (2603:10a6:800:1e::30) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.12 via Frontend
+ Transport; Wed, 4 Dec 2019 23:08:30 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ HE1EUR01FT042.mail.protection.outlook.com (10.152.0.228) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Wed, 4 Dec 2019 23:08:29 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 4 Dec 2019 23:08:28 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4N8HJo025866;	Wed, 4 Dec
+ 2019 23:08:21 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB4N89lP001863;	Wed, 4 Dec 2019 23:08:09 GMT
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id xB4N88h2001862;	Wed, 4 Dec 2019 23:08:09 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4N813P001830	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 4 Dec 2019 23:08:01
+ GMT
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4N7nVA014292	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 4 Dec 2019 23:07:53
+ GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB4N7dPE021080	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Wed, 4 Dec 2019 23:07:43 GMT
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4N7d7R028151	for
+ <cosma-support@durham.ac.uk>; Wed, 4 Dec 2019 23:07:39 GMT
+Received: from localhost.localdomain (atempo1.pri.cosma7.alces.network
+ [172.17.175.101])	by controller.pri.cosma7.alces.network (Postfix) with ESMTP
+ id 2ACA3222CA8	for <cosma-support@durham.ac.uk>; Wed,  4 Dec 2019 23:07:39
+ +0000 (GMT)
+Content-Disposition: inline
+Content-Type: text/plain; charset="UTF-8"
+X-Mailer: MIME::Lite 3.022 (F2.76; T1.24; A2.04; B3.07_01; Q3.07)
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: Atempo message - DatabaseBackup to Pax format - OK
+Date: Wed, 4 Dec 2019 23:07:39 +0000
+Message-ID: <20191204230739.2ACA3222CA8@controller.pri.cosma7.alces.network>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by franz1.dur.ac.uk id xB4N88Fb001859
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xB4N8HJo025866
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Dec 2019 23:08:29.4255
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ dfe78db8-f7a8-4569-838a-08d7790ee034
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT042.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT042.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:VI1PR06MB5296;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: dfe78db8-f7a8-4569-838a-08d7790ee034
+X-MS-TrafficTypeDiagnostic: VI1PR06MB5296:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:3826;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Dec 2019 23:08:29.0902
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: dfe78db8-f7a8-4569-838a-08d7790ee034
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR06MB5296
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.7677741
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2516.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?S1lVcDkwakZWbG53Y2gyRmo0R05Ja01iSXc3dkJvMHFOcjNwa0hvUCt1Tmt5?=
+ =?utf-8?B?U2xadVIvSGtSMGFBQzlWR2VOWTlEUndSZHd1Z2NKR2VQcVNpZEdjT0hjWE9u?=
+ =?utf-8?B?OE5sOWJSY1ovd3BSNmV2TExtR2lFS1RTRnpzWXBIV2VOTndEWlRYOGNrYlhX?=
+ =?utf-8?B?MjZjNy8wZi80NTBnV1VFczA0Vll4NzBvenNiVWlVVWZzNHpQb1VOeHc1TStp?=
+ =?utf-8?B?dmdqc1ZyaVZoOVNTZGlmR0MxSXVPeDZKNk1LZDcwZkc2bW41NTA2dGc1WlFQ?=
+ =?utf-8?B?bE14dFVYakp6Znd2cTJybHBGNlBWZm11NXc4MHBXUlhib21wMlEzRlVGcEJW?=
+ =?utf-8?B?YkdhaE9Zb0RzME9mbWF3VXFXM2haT2xaYXNKRStKY1E1M0twcTZkNjdWaWVL?=
+ =?utf-8?B?OEpOWDFlMHRJM1NLRlJmUFNUNnVBc3dkNlpTSVJpRHE2b1djbGtZT3d4WXp2?=
+ =?utf-8?B?Z1pRZ3NuQlF5NHJCa2djdk8zR2dZZllXamRWVmJ1Zno1d29MM1M0Z2dtUjhv?=
+ =?utf-8?B?U0VWK3FnZU5WT0o3ZjFmT2N1S2laVGJWTnpuNlk5OVhwNXFpaHQxakNtUUNO?=
+ =?utf-8?B?Mk50b0Izc29PYmZTdCtzMG5PTUlJOGMyWWRDaUd4T2ppR05qaVUwRzBtQ3Rp?=
+ =?utf-8?B?cXVKZU9oMnlqZ1JyNm1yT25ObW1iOVN4eHZtd0VuS1l3dXh0RXlHdzJLVHlE?=
+ =?utf-8?B?NXBZRVhBMnYwWFg5Rzg0WkpOQm9USE9WWkxHTkNleW9CT3lBeVJBUE9hV1BX?=
+ =?utf-8?B?N2VvcDZXVWFGSEoxY2ovV3A3Q1d1STRHb3pZQkRuSlorUGxFcmplUXFTc2Vp?=
+ =?utf-8?B?L3M2dkFJNkRLbkFXWVBLeEp4MVdhQW0rb2h3aDRxc3dUMmtZRWhFSmlkNWpP?=
+ =?utf-8?B?UTBJWUtGVTBjSlZHK1JMNFVISThNSm5CcVRQakhEKzcvMSt2YWF4U0lMV1Nq?=
+ =?utf-8?B?dXVTVklmWUFmWlp2NnpPbUQ0RkJWQ2NqREFmTURCejFCRUdhU3lSQ3IwRHRX?=
+ =?utf-8?B?WVZLQWthanMzK1lhb0MxbGVHK3BCV2lqYmxvMFNKTlFkb3RUcExRSW0xNmtL?=
+ =?utf-8?B?eURKdkFQM3RXbVNPVXNSZFljYTJjajZwNmh6bmg1Y09NTGNoUmgvRUFHOXpF?=
+ =?utf-8?B?WGpLM0ZabVpybkJoeWNBRnFFYWJVcllxaC84VnBnUmowQmtRVUlseUtWYmNH?=
+ =?utf-8?B?dEgwVWpRNzNaZXB0ZGVSL3ZmYmN3cXVGMGNaMWVsM2xYZ2xOeWxaMkJpdFRY?=
+ =?utf-8?B?MDFGQkZuLzZBN1l2RWpBNlVZVXZBTjArK1oyZ2VNYzVZR3JPSWZiNmZWejNr?=
+ =?utf-8?B?bHFtN1RwcDFaT3RVaTViOEd5T3hVYUdqTitRZzNZZUhFeVVDOWN4bUFyQTNG?=
+ =?utf-8?B?UnZBaUFHYW5Xd245SFJuS1M3RVNIeGUzWUF3OEpxRnJvMXoreDFWdnl6cUJw?=
+ =?utf-8?B?cUx0SkxZaGJUTHV6Y1JpZFJYS29GMFl1Y0VnM29RR3JYUWptYlVVYXdPNTdH?=
+ =?utf-8?B?Mmk0ZDFSdHBGaysyclJPRWhxd3FIcWxzSnBzb3g3QnpKako4dG9DZUtPUnEy?=
+ =?utf-8?B?TkJLaWpUbEZ1M0k4Q0ZZRmdrUktQamtEdGhpK1gyazFUSnBnUDRaYnl6RlRT?=
+ =?utf-8?B?cTBzV3JFQ0RtUmJZYmJIMWg4bFBrRkRqOFhSOUtNeWYwQzVLdFFQbGQ0bWZY?=
+ =?utf-8?Q?/y0oCwuGSDmFOttePoP5?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 62
+
+Task                                     : DatabaseBackup to Pax format
+ADA Instance Name                        : ADA
+Execution Platform                       : atempo1.pri.cosma7.alces.network
+Job Id/Sub Job Id                        : 4088/6575
+
+Information                              : 
+- processing database ADA...
+- Check medium ADA_DATA_Backup
+- Move file /opt/atempo/dbBackup/ADA_DATA_Backup to /opt/atempo/dbBackup/ADA_DATA_Backup.old
+- initiating full data backup for database ADA to directory /opt/atempo/dbBackup, Compression 1, Parallel Mode 0, Block Size 64 Pages
+- full data backup completed successfully for database ADA
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/ADA.knl
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/ADA/dbm.knl
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/ADA.mdf
+- Backup History list truncated in /opt/atempo/ADA/Database/MaxDB/Data/wrk/ADA/dbm.mdf
+- >db_connect
+- OK
+- 
+- ---
+- >backup_start ADA_DATA_Backup DATA
+- OK
+- Returncode           0
+- Date                 20191204
+- Time                 00190009
+- Server               atempo1.pri.cosma7.alces.network
+- Database             ADA
+- Kernel Version       Kernel    7.9.08   Build 036-123-255-240
+- Pages Transferred    56384000
+- Pages Left           0
+- Volumes              1
+- Medianame            ADA_DATA_Backup
+- Location             /opt/atempo/dbBackup/ADA_DATA_Backup
+- Errortext            
+- Label                DAT_000000220
+- Is Consistent        true
+- First LOG Page       189479522
+- Last LOG Page        
+- DB Stamp 1 Date      20191204
+- DB Stamp 1 Time      00190006
+- DB Stamp 2 Date      
+- DB Stamp 2 Time      
+- Page Count           55670356
+- Devices Used         1
+- Database ID          atempo1.pri.cosma7.alces.network:ADA_20191204_190006
+- Max Used Data Page   0
+- Converter Page Count 32665
+- 
+- ---
+- database ADA backed up successfully
+- Archiving Job 4091 (Media used : 016477M8, Tapefile : 67)
+
+

@@ -1,0 +1,225 @@
+From ali@durham.ac.uk Tue Oct 22 10:27:29 2019 +0100
+MIME-Version: 1.0
+Received: from AM6PR0602MB3558.eurprd06.prod.outlook.com
+ (2603:10a6:803:8c::46) by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS
+ via VI1PR06CA0117.EURPRD06.PROD.OUTLOOK.COM; Tue, 22 Oct 2019 09:27:29 +0000
+Received: from AM5PR06CA0033.eurprd06.prod.outlook.com (2603:10a6:206:2::46)
+ by AM6PR0602MB3558.eurprd06.prod.outlook.com (2603:10a6:209:f::13) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.18; Tue, 22 Oct
+ 2019 09:27:28 +0000
+Received: from VE1EUR01FT033.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::206) by AM5PR06CA0033.outlook.office365.com
+ (2603:10a6:206:2::46) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.20 via Frontend
+ Transport; Tue, 22 Oct 2019 09:27:28 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ VE1EUR01FT033.mail.protection.outlook.com (10.152.2.230) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Tue, 22 Oct 2019 09:27:28 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Tue, 22 Oct 2019 10:26:45 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M9QVqF007802;	Tue, 22 Oct
+ 2019 10:26:35 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9M9QFGX005705;	Tue, 22 Oct 2019 10:26:15 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9M9QFms005704;	Tue, 22 Oct 2019 10:26:15 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M9Q4pt005635	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Tue, 22 Oct 2019 10:26:04
+ +0100
+Received: from smtphost2.dur.ac.uk (smtphost2.dur.ac.uk [129.234.7.144])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M9PrdI007521	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Tue, 22 Oct 2019 10:25:57
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9M9Pl93009258	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Tue, 22 Oct 2019 10:25:47 +0100
+Received: from c-store1.cosma (c-store1.cosma [172.17.201.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M9Pf6A012518	for
+ <cosma-support@durham.ac.uk>; Tue, 22 Oct 2019 10:25:41 +0100
+Received: from c-store1.cosma (localhost [127.0.0.1])	by c-store1.cosma
+ (8.14.4/8.14.4) with ESMTP id x9M9P1wG008341	for
+ <cosma-support@durham.ac.uk>; Tue, 22 Oct 2019 10:25:01 +0100
+Received: (from root@localhost)	by c-store1.cosma (8.14.4/8.14.4/Submit) id
+ x9M9P1Ci008340;	Tue, 22 Oct 2019 10:25:01 +0100
+Date: Tue, 22 Oct 2019 10:25:01 +0100
+Message-ID: <201910220925.x9M9P1Ci008340@c-store1.cosma>
+From: Cron Daemon <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: Cron <root@c-store1> /var/zpool/data_check < /dev/null
+Content-Type: text/plain; charset="UTF-8"
+Auto-Submitted: auto-generated
+X-Cron-Env: <LANG=en_US.UTF-8>
+X-Cron-Env: <MAILTO=cosma-support@durham.ac.uk>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=root>
+X-Cron-Env: <USER=root>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9M9QVqF007802
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2019 09:27:28.3081
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 658eb466-b47f-46c4-43f2-08d756d20e87
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ VE1EUR01FT033.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ VE1EUR01FT033.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(979002)(4636009)(7192003)(189003)(199004)(217263001)(246002)(126002)(305945005)(87636003)(356004)(106002)(26005)(156004)(8276002)(336012)(36486004)(450100002)(8676002)(1096003)(8936002)(186003)(23676004)(476003)(486006)(50466002)(2351001)(6862004)(6200100001)(75640400001)(9686003)(5660300002)(1076003)(47776003)(5820100001)(4006050)(6392003)(7846003)(16586007)(42186006)(969003)(989001)(999001)(1009001)(1019001);DIR:INB;SFP:;SCL:1;SRVR:AM6PR0602MB3558;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 658eb466-b47f-46c4-43f2-08d756d20e87
+X-MS-TrafficTypeDiagnostic: AM6PR0602MB3558:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:5236;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2019 09:27:28.0369
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 658eb466-b47f-46c4-43f2-08d756d20e87
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM6PR0602MB3558
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.1990452
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?QWxsVXYwWVZDZ3NxanhjazlZL3hpUVJ6YnRVK3p2MTBqUlRUVzdTQU9iTVpU?=
+ =?utf-8?B?R0s4QURnRzdXTVJYK1J0SmRmM2JjdEtCUXFsaGtpaTZWdGdxVWY5N1VPOWUr?=
+ =?utf-8?B?NmkrVzJSOHZkWjdNYWlTNVV4dG5HY3E1QkZyd0FVS240WC8zYm9KY3p4Ukl2?=
+ =?utf-8?B?bHY0YUcvRGtyOC80VFZMVFJVanlLVVA2bEVuTmRUcHcvMmlOaVcwdmJjNDR1?=
+ =?utf-8?B?dk9rV1YwdCtCMUpSMWJ1Z3hlU1FBT1YzZTJWdFJvUlFSUnp6UXlkZjY2bWQ4?=
+ =?utf-8?B?NlhTQTBXVHl1ZHdNSVhSalVJZFJGakdsTWRzZkg2d2tkd2hDVU9RWDBlQ3BU?=
+ =?utf-8?B?akM4aHNlYjBiRmlETnB3WmR6VSs0dkZLTXZOOWF0NzhOelBGMlAwS0hSd3lK?=
+ =?utf-8?B?d212bTlSZlJsMTNHSEVSTGNDRTI5R0RsZ0JKQjhBWWhyZTBwanltMm4xK2ZJ?=
+ =?utf-8?B?QU1GU0hidTZ1YzNad1NudWZvMVJuTGhnZUJhUWp3R3JFaUFTYWlQcVk0eENC?=
+ =?utf-8?B?dXEvVHNSeVZ4U2VsUmY4eFBIRk1KWUxNeklqRlZucSs4S0RhRElEWWxHOEtW?=
+ =?utf-8?B?NTZVSVBaaTBxcWMreFNzSnNuV1dIYUFPNEVueHViNWpIWmwvWGF4U0lVbU1O?=
+ =?utf-8?B?S0UwRGlZUG9xTURBSHlrZWRwZ0dsRG91di9xNUVPVlZPM0xVcDE3bUFjd2lj?=
+ =?utf-8?B?L0JDVXlTTUhuaWx2Q1JKL3dsTk5UcFEwenBpcUk0cld1NWd6eWx6ZDM3ZmpU?=
+ =?utf-8?B?a0YrcW8za2k3N1VsQzBSUUlGY1piTVVFblVwQklaM2MvamRuOVhIaTRlVjVE?=
+ =?utf-8?B?NXlGd0V0aWxodU15ZFJmTFZqVWVPWStienpPTzNyTEZYK09aajlLc0czdFVO?=
+ =?utf-8?B?YllkNjQ1V29XUzVSem9UbW1qRDdQMUdEYTMvWmxRMThBOGQzSndJYXU5U1dM?=
+ =?utf-8?B?b1cxWklQN1ZlMTVUYUJMZkF6UFR0SWgxdFgxdEF0WitUZVpLd2dnKzE4dkpq?=
+ =?utf-8?B?THM1bUlOWkc1RnExeC8vUktrQlZZQ3QxNS9MTnhtbEZQUXJUSHpoNWlWY1RB?=
+ =?utf-8?B?ZThkMlE0T1h5NWRteG5QQXZ4NVRxeE9VbEphcHVGNnZnYUhHUDM3Sm9lbHlw?=
+ =?utf-8?B?dnVmdXM1UG5IQmoyelMyUUFKR1N1QVF5aE1QcDRlV1V0aUdTeFFlY04rdTJO?=
+ =?utf-8?B?d21nM3o5blhnUWVJSGVpWk1sVXdDcmZPSVJMTGw3NmZJZ2ZHcHRldVpScGRj?=
+ =?utf-8?B?bEh1NER3NEhjMUFKek1tb25nM2tBY0ozQlZXd01nYUNaYmhmN1ZHSDBhVm9Q?=
+ =?utf-8?B?OW1nRW5zdnJpVCtyMXY3TjhTZHV3d1VSdk03QVkyZE4rWjJIdll6ekxCU3Jr?=
+ =?utf-8?B?Qmh0NXdiL0RKWC9xaDJ3a21iRnVvV1RRcEYzT1dqTTdOZ3BicURtOStYM1Yr?=
+ =?utf-8?B?cmFkOW5TSHdHMU5mRFBrNGJxTTVTTk1zTXBPNVIxL3lGNXVKcWFjMUFXSEEr?=
+ =?utf-8?Q?NpkR+0=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 708
+
+  pool: zpool_c0
+ state: ONLINE
+  scan: scrub in progress since Sat Oct 19 02:15:01 2019
+    64.5T scanned out of 79.0T at 234M/s, 18h1m to go
+    0 repaired, 81.64% done
+config:
+
+	NAME                                      STATE     READ WRITE CKSUM
+	zpool_c0                                  ONLINE       0     0     0
+	  scsi-3600605b00ad7ff901ea7c5ec597b5bfd  ONLINE       0     0     0
+	  scsi-3600605b00ad7ff901ea7c5ec597b5ff4  ONLINE       0     0     0
+	  scsi-3600605b00ad7ff901ea7c5ec597b62d3  ONLINE       0     0     0
+
+errors: No known data errors
+
+  pool: zpool_c1
+ state: ONLINE
+  scan: scrub repaired 0 in 6h0m with 0 errors on Sat Oct 19 08:15:55 2019
+config:
+
+	NAME        STATE     READ WRITE CKSUM
+	zpool_c1    ONLINE       0     0     0
+	  raidz2-0  ONLINE       0     0     0
+	    sdaa    ONLINE       0     0     0
+	    sdab    ONLINE       0     0     0
+	    sdac    ONLINE       0     0     0
+	    sdad    ONLINE       0     0     0
+	    sdae    ONLINE       0     0     0
+	    sdaf    ONLINE       0     0     0
+	    sdag    ONLINE       0     0     0
+	    sdah    ONLINE       0     0     0
+	    sdai    ONLINE       0     0     0
+	    sdaj    ONLINE       0     0     0
+	    sdak    ONLINE       0     0     0
+	    sdal    ONLINE       0     0     0
+	    sdam    ONLINE       0     0     0
+	    sdan    ONLINE       0     0     0
+	  raidz2-1  ONLINE       0     0     0
+	    sdao    ONLINE       0     0     0
+	    sdap    ONLINE       0     0     0
+	    sdaq    ONLINE       0     0     0
+	    sdar    ONLINE       0     0     0
+	    sdas    ONLINE       0     0     0
+	    sdat    ONLINE       0     0     0
+	    sdau    ONLINE       0     0     0
+	    sdav    ONLINE       0     0     0
+	    sde     ONLINE       0     0     0
+	    sdf     ONLINE       0     0     0
+	    sdg     ONLINE       0     0     0
+	    sdh     ONLINE       0     0     0
+	    sdi     ONLINE       0     0     0
+	    sdj     ONLINE       0     0     0
+	  raidz2-2  ONLINE       0     0     0
+	    sdk     ONLINE       0     0     0
+	    sdl     ONLINE       0     0     0
+	    sdm     ONLINE       0     0     0
+	    sdn     ONLINE       0     0     0
+	    sdo     ONLINE       0     0     0
+	    sdp     ONLINE       0     0     0
+	    sdq     ONLINE       0     0     0
+	    sdr     ONLINE       0     0     0
+	    sds     ONLINE       0     0     0
+	    sdt     ONLINE       0     0     0
+	    sdu     ONLINE       0     0     0
+	    sdv     ONLINE       0     0     0
+	    sdw     ONLINE       0     0     0
+	    sdx     ONLINE       0     0     0
+	spares
+	  sdy       AVAIL   
+	  sdz       AVAIL   
+
+errors: No known data errors
+

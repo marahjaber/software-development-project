@@ -1,0 +1,245 @@
+From ali@durham.ac.uk Fri Oct 25 03:52:59 2019 +0100
+MIME-Version: 1.0
+Received: from AM0PR0602MB3777.eurprd06.prod.outlook.com
+ (2603:10a6:802:a0::16) by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS
+ via VE1PR03CA0004.EURPRD03.PROD.OUTLOOK.COM; Fri, 25 Oct 2019 02:52:59 +0000
+Received: from AM5PR0602CA0017.eurprd06.prod.outlook.com
+ (2603:10a6:203:a3::27) by AM0PR0602MB3777.eurprd06.prod.outlook.com
+ (2603:10a6:208:12::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.20; Fri, 25 Oct
+ 2019 02:52:56 +0000
+Received: from HE1EUR01FT027.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::202) by AM5PR0602CA0017.outlook.office365.com
+ (2603:10a6:203:a3::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2387.22 via Frontend
+ Transport; Fri, 25 Oct 2019 02:52:56 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ HE1EUR01FT027.mail.protection.outlook.com (10.152.0.161) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2387.20 via Frontend Transport; Fri, 25 Oct 2019 02:52:55 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Fri, 25 Oct 2019 03:51:22 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9P2pDLc014272;	Fri, 25 Oct
+ 2019 03:51:17 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9P2p7Cc005352;	Fri, 25 Oct 2019 03:51:07 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9P2p7E8005351;	Fri, 25 Oct 2019 03:51:07 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9P2owuB005277	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 25 Oct 2019 03:50:58
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9P2okUj014073	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 25 Oct 2019 03:50:50
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9P2odAF030660	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Fri, 25 Oct 2019 03:50:40 +0100
+Received: from virgodb.cosma (virgodb [172.17.1.1])	by cosma-x.cosma.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9P2oYjC001594	for <root@console51>; Fri, 25
+ Oct 2019 03:50:34 +0100
+Received: from virgodb.cosma (localhost [127.0.0.1])	by virgodb.cosma
+ (8.14.4/8.14.4) with ESMTP id x9P2Y9Wn022907	for <root@virgodb.cosma>; Fri,
+ 25 Oct 2019 03:34:10 +0100
+Received: (from root@localhost)	by virgodb.cosma (8.14.4/8.14.4/Submit) id
+ x9P2Y6UO022686;	Fri, 25 Oct 2019 03:34:06 +0100
+Date: Fri, 25 Oct 2019 03:34:06 +0100
+Message-ID: <201910250234.x9P2Y6UO022686@virgodb.cosma>
+To: <root@console51.cosma>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: cosma-system: Logwatch for virgodb (Linux)
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9P2pDLc014272
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 25 Oct 2019 02:52:56.2513
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ f25a3359-b01d-4789-4f20-08d758f6701f
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT027.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT027.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(63364002)(199004)(189003)(75640400001)(2351001)(486006)(476003)(6392003)(126002)(336012)(7846003)(42882007)(87636003)(36486004)(26005)(186003)(156004)(8676002)(50466002)(8276002)(246002)(450100002)(305945005)(23756003)(9686003)(2876002)(47776003)(8936002)(1096003)(230700001)(356004)(4006050)(5660300002)(1076003)(106002)(6862004)(42186006);DIR:INB;SFP:;SCL:1;SRVR:AM0PR0602MB3777;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: f25a3359-b01d-4789-4f20-08d758f6701f
+X-MS-TrafficTypeDiagnostic: AM0PR0602MB3777:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:404;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 25 Oct 2019 02:52:55.9551
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: f25a3359-b01d-4789-4f20-08d758f6701f
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR0602MB3777
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:03.3450636
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?jSQqhwBSfHB3wQNlUx9+x3lVXT1rKvliej7d+8qef9imXUxWMozLsEmTim?=
+ =?iso-8859-1?Q?I3VfNHe1fa02SVbkvpYr2aqz3UYXjnXvMOEStk+DuCLulNDmA6MjBQPhzs?=
+ =?iso-8859-1?Q?wEpfpvtDp7rMVmfrdyfUYDHI34A79CzHHM3rGCiozAY9JJT+BR1Yhu7QyT?=
+ =?iso-8859-1?Q?s3uLw/Fnku9JO/LssQSVCJeFLaKWFp4y4kOnPvuyr+UAV7c/5tg468cgRd?=
+ =?iso-8859-1?Q?AEc54ABdmf2parnlZ3WCOX+aKlbnpKwGTBTJS6ScDm16hYhY0oyI6NQpUB?=
+ =?iso-8859-1?Q?Su5nPAzEQlZe5b2nwaiyS8nIbd9oFR9dl5GvWwGNkJd6EdbYIXyTMzykMv?=
+ =?iso-8859-1?Q?UZe53fngI6PfXFW6VRkdIYx+JxIoyMiba1MwfQAjREYgEjmGSZxQe7Ka3L?=
+ =?iso-8859-1?Q?HfWWMBN8lYfrhwozYu25aiVmUJQOMYpsoeqrw1LWv0Q0HU9wsulXoNNPGA?=
+ =?iso-8859-1?Q?2MDtf7djUVcEB8AU9JIjU+/4g8wvLcxJ3NCS4tiVZMEVlJosTfcUTRq+wN?=
+ =?iso-8859-1?Q?h2S6JfrhwPazQbDBpMIOyMBlDJ7xI6zWdP6G5QA5FVkjwIDU3Qt0HHb0JE?=
+ =?iso-8859-1?Q?/sLPpSUsC37+TEP+3wbi8cYL4EhtROEdOjHn+mmv5ov+OCx05GfVB9ekbo?=
+ =?iso-8859-1?Q?HxefNYMAQ9do2+dWxywtYwgsiLAMalNx1XLcLjKahwC7nRPQfgC7IuLmhA?=
+ =?iso-8859-1?Q?CeHnp0nyVNKuXgiZoLkQzKuqVnbTNjLEAUljWien++ewON588mNV8prca2?=
+ =?iso-8859-1?Q?q6q/czcwIf+9hgMo6VsrIWxw3IQwww+UN+rT6CiZtdtJV3vc+tKPKOGDKI?=
+ =?iso-8859-1?Q?IMAoafeAj1o5yK1rXPrC39MBHmNE9eDAIweIbywFtOZkMK8OP1V/QGz0/z?=
+ =?iso-8859-1?Q?H5Zjioa/bjVQaWJs7ZJyik2M7U6KGEfptlzJdo38Ch0URUrQCz4xvbDtv0?=
+ =?iso-8859-1?Q?x9yZjtPjlKhp+gaVt5luKaz8qVJaI0fCvEklD217cA2rVT+UW7ajDRBuB/?=
+ =?iso-8859-1?Q?FasRDFl0oGhsVrc5Os9Letxe0ucBoiJL0LA1H4aNZuBwTeeRzaf6FRPsQu?=
+ =?iso-8859-1?Q?Ygjo1OsRU70tvG6cozVOe6T5jx82NCNXkbKnuVW3AfRjnLHgiwWJd9akj5?=
+ =?iso-8859-1?Q?rXxY7PiQ=3D=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 883
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Fri Oct 25 03:34:06 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-24 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: virgodb
+  ################################################################## 
+ 
+ --------------------- iptables firewall Begin ------------------------ 
+
+ Listed by source hosts:
+ Logged 33 packets on interface eth3
+   From 35.205.93.88 - 1 packet to tcp(22) 
+   From 45.67.14.153 - 1 packet to tcp(22) 
+   From 45.136.109.83 - 1 packet to tcp(22) 
+   From 46.99.143.9 - 1 packet to tcp(22) 
+   From 71.6.146.185 - 1 packet to tcp(22) 
+   From 80.82.70.118 - 1 packet to tcp(22) 
+   From 80.82.77.240 - 1 packet to tcp(22) 
+   From 81.22.45.137 - 1 packet to tcp(22) 
+   From 85.2.124.12 - 1 packet to tcp(22) 
+   From 87.98.139.179 - 1 packet to tcp(22) 
+   From 88.214.26.8 - 1 packet to tcp(22) 
+   From 89.248.168.156 - 1 packet to tcp(22) 
+   From 92.63.194.47 - 1 packet to tcp(22) 
+   From 92.118.37.91 - 1 packet to tcp(22) 
+   From 104.244.72.98 - 1 packet to tcp(22) 
+   From 104.244.76.14 - 1 packet to tcp(22) 
+   From 110.54.60.46 - 1 packet to tcp(22) 
+   From 113.110.203.150 - 1 packet to tcp(22) 
+   From 119.10.174.162 - 2 packets to tcp(22) 
+   From 129.204.135.179 - 1 packet to tcp(22) 
+   From 139.162.120.98 - 1 packet to tcp(22) 
+   From 142.93.212.101 - 1 packet to tcp(22) 
+   From 159.203.193.253 - 1 packet to tcp(22) 
+   From 167.71.163.141 - 1 packet to tcp(22) 
+   From 171.67.70.91 - 1 packet to tcp(22) 
+   From 177.200.103.174 - 1 packet to tcp(22) 
+   From 183.83.163.30 - 1 packet to tcp(22) 
+   From 185.130.144.74 - 1 packet to tcp(22) 
+   From 185.197.74.197 - 1 packet to tcp(22) 
+   From 198.108.67.96 - 1 packet to tcp(22) 
+   From 218.92.0.176 - 1 packet to tcp(22) 
+   From 221.207.32.250 - 1 packet to tcp(22) 
+ 
+ ---------------------- iptables firewall End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    rkhunter: Rootkit hunter check started (version 1.4.4): 1 Time(s)
+    rkhunter: Scanning took 5 minutes and 34 seconds: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Messages To Recipients:  8
+ Addressed Recipients:    8
+ Bytes Transferred:       33063
+ Messages No Valid Rcpts: 0
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    pdraper:
+       172.17.170.21: 3 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 3 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem      Size  Used Avail Use% Mounted on
+ /dev/sda2        20G  3.5G   16G  19% /
+ /dev/sda1       190M   69M  112M  39% /boot
+ /dev/sdb1       135G  103G   26G  81% /usr/local
+ /dev/sda5       111G  1.4G  104G   2% /var
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
+

@@ -1,0 +1,46 @@
+From a.g.basden@durham.ac.uk  Mon Dec 16 09:36:57 2019
+Return-Path: <a.g.basden@durham.ac.uk>
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB3DdBCk030489	for
+ <cosma-support@durham.ac.uk>; Tue, 3 Dec 2019 13:40:41 GMT
+Received: from 127.0.0.1 (delloss13.pri.cosma7.alces.network [172.17.175.13])
+	by controller.pri.cosma7.alces.network (Postfix) with SMTP id 36D28223527	for
+ <cosma-support@durham.ac.uk>; Tue,  3 Dec 2019 12:09:25 +0000 (GMT)
+MIME-Version: 1.0
+Subject: Warning Alert Message For ossary2
+To: <cosma-support@durham.ac.uk>
+From: <a.g.basden@durham.ac.uk>
+Date: Tue, 3 Dec 2019 12:09:25 +0000
+Content-Type: multipart/mixed; boundary="DataSeparatorString"
+Message-ID: <20191203120925.36D28223527@controller.pri.cosma7.alces.network>
+
+--DataSeparatorString
+Content-Type: text/plain; charset="UTF-8"
+
+
+User-Supplied Information
+Name: Alastair Basden
+Title: Senior Computer Manager
+Company: Durham University, The Institute for Computational Cosmology
+Phone: 0191 334 2229
+Cell phone:
+Pager:
+Email:cosma-support@durham.ac.uk
+Fax: 0191 334 3645
+Additional info:
+
+Summary
+Node ID: ossary2
+Host IP Address: fe80:0:0:0:526b:4b03:2:f5f2%6
+Host ID: fe80:0:0:0:526b:4b03:2:f5f2%6
+Event Error Code: 101e
+Event occurred: Dec 3, 2019 12:01:13 PM
+Event Message: Impending physical disk failure detected by RAID controller module
+Event Priority: Warning
+Component Type: Physical Disk
+Component Location: Enclosure 1, Drawer 2, Slot 2
+
+--DataSeparatorString--
+
+--xB3I23BI014194.1575397206/cosma-x.cosma.dur.ac.uk--
+

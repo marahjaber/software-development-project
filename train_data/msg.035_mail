@@ -1,0 +1,313 @@
+From ali@durham.ac.uk Wed Dec  4 11:05:18 2019 +0000
+MIME-Version: 1.0
+Received: from VE1PR06MB6333.eurprd06.prod.outlook.com (2603:10a6:803:b4::34)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR07CA0267.EURPRD07.PROD.OUTLOOK.COM; Wed, 4 Dec 2019 11:05:18 +0000
+Received: from DB6PR0601CA0026.eurprd06.prod.outlook.com (2603:10a6:4:17::12)
+ by VE1PR06MB6333.eurprd06.prod.outlook.com (2603:10a6:803:128::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.13; Wed, 4 Dec
+ 2019 11:05:16 +0000
+Received: from DB5EUR01FT008.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::206) by DB6PR0601CA0026.outlook.office365.com
+ (2603:10a6:4:17::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.12 via Frontend
+ Transport; Wed, 4 Dec 2019 11:05:16 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT008.mail.protection.outlook.com (10.152.4.96) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Wed, 4 Dec 2019 11:05:16 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 4 Dec 2019 11:04:55 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4B4K4x014937;	Wed, 4 Dec
+ 2019 11:04:24 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB4B3xQf009152;	Wed, 4 Dec 2019 11:03:59 GMT
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id xB4B3x6n009150;	Wed, 4 Dec 2019 11:03:59 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4B3gjc008870	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 4 Dec 2019 11:03:42 GMT
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB4B3Eb6028101	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 4 Dec 2019 11:03:24 GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB4B232v030016	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Wed, 4 Dec 2019 11:02:16 GMT
+Received: from console61.cosma (console61 [172.17.120.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB43BVxr022675	for
+ <root@console51>; Wed, 4 Dec 2019 03:11:31 GMT
+Received: from console61.cosma (localhost [127.0.0.1])	by console61.cosma
+ (8.14.4/8.14.4) with ESMTP id xB43B2In031351	for <root@console61.cosma>; Wed,
+ 4 Dec 2019 03:11:02 GMT
+Received: (from root@localhost)	by console61.cosma (8.14.4/8.14.4/Submit) id
+ xB439XFE028588;	Wed, 4 Dec 2019 03:09:33 GMT
+Date: Wed, 4 Dec 2019 03:09:33 +0000
+Message-ID: <201912040309.xB439XFE028588@console61.cosma>
+To: <root@console51.cosma>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: cosma-system: Logwatch for console61 (Linux)
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xB4B4K4x014937
+Content-Type: text/plain
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Dec 2019 11:05:16.3687
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ d1402606-8b2f-4297-843a-08d778a9d7ed
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT008.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT008.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:VE1PR06MB6333;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: d1402606-8b2f-4297-843a-08d778a9d7ed
+X-MS-TrafficTypeDiagnostic: VE1PR06MB6333:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:215;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Dec 2019 11:05:16.1256
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: d1402606-8b2f-4297-843a-08d778a9d7ed
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VE1PR06MB6333
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.0731404
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2495.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?iDU+6mh07tJLvYQKkcbyT71N7n85DrTfQLjszlvAZrc87gqPZrITAwfmC+?=
+ =?iso-8859-1?Q?uSbcPXlEbMI/eZlp13jrVf7jl42SST1LoaniolENzJn3TfmL3+QK6mZnBm?=
+ =?iso-8859-1?Q?X2ieVMYWmr36tCE82G84QVn8fm7wzVThVPKiCYZN463OaGi7NP5BUuKZaf?=
+ =?iso-8859-1?Q?uuOU+AiwKgmw0x868OLdTJqOexh4KNKpSBx4wuIClqQ7KX97R8DnnMbyOR?=
+ =?iso-8859-1?Q?xNs0sOsrO+h6Z8bmXJAcQgHh9SR+0CSGWjk/f71XWbUkB59JgL7QkQlYhJ?=
+ =?iso-8859-1?Q?yOXRCJwM1R0lM+Mhpq9k/Qe6hEQH/siAylKLJHvC+6Y4bO4Lk0ymv9eIuT?=
+ =?iso-8859-1?Q?vu7reshq6fB4SUuWnyFqYirxeygJvbzXDfZW2RrcTfcEIov5hlhS/eUgW/?=
+ =?iso-8859-1?Q?pPYiNA7gbHrKTgwrMJD0Lksg0c0LwDs4e2Q3ebBcwhggB7Nm1jPK/bzdao?=
+ =?iso-8859-1?Q?N6e0GkuXUnxtjqM1xKakndzEcy8wjnevPxKaQ/UWki4Lq9IXEXqlskLCXx?=
+ =?iso-8859-1?Q?sJcyzs+xZ5uc1bb0MA8H+uXIWT/7L9uvFBVL572xunjpJ1b2h3dY3C5618?=
+ =?iso-8859-1?Q?FBRMyyKhh1wfxeNvhF4a8luzefbLJSKZeM7yKIl3WiDcRDBx3VC8l54D90?=
+ =?iso-8859-1?Q?is5LHWGyTVsVfNxctjtgmgYgZCf0Wi0DDaztk0EZbIwx1l5DUObLbXUSAN?=
+ =?iso-8859-1?Q?GUGlmUYLuc4fWMIEYnpHLvMqykwBADi6TJtXCq7iXko3NBhF8dsqRYr7TH?=
+ =?iso-8859-1?Q?tusJj1n/NFwPXejzmFEs5Qoi4wX4Lt+YKTHwPbbeTegOmfM3pXmTJwQc9Y?=
+ =?iso-8859-1?Q?8LJp4u0EGwBKxU+4xiu8Z1KvR1455HgwMWZ4nBNPEPQcyKYNXooGgbbY7b?=
+ =?iso-8859-1?Q?vbR/F0Kt/T69I30F2PCh0WL58XnpCgiQH38tcO5PLxs6oJZt4/6gfCKGgz?=
+ =?iso-8859-1?Q?o1T2+ZRTxmJaMKSzvznJeVTgzrLc1y9MSIVJoNNLhdmip65/m3boHyq5HP?=
+ =?iso-8859-1?Q?4m70SI/jt2xoAQyospQJs+3h3MNCceFz8FUvioe/zjrXc7AGqlraoES3sm?=
+ =?iso-8859-1?Q?925evrL5P3OvkP47eRLu0sUN0WQiGJet+8jTas8jlhdV0181KCWf+/aGtg?=
+ =?iso-8859-1?Q?80H8lCvDBEbmzKyJA+2HWQ2rXtgcjLu2c90DEUI/FWY43YI4UY0C/Cm3N8?=
+ =?iso-8859-1?Q?RCWsxLAtEwtEveWRdRO5YHHfwE+d1odteECpH6yE1CU0lnJh6xm3h1X9wH?=
+ =?iso-8859-1?Q?cpZXRTF9AzCPNiv6HD+6OfQ3sgkc99tuTrH1iIho0+yTOdT/JK6PVs9oTW?=
+ =?iso-8859-1?Q?gf2tc5RrpPwbRwIH2BAxZqr9ziQWUJTDNzJ4lkW/jgYtTAFXEwjs8wTap7?=
+ =?iso-8859-1?Q?qP82Gp3BTeuWA5TZvKuOM4wKsIJRiOqw=3D=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 31
+
+Reporting on hosts: console61
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec  4 03:09:28 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: console61
+  ################################################################## 
+ 
+ --------------------- Automount Begin ------------------------ 
+
+ **Unmatched Entries**
+ 1 remaining in /-: 2304 Time(s)
+ 
+ ---------------------- Automount End ------------------------- 
+
+ 
+ --------------------- Named Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    error (network unreachable) resolving './NS/IN': 2001:500:1::803f:235#53: 54 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:500:2f::f#53: 56 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:500:3::42#53: 52 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:503:ba3e::2:30#53: 56 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:503:c27::2:30#53: 54 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:7fd::1#53: 52 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:7fe::53#53: 54 Time(s)
+    error (network unreachable) resolving './NS/IN': 2001:dc3::35#53: 54 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:500:1::803f:235#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:500:2f::f#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:500:3::42#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:503:ba3e::2:30#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:503:c27::2:30#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:7fd::1#53: 8 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:7fe::53#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/A/IN': 2001:dc3::35#53: 6 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:500:3::42#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:7fe::53#53: 2 Time(s)
+    error (network unreachable) resolving 'api.wordpress.org/AAAA/IN': 2001:dc3::35#53: 2 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:500:1::803f:235#53: 44 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:500:2f::f#53: 48 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:500:3::42#53: 42 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:503:ba3e::2:30#53: 48 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:503:c27::2:30#53: 46 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:7fd::1#53: 40 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:7fe::53#53: 46 Time(s)
+    error (network unreachable) resolving 'console51.cosma.dur.ac.uk/MX/IN': 2001:dc3::35#53: 46 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:500:1::803f:235#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:500:2f::f#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:500:3::42#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:503:ba3e::2:30#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:503:c27::2:30#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:7fe::53#53: 4 Time(s)
+    error (network unreachable) resolving 'cosma-k.cosma.dur.ac.uk/AAAA/IN': 2001:dc3::35#53: 4 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:500:3::42#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:7fe::53#53: 2 Time(s)
+    error (network unreachable) resolving 'ls/A/IN': 2001:dc3::35#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/A/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/A/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/A/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/A/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/AAAA/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/AAAA/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/AAAA/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net.cosma.dur.ac.uk/AAAA/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:500:3::42#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:7fe::53#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/A/IN': 2001:dc3::35#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:500:3::42#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:7fe::53#53: 2 Time(s)
+    error (network unreachable) resolving 'rkhunter.sourceforge.net/AAAA/IN': 2001:dc3::35#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:500:1::803f:235#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:500:2f::f#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:500:3::42#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:503:ba3e::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:503:c27::2:30#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:7fd::1#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:7fe::53#53: 2 Time(s)
+    error (network unreachable) resolving 'swift.dur.ac.uk/A/IN': 2001:dc3::35#53: 2 Time(s)
+ 
+ ---------------------- Named End ------------------------- 
+
+ 
+ --------------------- pam_unix Begin ------------------------ 
+
+ sshd:
+    Authentication Failures:
+       root (console71): 2 Time(s)
+ 
+ 
+ ---------------------- pam_unix End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Messages To Recipients:  4
+ Addressed Recipients:    4
+ Bytes Transferred:       435806
+ Messages No Valid Rcpts: 0
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Failed logins from:
+    172.17.170.11 (console71): 2 times
+ 
+ Users logging in through sshd:
+    root:
+       172.17.170.11 (console71): 4 times
+       172.17.110.1 (console51): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 10 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/mapper/system-root
+                        20G   15G  3.8G  80% /
+ /dev/sda2             477M   37M  415M   9% /boot
+ /dev/sda1             100M  256K  100M   1% /boot/efi
+ /dev/mapper/system-var
+                        99G   60G   34G  65% /var
+ /dev/drbd1            274G   87G  173G  34% /xCATdrbd
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
+

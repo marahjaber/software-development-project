@@ -1,0 +1,474 @@
+From ali@durham.ac.uk Fri Oct 18 06:27:58 2019 +0100
+MIME-Version: 1.0
+Received: from AM7PR06MB6582.eurprd06.prod.outlook.com (2603:10a6:802:29::23)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR09CA0079.EURPRD09.PROD.OUTLOOK.COM; Fri, 18 Oct 2019 05:27:57 +0000
+Received: from DB6PR0601CA0016.eurprd06.prod.outlook.com (2603:10a6:4:7b::26)
+ by AM7PR06MB6582.eurprd06.prod.outlook.com (2603:10a6:20b:120::21) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.22; Fri, 18 Oct
+ 2019 05:27:56 +0000
+Received: from HE1EUR01FT059.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::201) by DB6PR0601CA0016.outlook.office365.com
+ (2603:10a6:4:7b::26) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.16 via Frontend
+ Transport; Fri, 18 Oct 2019 05:27:56 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ HE1EUR01FT059.mail.protection.outlook.com (10.152.0.241) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Fri, 18 Oct 2019 05:27:54 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Fri, 18 Oct 2019 06:27:52 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I5RhvA027789;	Fri, 18 Oct
+ 2019 06:27:48 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9I5RauS013716;	Fri, 18 Oct 2019 06:27:36 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9I5RaEd013715;	Fri, 18 Oct 2019 06:27:36 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I5RTld013652	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 18 Oct 2019 06:27:29
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I5RHHK027620	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 18 Oct 2019 06:27:21
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9I5R7s7029804	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 06:27:07 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I5R2Gf006873	for
+ <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 06:27:02 +0100
+Received: from login7a.pri.cosma7.alces.network
+ (login7a.pri.cosma7.alces.network [172.17.170.21])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id 517D9222A1F	for
+ <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 06:27:02 +0100 (BST)
+Received: by login7a.pri.cosma7.alces.network (Postfix)	id 48E6AE0046; Fri, 18
+ Oct 2019 06:27:02 +0100 (BST)
+Delivered-To: root@login7a.pri.cosma7.alces.network
+Received: by login7a.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ 4449BE004E; Fri, 18 Oct 2019 06:27:02 +0100 (BST)
+From: "(Cron Daemon)" <cosma-support@durham.ac.uk>
+To: <root@login7a.pri.cosma7.alces.network>
+Subject: Cron <root@login7a> /cosma/local/admin/cronjobs/cosma7-nightly-cronjob
+Content-Type: text/plain; charset="UTF-8"
+Auto-Submitted: auto-generated
+X-Cron-Env: <XDG_SESSION_ID=20667>
+X-Cron-Env: <XDG_RUNTIME_DIR=/run/user/0>
+X-Cron-Env: <LANG=en_GB.UTF-8>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <PATH=/usr/bin:/bin>
+X-Cron-Env: <LOGNAME=root>
+X-Cron-Env: <USER=root>
+Message-ID: <20191018052702.4449BE004E@login7a.pri.cosma7.alces.network>
+Date: Fri, 18 Oct 2019 06:00:01 +0100
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9I5RhvA027789
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Oct 2019 05:27:55.3770
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 223f0a9b-ce55-4a33-09c2-08d7538bedf1
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT059.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT059.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(979002)(4636009)(7192003)(217263001)(189003)(199004)(70486001)(186003)(156004)(356004)(476003)(26005)(1076003)(47776003)(42186006)(5820100001)(30864003)(336012)(126002)(486006)(36486004)(4001150100001)(97876018)(8266002)(23676004)(9686003)(450100002)(6862004)(16586007)(33656002)(106002)(50466002)(6392003)(1096003)(8936002)(5660300002)(4006050)(2351001)(19627235002)(6266002)(7846003)(37006003)(246002)(305945005)(8676002)(14444005)(75640400001)(969003)(989001)(999001)(1009001)(1019001);DIR:INB;SFP:;SCL:1;SRVR:AM7PR06MB6582;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 223f0a9b-ce55-4a33-09c2-08d7538bedf1
+X-MS-TrafficTypeDiagnostic: AM7PR06MB6582:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:4714;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Oct 2019 05:27:54.9767
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 223f0a9b-ce55-4a33-09c2-08d7538bedf1
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM7PR06MB6582
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.8759838
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2347.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MUJyZUxSNEVEQ1o1elh1ZytqajZudHpoeEt3eUd2SnprNEF3TXdsZVg3WlJQ?=
+ =?utf-8?B?SHJmT3NhczY3SU4reGZYb01PTWRoZWNMZis3bUFwUnpwYXQrSGxQaHFBU0VR?=
+ =?utf-8?B?S2UyTTVwOHdLVnVKVHYrZHo3a2ZwM1hRWEhYWHF4bDlDTWVpNkh0cWpRMENI?=
+ =?utf-8?B?ZHVvUXJFRTY3TnRvZzF2YzVlTzBhWkJocmdwK0EvMTRpSEtkdWZHUjZLRW1a?=
+ =?utf-8?B?eWdNMGZYMG84ZG51cS96ZkJrd0cyVTN5bllHYlMzRWJNT1lqbWtrcjl6Tjh2?=
+ =?utf-8?B?R0phaXZxT0Ftand5VTVNWm9mMm5TeXVmeXNGdkFhQlVUYk8wcTdSRkMvM1VK?=
+ =?utf-8?B?NzVlRVEwSEppRE16WU5hVEJkOFlubUY4blg0UmRPdUNvTjlmRWs4V2RuUDlE?=
+ =?utf-8?B?RXptNVVKSU9CT01sQ3BCblpJcW5tVmJjYUIrQ3BGTzhIcXphMVNXcEo4RytI?=
+ =?utf-8?B?eFRRZ0VuRHVJK3BldkhUc0dtNTZybHEzSGVpK0xDS0diTXJYdlZvaHhTRHY2?=
+ =?utf-8?B?V1gzSTlZUkVjdU1FNEx2THVxL1ROanJ6c3dLKy8xNFlBZEtHTHkxUmZQZUpX?=
+ =?utf-8?B?ZDV0UEJiUGZ0NEM0dTNCbmc4K2wydFZLcDJvM28vOE82RkRFMjk0Y1NINGpG?=
+ =?utf-8?B?dk5iMWFvaGRzdW9hbjdGWjdYYUhjQk54RjRKS2NoK2pYZCsrb3VYUENnV0h2?=
+ =?utf-8?B?UjhMUUhNOU9zdnVhTmlMSi9EQlczaW92bmh6dzRJSzR4SDE1ZDI0ay9JNHJ6?=
+ =?utf-8?B?Z2tMVXpZeEZjMW4zNkpia1MxcjZmQkxPZlZXcXIrSThkRnFzaVdXR0tKYmty?=
+ =?utf-8?B?dVg1VlNqeFlRYWlrbGp3bldsWUxVK0VIaGZmV2pXVi81bTErU1FaL09VVkFG?=
+ =?utf-8?B?ZndrMHBqN3ZFTmNkTHJrMEV1c01OR09BRFZtZUJnSXJUTU1FVlVFQjBDVFor?=
+ =?utf-8?B?TEhna2tzSU1NUTRHUnAzR2tuZE56ZDMyZlU3Zmk3M2pQRzhMcWp4amtDVGdI?=
+ =?utf-8?B?MFJaOEt2WW14cGNsNTc4cXRZdzdlNW9Pd2s1aml4RTYrRFdvTitSOHFPMTNR?=
+ =?utf-8?B?RXcvaWVxZ05RZEZTZjhqWlFPWEFtUkRSWlg1M1B6d2krUE1GVlc5T1pZL0Zq?=
+ =?utf-8?B?NVlUUWNkazRxMU1Cam02T0FQckdjZmxyZU5yQ3Y0UDhIK1MwMHk2R3oySjI2?=
+ =?utf-8?B?VU40ZVl3WDZMVmc0ZThtOUN2ZGpnamxWL3NyeHh6TjNXdUp1TGhxODFUQkw4?=
+ =?utf-8?B?MDR1UENNS3g3N1JaaVRvMm0wUWxlYzBxUWFkL1k2UDNvRkRDRTljYlZTazdD?=
+ =?utf-8?B?YS8zVktnamhzU21aYTRnVjF1dWV1SGRmSUQzV3ZDTU9DL2ppNXA2UTgwZkRi?=
+ =?utf-8?B?cGhwMDRPT0ZxN1E9PQ==?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 242
+
+.....COSMA7.......
+
+Running nightly updates to Dirac epoch
+Extracting Dirac accounts for day: 20191017
+Currently requires export PERL_LWP_SSL_VERIFY_HOSTNAME=0
+Although there are clearly better ways
+HTTP/1.1 200 200
+Connection: close
+Date: Fri, 18 Oct 2019 05:00:54 GMT
+Server: Apache/2.4
+Content-Length: 200
+Content-Type: text/html; charset=UTF-8
+Client-Date: Fri, 18 Oct 2019 05:00:59 GMT
+Client-Peer: 129.215.10.66:443
+Client-Response-Num: 1
+Client-SSL-Cert-Issuer: /C=BM/O=QuoVadis Limited/CN=QuoVadis EV SSL ICA G3
+Client-SSL-Cert-Subject: /jurisdictionC=GB/businessCategory=Government Entity/serialNumber=Government Entity/C=GB/ST=City of Edinburgh/L=EDINBURGH/O=University of Edinburgh/OU=D562 - EPCC/CN=safe.epcc.ed.ac.uk
+Client-SSL-Cipher: ECDHE-RSA-AES256-GCM-SHA384
+Client-SSL-Socket-Class: IO::Socket::SSL
+Client-SSL-Warning: Peer certificate not verified
+X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+X-Xss-Protection: 1;mode-block
+
+Inserted lines: 192
+Replaced lines: 0
+Duplicate lines: 0
+Partial lines: 0
+Skipped lines: 0
+First record (completed): Thu Oct 17 00:07:59 BST 2019
+Last record (completed): Thu Oct 17 23:54:57 BST 2019
+ 
+Completed
+Running nightly updates to current month
+Processing accounting for month: 201910
+COSMA4 page for 201910 already exists - skipping
+COSMA5 page for 201910 already exists - skipping
+COSMA6 page for 201910 already exists - skipping
+COSMA7 page for 201910 already exists - skipping
+Done
+Running nightly updates to project totals
+Updating quarterly totals for Dirac 2.5 projects
+Done
+Running nightly updates to diskusage stats
+Getting current disk-usage statistics
+Processing user disk-usage statistics
+Processing group disk-usage statistics
+Processing user inode-usage statistics
+Getting current file-usage histories
+Completed
+Running nightly diskusage warnings
+Warning over-quota users
+Password for admin@PRI.COSMA7.ALCES.NETWORK: 
+Password for admin@PRI.COSMA7.ALCES.NETWORK: 
+Password for admin@PRI.COSMA7.ALCES.NETWORK: 
+Password for admin@PRI.COSMA7.ALCES.NETWORK: 
+Password for admin@PRI.COSMA7.ALCES.NETWORK: 
+User dc-berg1 has no madfs quota - setting 10TB quota
+Updating motd
+Groups nearing quota (space, files):
+/cosma6 dp004-eagle no file quota, 1518436 used
+/cosma6 dp034 90.9012% 75.4426%
+/cosma6 dp082 95.3804% 96.4475%
+/cosma6 dphlss 105.084% 626.549%
+/cosma7 cosma7 1.81078% 101.325%
+/cosma7 dp004-eagle 115.516% 60.6583%
+/cosma7 dp104 94.178% 1.35349%
+Capture SLURM node down status
+2a3,15
+> m7353 | 2019-10-18 05:08:09 | online | ''
+> m7063 | 2019-10-18 05:08:09 | online | ''
+> m7090 | 2019-10-18 05:08:09 | online | ''
+> m7092 | 2019-10-18 05:08:09 | online | ''
+> m7141 | 2019-10-18 05:08:09 | online | ''
+> m7161 | 2019-10-18 05:08:09 | online | ''
+> m7346 | 2019-10-18 05:08:09 | online | ''
+> m7348 | 2019-10-18 05:08:09 | online | ''
+> m7433 | 2019-10-18 05:08:09 | online | ''
+> m7435 | 2019-10-18 05:08:09 | online | ''
+> m7005 | 2019-10-18 05:08:09 | undetected-state | 'CMOSS/DIMMA1/CPU1 issues'
+> m7106 | 2019-10-18 05:08:09 | drain | 'DIMMA4/CPU1 issue'
+> m7136 | 2019-10-18 05:08:09 | drain | 'DIMMA2/CPU1 issue'
+Completed
+----------------
+atempo[1-2],c6mds[1-2],c6oss[01-04],console[71-72],dellmds[1-2],dellnfs[1-2],delloss[01-20],m[7001-7040,7043-7173,7175-7203,7205-7452],mad[01-02],login7c,login7a,login7b,dataweb
+----------------
+No active sensor errors or LEDs detected
+----------------
+admin[01-02],c5mds1,c5oss01,dellbf[1-2],infra[01-02],m[5109-5420,6001-6572,7041-7042,7174,7204],mad03,cosma-f,login[5-6]a,login5b
+----------------
+LED is blinking, check logs
+.....COSMA6.......
+
+Running nightly updates to Dirac epoch
+Extracting Dirac accounts for day: 20191017
+Currently requires export PERL_LWP_SSL_VERIFY_HOSTNAME=0
+Although there are clearly better ways
+HTTP/1.1 200 200
+Connection: close
+Date: Fri, 18 Oct 2019 05:15:11 GMT
+Server: Apache/2.4
+Content-Length: 200
+Content-Type: text/html; charset=UTF-8
+Client-Date: Fri, 18 Oct 2019 05:15:14 GMT
+Client-Peer: 129.215.10.66:443
+Client-Response-Num: 1
+Client-SSL-Cert-Issuer: /C=BM/O=QuoVadis Limited/CN=QuoVadis EV SSL ICA G3
+Client-SSL-Cert-Subject: /jurisdictionC=GB/businessCategory=Government Entity/serialNumber=Government Entity/C=GB/ST=City of Edinburgh/L=EDINBURGH/O=University of Edinburgh/OU=D562 - EPCC/CN=safe.epcc.ed.ac.uk
+Client-SSL-Cipher: ECDHE-RSA-AES256-GCM-SHA384
+Client-SSL-Socket-Class: IO::Socket::SSL
+Client-SSL-Warning: Peer certificate not verified
+X-Content-Type-Options: nosniff
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Xss-Protection: 1; mode=block
+X-Xss-Protection: 1;mode-block
+
+Inserted lines: 245
+Replaced lines: 0
+Duplicate lines: 0
+Partial lines: 0
+Skipped lines: 0
+First record (completed): Thu Oct 17 00:12:05 BST 2019
+Last record (completed): Thu Oct 17 23:20:51 BST 2019
+ 
+Completed
+Running nightly updates to current month
+Processing accounting for month: 201910
+COSMA4 page for 201910 already exists - skipping
+COSMA5 page for 201910 already exists - skipping
+COSMA6 page for 201910 already exists - skipping
+COSMA7 page for 201910 already exists - skipping
+Done
+Running nightly updates to project totals
+Updating quarterly totals for Dirac 2.5 projects
+Done
+.....COSMA5.......
+Running nightly updates to Dirac epoch
+Daily update of processed accounting
+Completed
+Running nightly updates to current month
+Processing accounting for month: 201910
+COSMA4 page for 201910 already exists - skipping
+COSMA5 page for 201910 already exists - skipping
+COSMA6 page for 201910 already exists - skipping
+COSMA7 page for 201910 already exists - skipping
+Done
+.....SYNC TO VIRGODB.....
+sending incremental file list
+cosma7-project-summary.csv
+cosma/batch/project_log.csv
+cosma/batch/project_username_log.csv
+cosma/batch/username_log.csv
+cosma5/batch/201910-project_log.csv
+cosma5/batch/201910-project_username_log.csv
+cosma5/batch/201910-username_log.csv
+cosma5/batch/project_log.csv
+cosma5/batch/project_username_log.csv
+cosma5/batch/username_log.csv
+cosma5/diskusage/cosma5/
+cosma5/diskusage/cosma5/201910180300-cosma5_quotas.asc
+cosma5/diskusage/cosma5/201910180300-cosma5_size.asc
+cosma5/diskusage/cosma5/cosma5_filehist_group_access.asc
+cosma5/diskusage/cosma5/cosma5_filehist_group_change.asc
+cosma5/diskusage/cosma5/cosma5_filehist_group_modification.asc
+cosma5/diskusage/cosma5/cosma5_filehist_user_access.asc
+cosma5/diskusage/cosma5/cosma5_filehist_user_change.asc
+cosma5/diskusage/cosma5/cosma5_filehist_user_group.asc
+cosma5/diskusage/cosma5/cosma5_filehist_user_modification.asc
+cosma5/diskusage/cosma5/cosma5_quotas.asc
+cosma5/diskusage/cosma5/cosma5_quotas.csv
+cosma5/diskusage/cosma5/cosma5_quotas_files.csv
+cosma5/diskusage/cosma5/cosma5_quotas_group.csv
+cosma5/diskusage/cosma5/cosma5_size.asc
+cosma5/diskusage/cosma5/cosma5_size_timeseries.csv
+cosma5/diskusage/cosma5/cosma5_size_timeseries_group.csv
+cosma6/batch/
+cosma6/batch/201910-project_log.csv
+cosma6/batch/201910-project_username_log.csv
+cosma6/batch/201910-slurm.acct
+cosma6/batch/201910-username_log.csv
+cosma6/batch/20191017-slurm.acct
+cosma6/batch/over-budget-projects.lis
+cosma6/batch/project-current-quarter-totals.csv
+cosma6/batch/project-quarter-totals.csv
+cosma6/batch/project-totals.csv
+cosma6/batch/project_log.csv
+cosma6/batch/project_username_log.csv
+cosma6/batch/username_log.csv
+cosma6/diskusage/cosma6/
+cosma6/diskusage/cosma6/201910180300-cosma6_quotas.asc
+cosma6/diskusage/cosma6/201910180300-cosma6_size.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_access-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_access-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_access-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_access-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_access.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_change-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_change-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_change-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_change-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_change.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_modification-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_modification-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_modification-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_modification-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_group_modification.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_access-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_access-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_access-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_access-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_access.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_change-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_change-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_change-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_change-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_change.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_group-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_group-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_group-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_group-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_modification-mdt0.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_modification-mdt1.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_modification-mdt2.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_modification-mdt3.asc
+cosma6/diskusage/cosma6/cosma6_filehist_user_modification.asc
+cosma6/diskusage/cosma6/cosma6_quotas.asc
+cosma6/diskusage/cosma6/cosma6_quotas.csv
+cosma6/diskusage/cosma6/cosma6_quotas_files.csv
+cosma6/diskusage/cosma6/cosma6_quotas_group.csv
+cosma6/diskusage/cosma6/cosma6_size.asc
+cosma6/diskusage/cosma6/cosma6_size_timeseries.csv
+cosma6/diskusage/cosma6/cosma6_size_timeseries_group.csv
+cosma7/batch/
+cosma7/batch/201910-project_log.csv
+cosma7/batch/201910-project_username_log.csv
+cosma7/batch/201910-slurm.acct
+cosma7/batch/201910-username_log.csv
+cosma7/batch/20191017-slurm.acct
+cosma7/batch/over-budget-projects.lis
+cosma7/batch/project-current-quarter-totals.csv
+cosma7/batch/project-quarter-totals.csv
+cosma7/batch/project-totals.csv
+cosma7/batch/project_log.csv
+cosma7/batch/project_username_log.csv
+cosma7/batch/username_log.csv
+cosma7/diskusage/cosma7/
+cosma7/diskusage/cosma7/201910180605-cosma7_quotas.asc
+cosma7/diskusage/cosma7/201910180605-cosma7_size.asc
+cosma7/diskusage/cosma7/cosma7_filehist_group_access.asc
+cosma7/diskusage/cosma7/cosma7_filehist_group_change.asc
+cosma7/diskusage/cosma7/cosma7_filehist_group_modification.asc
+cosma7/diskusage/cosma7/cosma7_filehist_user_access.asc
+cosma7/diskusage/cosma7/cosma7_filehist_user_change.asc
+cosma7/diskusage/cosma7/cosma7_filehist_user_group.asc
+cosma7/diskusage/cosma7/cosma7_filehist_user_modification.asc
+cosma7/diskusage/cosma7/cosma7_quotas.asc
+cosma7/diskusage/cosma7/cosma7_quotas.csv
+cosma7/diskusage/cosma7/cosma7_quotas_files.csv
+cosma7/diskusage/cosma7/cosma7_quotas_group.csv
+cosma7/diskusage/cosma7/cosma7_size.asc
+cosma7/diskusage/cosma7/cosma7_size_timeseries.csv
+cosma7/diskusage/cosma7/cosma7_size_timeseries_group.csv
+cosma7/diskusage/snap7/
+cosma7/diskusage/snap7/201910180605-snap7_quotas.asc
+cosma7/diskusage/snap7/201910180605-snap7_size.asc
+cosma7/diskusage/snap7/snap7_filehist_group_access.asc
+cosma7/diskusage/snap7/snap7_filehist_group_change.asc
+cosma7/diskusage/snap7/snap7_filehist_group_modification.asc
+cosma7/diskusage/snap7/snap7_filehist_user_access.asc
+cosma7/diskusage/snap7/snap7_filehist_user_change.asc
+cosma7/diskusage/snap7/snap7_filehist_user_group.asc
+cosma7/diskusage/snap7/snap7_filehist_user_modification.asc
+cosma7/diskusage/snap7/snap7_quotas.asc
+cosma7/diskusage/snap7/snap7_quotas.csv
+cosma7/diskusage/snap7/snap7_quotas_files.csv
+cosma7/diskusage/snap7/snap7_quotas_group.csv
+cosma7/diskusage/snap7/snap7_size.asc
+cosma7/diskusage/snap7/snap7_size_timeseries.csv
+cosma7/diskusage/snap7/snap7_size_timeseries_group.csv
+
+sent 573,059 bytes  received 145,405 bytes  478,976.00 bytes/sec
+total size is 640,259,469  speedup is 891.15
+sending incremental file list
+.git/
+.git/COMMIT_EDITMSG
+.git/MERGE_RR
+.git/index
+.git/logs/HEAD
+.git/logs/refs/heads/master
+.git/logs/refs/remotes/origin/master
+.git/objects/50/
+.git/objects/50/982518be4f6b803d341ebb16a5c8892f63b92c
+.git/objects/5f/
+.git/objects/5f/ce498ca927d5c67cfd5202fa8b829611833856
+.git/objects/6d/
+.git/objects/6d/becf4a482ad1c19de34c54a4605f2731b437cc
+.git/objects/ec/
+.git/objects/ec/30f961341edb7354f03701c49d5d61230d2846
+.git/refs/heads/
+.git/refs/heads/master
+.git/refs/remotes/origin/
+.git/refs/remotes/origin/master
+cosma7-projects/
+cosma7-projects/di004
+
+sent 75,952 bytes  received 4,497 bytes  160,898.00 bytes/sec
+total size is 30,146,213  speedup is 374.72
+sending incremental file list
+c7diskUsageWarn.py
+
+sent 3,675 bytes  received 325 bytes  8,000.00 bytes/sec
+total size is 165,802  speedup is 41.45
+Checking lustre connections for cosma7 compute
+@tcp lustre connections for m7125: 1
+
+

@@ -1,0 +1,160 @@
+From ali@durham.ac.uk Thu Dec 12 10:23:35 2019 +0000
+MIME-Version: 1.0
+Received: from DB7PR06MB4444.eurprd06.prod.outlook.com (2603:10a6:803:14::28)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR0202CA0015.EURPRD02.PROD.OUTLOOK.COM; Thu, 12 Dec 2019 10:23:35 +0000
+Received: from AM5PR0602CA0017.eurprd06.prod.outlook.com
+ (2603:10a6:203:a3::27) by DB7PR06MB4444.eurprd06.prod.outlook.com
+ (2603:10a6:10:21::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.14; Thu, 12 Dec
+ 2019 10:23:34 +0000
+Received: from DB5EUR01FT009.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::206) by AM5PR0602CA0017.outlook.office365.com
+ (2603:10a6:203:a3::27) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2538.16 via Frontend
+ Transport; Thu, 12 Dec 2019 10:23:34 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.7.139)
+ smtp.mailfrom=durham.ac.uk; mds.ad.dur.ac.uk; dkim=none (message not signed)
+ header.d=none;mds.ad.dur.ac.uk; dmarc=bestguesspass action=none
+ header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.7.139 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.7.139; helo=hermes2.dur.ac.uk;
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ DB5EUR01FT009.mail.protection.outlook.com (10.152.4.124) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2538.14 via Frontend Transport; Thu, 12 Dec 2019 10:23:34 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])
+	by hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCANLZB021149;
+	Thu, 12 Dec 2019 10:23:25 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])
+	by franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCANE0D016436;
+	Thu, 12 Dec 2019 10:23:14 GMT
+Received: (from majordom@localhost)
+	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit) id xBCANEC2016435;
+	Thu, 12 Dec 2019 10:23:14 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])
+	by franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCAN1CG016334
+	for <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 12 Dec 2019 10:23:01 GMT
+Received: from smtphost4.dur.ac.uk (smtphost4.dur.ac.uk [129.234.7.146])
+	by hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCAMlMC012710
+	for <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 12 Dec 2019 10:22:51 GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk [129.234.196.4])
+	by smtphost4.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCAMaou011625
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256 verify=NO)
+	for <cosma-support@durham.ac.uk>; Thu, 12 Dec 2019 10:22:40 GMT
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])
+	by cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xBCAMa6A031248
+	for <cosma-support@durham.ac.uk>; Thu, 12 Dec 2019 10:22:36 GMT
+Received: from 127.0.0.1 (delloss13.pri.cosma7.alces.network [172.17.175.13])
+	by controller.pri.cosma7.alces.network (Postfix) with SMTP id 5B3572209CF
+	for <cosma-support@durham.ac.uk>; Thu, 12 Dec 2019 10:22:36 +0000 (GMT)
+Subject: Critical Alert Message For ossary2
+To: <cosma-support@durham.ac.uk>
+From: <a.g.basden@durham.ac.uk>
+Date: Thu, 12 Dec 2019 10:22:36 +0000
+Content-Type: multipart/mixed; boundary="DataSeparatorString"
+Message-Id: <20191212102236.5B3572209CF@controller.pri.cosma7.alces.network>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: owner-cosma-support@durham.ac.uk
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xBCANLZB021149
+Return-Path: owner-cosma-support@durham.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 12 Dec 2019 10:23:34.6793
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ a705425e-e65e-49a7-fe47-08d77eed581b
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-Forefront-Antispam-Report:
+ CIP:129.234.7.139;IPV:CAL;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:DB7PR06MB4444;H:hermes2.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource:
+ DB5EUR01FT009.eop-EUR01.prod.protection.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: a705425e-e65e-49a7-fe47-08d77eed581b
+X-MS-TrafficTypeDiagnostic: DB7PR06MB4444:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:1002;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 12 Dec 2019 10:23:34.6412
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: a705425e-e65e-49a7-fe47-08d77eed581b
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.7.139];Helo=[hermes2.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB7PR06MB4444
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:00.6047273
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2516.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?WFF6Mkp2cmt1MVBtNVNKYTFLQnhocUtiQmdhKytpb0JoY285Q3AxUktpZEtP?=
+ =?utf-8?B?OW96eTN6OVV0Vm9ZOEN6S2FGMndPbWdOS3FyNTBlSk9NVWdDRDdVOWNtNHJP?=
+ =?utf-8?B?VDNWZlRSK1ZqMXJiaWhpQ3FvekZoREh1Z2g2cWFWN01zOExHeGczdVNuRmEr?=
+ =?utf-8?B?enpGVnk4d1FMekdqWXRrQkJVejZuRnI2eURaT1ZHZk1wem12UzJvLzh3KzFi?=
+ =?utf-8?B?M1BGMm9GMGkxK2QvY0x4ZTR2MkVPOVYvU3B5NndIb2diSVhQKys2T25hcTkx?=
+ =?utf-8?B?cldud0NlVTdaZ2ZIOHdoVmcrWWs1Y2Zwamp6SmQzdVE5SmV1SzFMYVVVR3Jh?=
+ =?utf-8?B?UkZJczIrQXlTU2xSUVUxSXk1aTB2K3FMdFRpR0lsTjFyMThPQ1NMY0RpclRT?=
+ =?utf-8?B?RzF2Nmo5M2lQcitMOWZ6M3VtamRodCtJUGo2YmZTYlJvTEN1MnFQZlVpRFdP?=
+ =?utf-8?B?UzkzMTFYS0lPT1pPaDhJSHJ6RURNQ0dsS0tLQ1orU01oNXhqQiszWmxQRjAy?=
+ =?utf-8?B?M1hVMWY3VmlCelNhUHkxaFRHbkRmNUdCSWpsanc2c1RBeDQveXpCbUZhUTFK?=
+ =?utf-8?B?RjZ3UktFem1oVThLeGV3K0QzSnh0dnFnMkM2WnVwTHkyZ25pK3MwdzB6bkFX?=
+ =?utf-8?B?bGh2Zm9XL1Q3R2pNWEliQ0F4RUFNbC9ndmVVa1lOTktIY1RQVGhhVGNuU2cy?=
+ =?utf-8?B?TnpJRlovanN0RUp1YnlzOGVTbWlaZ2owSGNUVFFDUUxNRjY3WDFYQUUwQ05E?=
+ =?utf-8?B?eWVTK2d5Z1VDVnhheHBFOGVKYnZNeitMdFEvVmZwMXpWOWhLZ2lKUDZFRFp4?=
+ =?utf-8?B?TmQ0V3pHV1ZmWGo3YVZYeTVESFlaY0tyaXF4TjVMeTkxOTl3TVhaVG9NdG9E?=
+ =?utf-8?B?N1VSYkhnMjFBYkpCNU1EWjlHbXRjUXg4K2xaZGdFTGtaeEFnaVgxbm5zMDVo?=
+ =?utf-8?B?V3FFV0FFZDJmSFkwT1ZTaENFZkJFVUlyUDJZa3dKVVh3bnZ1MHpLMHo0TjNv?=
+ =?utf-8?B?UXVaRVBGbFJrMHBYb3dqYlBEdUNhRk1KS0Nxd3Y2YnVBZTNqN3dHTTh6RmNv?=
+ =?utf-8?B?eDNTZlRCYjVXeVN0RGdxcXQ3cjhyQVZzS0xEdUNrNFpUczR1Z1hMWEdZZWFa?=
+ =?utf-8?B?aXNPU2NmRHJqTFYyYTZSOVpwVmlaRzhVbWxrVm9YaEhkdkdqeDA5MjdPbVNE?=
+ =?utf-8?B?WUJ0Q3RqU3lwNDhoSXVhcjFhd2x3NytQdnVMV1pIdUIyY2s4dXplOFRjMnky?=
+ =?utf-8?B?cll1UW12N2cwbG5aRGhMd2JudTBDRTRZV0ZYMlpDRkdiVVRZYnV0RVpwZkJN?=
+ =?utf-8?B?b2RRaStvUnRwREdoanJLMDRyT1ZlMUhPelR4ZG5DVmF6OGlWYUt3TThnMHR0?=
+ =?utf-8?B?SndrcjBvSk9VcmV2VGxRNUI4K0N0YzdQVmlXRWljTVFPd3JYL25BSjFSdXly?=
+ =?utf-8?B?UXVsNnV2MG9QakRnaDl3eXBNUisxWktIVXJXeDhvZUVGa0FxT1JQeW1Sam03?=
+ =?utf-8?B?bnk4U1V6bDJUSjY3Sy95cGphNWdwVHZFVkZ5RXBSTUtvWlBZTnYweEVoRWtU?=
+ =?utf-8?B?dGJKZ3FnMUdibUVtSzcrR1NDS2Z0SmorVmJyWTlMR2JVM0UvWGNTZmdUTVF5?=
+ =?utf-8?B?NzJDbDRHYktiUVU2R2JkOVVRM2ZKczF3emVlNlNISm5MSUFPQ0cvRG9Dd1BV?=
+ =?utf-8?Q?SlbUvKnQqRegW1oOCkRp?=
+Status: R
+X-Status: A
+X-Keywords:                 
+X-UID: 113
+
+--DataSeparatorString
+Content-Type: text/plain; charset="UTF-8"
+
+
+User-Supplied Information
+Name: Alastair Basden
+Title: Senior Computer Manager
+Company: Durham University, The Institute for Computational Cosmology
+Phone: 0191 334 2229
+Cell phone:
+Pager:
+Email:cosma-support@durham.ac.uk
+Fax: 0191 334 3645
+Additional info:
+
+Summary
+Node ID: ossary2
+Host IP Address: fe80:0:0:0:526b:4b03:2:f5f2%6
+Host ID: fe80:0:0:0:526b:4b03:2:f5f2%6
+Event Error Code: 226c
+Event occurred: Dec 12, 2019 10:14:17 AM
+Event Message: Physical disk failed
+Event Priority: Critical
+Component Type: Physical Disk
+Component Location: Enclosure 0, Drawer 1, Slot 5
+
+--DataSeparatorString--
+

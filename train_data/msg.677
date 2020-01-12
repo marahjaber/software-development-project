@@ -1,0 +1,139 @@
+From ali@durham.ac.uk Tue Oct 22 03:04:06 2019 +0100
+MIME-Version: 1.0
+Received: from AM0PR06MB6562.eurprd06.prod.outlook.com (2603:10a6:802:14::18)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR02CA0047.EURPRD02.PROD.OUTLOOK.COM; Tue, 22 Oct 2019 02:04:05 +0000
+Received: from AM5PR0602CA0014.eurprd06.prod.outlook.com
+ (2603:10a6:203:a3::24) by AM0PR06MB6562.eurprd06.prod.outlook.com
+ (2603:10a6:208:1a0::10) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.20; Tue, 22 Oct
+ 2019 02:04:04 +0000
+Received: from HE1EUR01FT009.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::208) by AM5PR0602CA0014.outlook.office365.com
+ (2603:10a6:203:a3::24) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2367.20 via Frontend
+ Transport; Tue, 22 Oct 2019 02:04:03 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ HE1EUR01FT009.mail.protection.outlook.com (10.152.0.77) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Tue, 22 Oct 2019 02:04:03 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Tue, 22 Oct 2019 03:04:02 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M23paL023591;	Tue, 22 Oct
+ 2019 03:03:55 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9M23jns013817;	Tue, 22 Oct 2019 03:03:45 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9M23jtK013816;	Tue, 22 Oct 2019 03:03:45 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M23ZRh013718	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Tue, 22 Oct 2019 03:03:35
+ +0100
+Received: from smtphost2.dur.ac.uk (smtphost2.dur.ac.uk [129.234.7.144])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M23M0M023366;	Tue, 22 Oct
+ 2019 03:03:26 +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9M23FxF028758	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO);	Tue, 22 Oct 2019 03:03:15 +0100
+Received: from console51.cosma (localhost [127.0.0.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9M23AVF028820;	Tue, 22
+ Oct 2019 03:03:10 +0100
+Received: (from root@localhost)	by console51.cosma (8.14.4/8.14.4/Submit) id
+ x9M239cx028798;	Tue, 22 Oct 2019 03:03:10 +0100
+Date: Tue, 22 Oct 2019 03:03:09 +0100
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>, <r.p.ratnasingam2@newcastle.ac.uk>
+Subject: COSMA-support: over files limit quota alert
+Message-ID: <5dae635d.4SlkT2lRGb07gKHv%cosma-support@durham.ac.uk>
+User-Agent: Heirloom mailx 12.4 7/29/08
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9M23paL023591
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 22 Oct 2019 02:04:03.4117
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ be002c17-8465-41d6-410f-08d756941cc6
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT009.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT009.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(199004)(189003)(46406003)(58126008)(14444005)(47776003)(110136005)(75640400001)(106002)(42186006)(50466002)(4006050)(186003)(5660300002)(476003)(126002)(486006)(36486004)(336012)(36756003)(156004)(2616005)(26005)(230700001)(356004)(97756001)(450100002)(575854001)(15650500001)(87636003)(2876002)(1096003)(8936002)(305945005)(8676002)(6392003)(246002)(558084003)(7846003)(23726003);DIR:INB;SFP:;SCL:1;SRVR:AM0PR06MB6562;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: be002c17-8465-41d6-410f-08d756941cc6
+X-MS-TrafficTypeDiagnostic: AM0PR06MB6562:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:2276;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 22 Oct 2019 02:04:03.1065
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: be002c17-8465-41d6-410f-08d756941cc6
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR06MB6562
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.8275620
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?us-ascii?Q?N2QqSs9Fv5NHsi1thtQrlMHBkNq4yr82UKM91vxAE6ePno5ewf3jhsskha8D?=
+ =?us-ascii?Q?pOhjRHrz2bLidvGYCZ29gdPRP9ufAVhnGI5VU3mjx1lx9zhGedgUVz7E0v0g?=
+ =?us-ascii?Q?jZGm27eGE/wzAp93HMudWvGer2qaRmk9ENnD20iIy3XLzOEXSjNj70zXhfkv?=
+ =?us-ascii?Q?8DKvXAd9tSy9XiYhjBUdKWTNXPrx3BuOL/KsUmM8PD/Ow7LNIA+ZPe12TKgY?=
+ =?us-ascii?Q?04LNmYzQ7+k5h6pFqUZNEc5cXLD5d4XV+ovOiGXBxQlSrwQaeAY1UbtIYfcw?=
+ =?us-ascii?Q?jH/n0TaMOqizaiUBnSgZfZXybl3KmvoNHHujeIf1mNVoLlcyPwf165Ln1GDX?=
+ =?us-ascii?Q?B7F2+unhZYCsM/HUWx2lp590aO4KMgYEyS5uKBD/Z/Mh+0vlKDauIisj9Wb5?=
+ =?us-ascii?Q?A4EcYOCCcdjMDt7x19Qig86IGpDR9bymcwqmsVKW6QCxU8NhVpHDHdzID3wJ?=
+ =?us-ascii?Q?UXhBGnc1LgJUx17CUMHmW3dKkmZi1REBKhbDgEvtzZAf1VS51YmRUFSkn3Dg?=
+ =?us-ascii?Q?KNYa9OW0JP1NMqw03G+jcXKBLT0ucWQBm7CHJABj0OeMc6mx4Y8S7qlM3+U4?=
+ =?us-ascii?Q?m8DsidcNu27wJiKhanQFOFAy10mG4sMiy17YLIDpexzQSdka5s8HalnUag6M?=
+ =?us-ascii?Q?It7kD/+H1O0FR+4Oc9YOxawkx/jzkxib6GMCvYNfC+rmkEta3a87ykWaXvKT?=
+ =?us-ascii?Q?qJ2HeyrQuT6/wL1LrYBZPi7V5Ul9Rwb6JvjRSmA3CiDH/yLbla+BYRcGfZnp?=
+ =?us-ascii?Q?I5qjbX8+PEbYex6Ren/IArYF3K2oA2+6yMTNCR2pWPm/EQlZc3wZ1Ew8UwlU?=
+ =?us-ascii?Q?jzS3sJi2cpcurLhLApUoKMRmCTtym+Zs9kgO3VwrBJYBT6eTfbzU2n6geqZv?=
+ =?us-ascii?Q?DiqmIhchlvLL9QPFuwcETyPEPwVtvgeaQVvAkW1Tq9dPWaIiZLuTRbNfnc0r?=
+ =?us-ascii?Q?n1IF+6w0glZ1T3U1UfCh9eb/KBWTFBsdqrBn2hS4r9aUTp6xM4N1noXPXIFJ?=
+ =?us-ascii?Q?8mk2kZOZCEXjQyZjkcVWUVErk5HMAXEsfvYcxV/24tN0cS5IxZLKksz4vUGN?=
+ =?us-ascii?Q?dkuJlYi1P7kN+2yNsqXs4g0pFsEsRg=3D=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 677
+
+Your account dc-ratn1 is over the number of files quota on filesystem COSMA6.
+You are using  104780 ( 102.32%) of your  102400 quota.
+Use the c6quota command to check quotas on this filesystem and tidy up.
+

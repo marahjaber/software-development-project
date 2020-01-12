@@ -1,0 +1,212 @@
+From ali@durham.ac.uk Fri Dec  6 06:21:23 2019 +0000
+MIME-Version: 1.0
+Received: from VI1PR06MB3983.eurprd06.prod.outlook.com (2603:10a6:803:dc::27)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR08CA0254.EURPRD08.PROD.OUTLOOK.COM; Fri, 6 Dec 2019 06:21:22 +0000
+Received: from DB6PR0601CA0002.eurprd06.prod.outlook.com (2603:10a6:4:7b::12)
+ by VI1PR06MB3983.eurprd06.prod.outlook.com (2603:10a6:802:60::24) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2495.22; Fri, 6 Dec
+ 2019 06:21:21 +0000
+Received: from DB5EUR01FT039.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::205) by DB6PR0601CA0002.outlook.office365.com
+ (2603:10a6:4:7b::12) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.14 via Frontend
+ Transport; Fri, 6 Dec 2019 06:21:21 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT039.mail.protection.outlook.com (10.152.5.18) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Fri, 6 Dec 2019 06:21:20 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Fri, 6 Dec 2019 06:21:20 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB66LAxk003999;	Fri, 6 Dec
+ 2019 06:21:14 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB66L3uL027550;	Fri, 6 Dec 2019 06:21:03 GMT
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id xB66L3Q7027549;	Fri, 6 Dec 2019 06:21:03 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-system@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB66Ku8f027257	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 6 Dec 2019 06:20:56 GMT
+Received: from smtphost1.dur.ac.uk (smtphost1.dur.ac.uk [129.234.7.143])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB66Khxb003842	for
+ <cosma-system+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 6 Dec 2019 06:20:47 GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB66KX1w020965	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-system@durham.ac.uk>; Fri, 6 Dec 2019 06:20:37 GMT
+Received: from console51.cosma (localhost [127.0.0.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB66KXU5015034	for
+ <root@console51.cosma>; Fri, 6 Dec 2019 06:20:33 GMT
+Received: (from root@localhost)	by console51.cosma (8.14.4/8.14.4/Submit) id
+ xB66K11N014947;	Fri, 6 Dec 2019 06:20:01 GMT
+Date: Fri, 6 Dec 2019 06:20:01 +0000
+Message-ID: <201912060620.xB66K11N014947@console51.cosma>
+From: Cron Daemon <cosma-support@durham.ac.uk>
+To: <root@console51.cosma>
+Subject: cosma-system: Cron <root@console51> /usr/local/bin/check_system_LEDS.sh
+Content-Type: text/plain; charset="UTF-8"
+Auto-Submitted: auto-generated
+X-Cron-Env: <PATH=/sbin:/bin:/usr/sbin:/usr/bin>
+X-Cron-Env: <MAILTO=root@console51.cosma>
+X-Cron-Env: <SHELL=/bin/sh>
+X-Cron-Env: <HOME=/root>
+X-Cron-Env: <LOGNAME=root>
+X-Cron-Env: <USER=root>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-system@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xB66LAxk003999
+Return-Path: owner-cosma-system@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-system@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 06 Dec 2019 06:21:21.0650
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 7246596e-da4e-4ee1-f1d2-08d77a1482eb
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT039.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT039.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:VI1PR06MB3983;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 7246596e-da4e-4ee1-f1d2-08d77a1482eb
+X-MS-TrafficTypeDiagnostic: VI1PR06MB3983:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:1824;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 06 Dec 2019 06:21:20.8088
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 7246596e-da4e-4ee1-f1d2-08d77a1482eb
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR06MB3983
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.8871568
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2516.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?VXNKaDNKY3EyVjhWTmdGYTd2VEZWS2dCKzdRWmdMM1Y4K3IwcnlXcUZEZGF5?=
+ =?utf-8?B?Q3pIUUorVFlvZml4blQ3YlEvcTBWWFB6NS9FTDV2WUx3ei9SRWovNWFRZlZv?=
+ =?utf-8?B?QjQrd2RKYWthQmY1VVFiODZVcnlDN3JncGRIWSsyS3VTQWpmcm5pMmQ2S3VI?=
+ =?utf-8?B?bmpyUGdkc2VRR2pFcmtUNm02OTM4RlI0SXkydXV5UU1IRUhLWE81MmtVOGw3?=
+ =?utf-8?B?R01YRE9aSkVHUjBBSUNyTC8zMWF2RFkvNVFNR0RvSGZETC9LUHFvd1RuRWQz?=
+ =?utf-8?B?ck44WWgwS1ZSNHhjeWU5MGVSUWlUV0YzSWVVQXpKNjlReDY5SGdRVnlkeDdQ?=
+ =?utf-8?B?dHdwQ3ptdHR2UURnUjAxd1krUEdBOVR4cURFVXkzWlNaYk1VYngrMUhJN2hj?=
+ =?utf-8?B?K3EzV21oNFkwQnlvTUVPaDE4bE9WMUNyZFRCb2Z0cllubTNyZy9ITkZRU29u?=
+ =?utf-8?B?NHNDdVd0V1RYM0hteHpwNWZ6Tm01M01JVmRVUVp1ZXZENFFjeGRsZDdjbXN6?=
+ =?utf-8?B?ZTBxeGxJam5CVkJpbG8xeXV6SkwwTSs2RzFzRnExRE9sc2VWaDV4R3EzVTE3?=
+ =?utf-8?B?Z2EybVo4WkUvenJZdzhDZktDcjVxWEwyam56eTZLdDVJR01PL2dUWXNZVVAw?=
+ =?utf-8?B?Tmo5VmxnUS96TWdRYUhwcDlGYXgrSStVM0JuL21nVUlnMEpGWUpTR1l6SlJU?=
+ =?utf-8?B?MjJUTjl3Yzd0VE1mbjNiT012bnYzTzhCbjZCeFUvdFdMTkxzNmR3aDg5TndS?=
+ =?utf-8?B?WHlTUlhNVzdOUE5kT25LSnNzYldEWHRnZmYrUnNpRmZJd3poakNrSWFnQkR5?=
+ =?utf-8?B?ajBvak1zWEVaclIwSDd6Y05GUlV4MmxybytlWDBDeitOVWtidnlUa2hHdXNN?=
+ =?utf-8?B?VlIwc1gzd0JyY281Y3BSdVJWM2I5UVc4dW9hYndldUFoc2pSTVo2L1ZOL3Iz?=
+ =?utf-8?B?OWhHeG0wcHlXVUZ0T1paUUJiZmRVM0xUZnEya1F4L3VJalQ5Z1ZVWmFSOG9W?=
+ =?utf-8?B?SHVJVnR6RHhxcWFKLy9LZzNqbW5FWDFYaE9IcVRUSHV1R2pxM3JhZHhlUDJv?=
+ =?utf-8?B?akZKblVRMDV0MkRPWHRSc09POW1mbWRaeDY4aytydGx0MlpyQkNlckJvQ0lE?=
+ =?utf-8?B?RUhnSlQ4TTJ6Wlg3SHRuaDM5RXBHbi9FVkJRVVRST3J4N0hGaWtPNUZPaVNk?=
+ =?utf-8?B?ZW9QUlU5MzljRWNGRTcwZlhieWtRNzJENUYwNmRlYnhFd1N3ZVd6QUV6YlZW?=
+ =?utf-8?B?cW94SlZOSENWTVE4clBaM01HcW9JNGttRjRZTDZ2cnZQaEZRdGtrK1U3Tk1H?=
+ =?utf-8?B?eHQxNmpsbTIrdHNhMWNzUlRobzlqZGcwUXY2TlZHaVdCVnFDbUJQcThFQk9M?=
+ =?utf-8?B?NzNPY1JQaTZTSHIwKzFOb3d2U1dnVjBaQ2NkL21wamJxUXlzYjk3UEIrK0dH?=
+ =?utf-8?B?dEZaeFBidnFySkIyTkgwS3VjYkhMNWkxZEFjeHgrWTUyaDRqRnFnVnJVR3dX?=
+ =?utf-8?B?d0c2RXVkZnlMY09KcHNpejZ5OWtVUGZKWjBxVW5ENG0zMUlYVUhRazJMTm1q?=
+ =?utf-8?B?eVhOcmdSTGYxRUYrTUNQOGFQdkY4bDY2MHQ0UHZGK2wrNkRDRG9sY3BtR3dm?=
+ =?utf-8?B?b2lOZmwzY3RWczQ2NSt2TW9QcWU3VTJWMlMzYzlVWHBMSEt6MmhSTkFJMGZG?=
+ =?utf-8?B?THk1YXVuci9CcTV6NStlYzk4TCtwZU8rdXRRNVd4WWoyazZkTDdFMEZ3PT0=?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 105
+
+########################### Rvitals ############################
+    Processing Initiated:Fri Dec  6 06:20:01 GMT 2019
+    Host:console51
+################################################################
+
+Checking Cosma 5
+m5213: Error: timeout
+m5215: Error: timeout
+m5153: Error: timeout
+m5158: Error: timeout
+m5157: Error: timeout
+m5305: Error: timeout
+m5296: Error: timeout
+====================================
+m5367
+====================================
+LED 0068 (DIMM 9) active to indicate Sensor 0xb8 (DIMM 9) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+m5178
+====================================
+LED 006c (DIMM 13) active to indicate Sensor 0xbc (DIMM 13) error.
+LED 0065 (DIMM 6) active to indicate Sensor 0xb5 (DIMM 6) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+====================================
+====================================
+m5118
+====================================
+LED 006d (DIMM 14) active to indicate Sensor 0xbd (DIMM 14) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+m5351,m5112
+====================================
+LED 0308 ( SysBrd Fault) active to indicate Sensor 0xaf (SysBrd Vol Fault) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+m5135
+====================================
+LED 0308 ( SysBrd Fault) active to indicate Sensor 0xaf (SysBrd Vol Fault) error.
+LED 0003 (Check Log) active to indicate Sensor 0x0b (CPU 2 PECI) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+m5378,m5199
+====================================
+LED 006c (DIMM 13) active to indicate Sensor 0xbc (DIMM 13) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+====================================
+m5376
+====================================
+LED 0309 (Battery) active to indicate Sensor 0x1c (CMOS Battery) error.
+LED 0x0000 (Fault) active to indicate system error condition.
+
+Checking shmem5
+cosma-b: Error: timeout
+cosma-c: Error: timeout
+====================================
+cosma-a
+====================================
+No active error LEDs detected
+
+######################### Rvitals End ##########################
+

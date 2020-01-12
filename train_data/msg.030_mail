@@ -1,0 +1,56 @@
+From cosma-support@durham.ac.uk  Mon Dec 16 09:36:57 2019
+Return-Path: <cosma-support@durham.ac.uk>
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB434oUr018319	for
+ <cosma-support@durham.ac.uk>; Wed, 4 Dec 2019 03:04:50 GMT
+Received: from localhost.localdomain (atempo1.pri.cosma7.alces.network
+ [172.17.175.101])	by controller.pri.cosma7.alces.network (Postfix) with ESMTP
+ id 08B4A2235A2	for <cosma-support@durham.ac.uk>; Wed,  4 Dec 2019 03:04:50
+ +0000 (GMT)
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset="UTF-8"
+X-Mailer: MIME::Lite 3.022 (F2.76; T1.24; A2.04; B3.07_01; Q3.07)
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: Atempo message - homeBackupDirect on dellnfs1 - OK
+Date: Wed, 4 Dec 2019 03:04:50 +0000
+Message-ID: <20191204030450.08B4A2235A2@controller.pri.cosma7.alces.network>
+
+Task                                     : homeBackupDirect on dellnfs1
+ADA Instance Name                        : ADA
+Execution Platform                       : dellnfs1.pri.cosma7.alces.network
+Job Id/Sub Job Id                        : 4083/6568
+Ada Archive Destination                  : home
+Root Path                                : /export/vol1
+Rearchiving same files                   : No (Using Digest No, using Snaps=
+hot No, using FastScan No)
+Archive Empty Directories                : Yes
+Parallel Jobs                            : 1
+Jobs Creation if Volume greater than     : 2.00 TB
+Jobs Creation if number of files greater than : 2500000
+
+Information                              :=20
+- Connected to host dellnfs1.pri.cosma7.alces.network with class ADA::ADA_F=
+S_NONE
+- Use standard scan for root path /export/vol1 (Archive mode INCREMENTAL, A=
+rchive Symbolic Links, Snapshot disabled, FastScan disabled)
+- Archiving job number 4084 created
+
+Information                              :=20
+ SCANNED FILES
+ Number         : 12678974 (586 files/s)
+ Volume         : 1.68 TB (81.36 MB/s, 286.04 GB/h)
+ Scanning time  : 0d 6h 00m 20s
+ ARCHIVED FILES
+ Number         : 12590 expected, 12530 archived (0 files/s)
+ Volume         : 3.21 GB expected, archived 3.11 GB (149.05 kB/s, 523.99 M=
+B/h)
+ Archiving time : 0d 6h 04m 46s
+ NUMBER OF JOBS
+ Created        : 1
+ On warning     : 1
+
+--xB4723Z3017496.1575445032/cosma-x.cosma.dur.ac.uk--
+

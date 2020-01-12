@@ -1,0 +1,155 @@
+From ali@durham.ac.uk Sat Oct 19 04:06:12 2019 +0100
+MIME-Version: 1.0
+Received: from DB6PR06MB3031.eurprd06.prod.outlook.com (2603:10a6:803:78::24)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR09CA0101.EURPRD09.PROD.OUTLOOK.COM; Sat, 19 Oct 2019 03:06:12 +0000
+Received: from DB6PR0601CA0003.eurprd06.prod.outlook.com (2603:10a6:4:7b::13)
+ by DB6PR06MB3031.eurprd06.prod.outlook.com (2603:10a6:6:5::10) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2347.16; Sat, 19 Oct 2019 03:06:11 +0000
+Received: from DB5EUR01FT042.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::209) by DB6PR0601CA0003.outlook.office365.com
+ (2603:10a6:4:7b::13) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2367.20 via Frontend
+ Transport; Sat, 19 Oct 2019 03:06:11 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ DB5EUR01FT042.mail.protection.outlook.com (10.152.5.100) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Sat, 19 Oct 2019 03:06:11 +0000
+Received: from hermes2.dur.ac.uk (129.234.7.139) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Sat, 19 Oct 2019 04:06:09 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J360RV025052;	Sat, 19 Oct
+ 2019 04:06:04 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9J35r0O025718;	Sat, 19 Oct 2019 04:05:53 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9J35rAb025717;	Sat, 19 Oct 2019 04:05:53 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J35jZ5025693	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 04:05:45
+ +0100
+Received: from smtphost2.dur.ac.uk (smtphost2.dur.ac.uk [129.234.7.144])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J35WbQ024849	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sat, 19 Oct 2019 04:05:36
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9J35P5T010717	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 04:05:25 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9J35Kju024577	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 04:05:20 +0100
+Received: from bmc.mgt.cosma7.alces.network
+ (mad01.bmc.mgt.cosma7.alces.network [172.16.170.31])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id B2006222BB1	for
+ <cosma-support@durham.ac.uk>; Sat, 19 Oct 2019 04:05:20 +0100 (BST)
+Date: Sat, 19 Oct 2019 04:06:09 +0100
+From: <mad01@cosma-x.cosma.dur.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: mad01.pri.cosma7.alces.network: A Patrol Read operation started for RAID Controller in Slot 1.
+Content-Type: text/plain
+Message-ID: <20191019030520.B2006222BB1@controller.pri.cosma7.alces.network>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9J360RV025052
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.139 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.139;
+ helo=hermes2.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 19 Oct 2019 03:06:11.5685
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 5cff0b46-d010-473f-9299-08d754414bb0
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT042.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT042.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(199004)(189003)(51416003)(2876002)(8676002)(2351001)(48376002)(186003)(156004)(42882007)(336012)(305945005)(486006)(126002)(36486004)(8266002)(7846003)(6392003)(450100002)(33656002)(246002)(476003)(26005)(1096003)(8936002)(1076003)(50466002)(356004)(6666004)(106002)(966005)(4006050)(6266002)(4744005)(70486001)(47776003)(97876018)(10126004)(5660300002)(16586007)(75640400001)(9686003)(6306002)(6862004);DIR:INB;SFP:;SCL:1;SRVR:DB6PR06MB3031;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 5cff0b46-d010-473f-9299-08d754414bb0
+X-MS-TrafficTypeDiagnostic: DB6PR06MB3031:
+X-MS-Exchange-PUrlCount: 2
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:2331;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 19 Oct 2019 03:06:11.3423
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 5cff0b46-d010-473f-9299-08d754414bb0
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB6PR06MB3031
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3092658
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?pTYDTgE2UAGKp80gjSKFB9IfIjtx+hn18rhqAS3CglQCn/zp4eM5jhA9MP?=
+ =?iso-8859-1?Q?VkkGcf5auReEzRwLw5NFWSxxRehIltRlnpuKUdUceoUkzAYQ1924UVawHK?=
+ =?iso-8859-1?Q?2Qsthfsgp2lHjTmazb1uO7J/mGXlZzYvS4hi0w9O171RTa1X/8EmW+sfhv?=
+ =?iso-8859-1?Q?hBhxQ+TlX8o0wp7eR/xcvpoLsvuPzU+HgY9tDP6L3Oh/JevG33mLCDAOAU?=
+ =?iso-8859-1?Q?IwobE9UAwCsUz5f9d27R7MDa7gZeV3eJVL4GTUMFCED5dRMmI7NZ2K2X98?=
+ =?iso-8859-1?Q?yMnkBmeN7xgqOsg4BppeaidVuDhwULLehxReJrksoXWtlmy9CIzO2zoKI1?=
+ =?iso-8859-1?Q?XHCfOLOOSH5rW3D+zB4LRaytRc9dJxaWFduNaBhyQ7kOX6rDty0ismewA2?=
+ =?iso-8859-1?Q?/vXpw11yWRSKw1ayGoYqAyb0orcpOZnxy2bxEq+HEw4XqmFvSF4nwdJt4G?=
+ =?iso-8859-1?Q?SjXAq8XgjFX5RWD+pkR/P0kS+2jjET1q41HIeE6DeHLG6ew6uM1sbnTyYj?=
+ =?iso-8859-1?Q?DJgVsPCLXyEr4/sYPWpecZllF2XRluN48wJI/mqw4EFMiu9hypkSz+P+OQ?=
+ =?iso-8859-1?Q?YcgPlZbktcx4Xfi3t/QHNwOLQZAM18zN3N6/lofVqksDm1Bhh55yi5Fqab?=
+ =?iso-8859-1?Q?WvA/LPQgBdCLYObzsxz8VPkwgMFbauJMX4L9EGxxTFUPqLO0+bJAdTnxoL?=
+ =?iso-8859-1?Q?m/N6vLxEmklKO3yCY+wxy9mTxl/I8arGzwdYHGJUb8qbDrGwLzCZ7fSEbp?=
+ =?iso-8859-1?Q?AsK59SAXKJYkKSxZnXKC55K9OoP0LaEbNRHKJVcq8bWCi/1Rr1XDJ2eh+4?=
+ =?iso-8859-1?Q?L/geKOJYCfjPSCco76kAeQsso5hvFpc7saBl9ogZGPzdcbkHrw0bm9iqXU?=
+ =?iso-8859-1?Q?JxS9ORLigRgeSE3MOits9RYr9igo10jqfGyclpXhJLP/691bwZTTDGJUlf?=
+ =?iso-8859-1?Q?dOIi4wdcOTN8LZnpCvRyCWDtHLUGI0juzCkS4XjecsXFD6JMUBlM27X63k?=
+ =?iso-8859-1?Q?VnPMxvRGpCiQIowYRvIoRCo/k58nLChzxeFniOZefjyGCwja8bgLfPX3VG?=
+ =?iso-8859-1?Q?/aDEaCPb0ftbmzxBtTkXlG5xC9y4HvyvB43UrQ7kcB0q?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 426
+
+System Host Name: mad01.pri.cosma7.alces.network
+Event Message: A Patrol Read operation started for RAID Controller in Slot 1.
+Date/Time: Sat, 19 Oct 2019 03:00:04 -0500
+Severity: Informational
+
+Detailed Description: A patrol read operation was initiated by the controller or the user.
+Recommended Action: No response action is required.
+Message ID: CTL37
+
+System Model: PowerEdge R940
+Service Tag: C367JN2
+Power State: ON
+System Location: Slot 1 (3 U)
+
+To launch the iDRAC Web Interface, click here: https://mad01.bmc.mgt.cosma7.alces.network
+To launch the iDRAC Virtual Console, click here: https://mad01.bmc.mgt.cosma7.alces.network/console
+
+
+

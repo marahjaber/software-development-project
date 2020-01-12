@@ -1,0 +1,282 @@
+From ali@durham.ac.uk Wed Oct 16 10:46:29 2019 +0100
+MIME-Version: 1.0
+Received: from VI1PR06MB5823.eurprd06.prod.outlook.com (2603:10a6:800:1e::22)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR0601CA0012.EURPRD06.PROD.OUTLOOK.COM; Wed, 16 Oct 2019 09:46:28 +0000
+Received: from VI1PR06CA0089.eurprd06.prod.outlook.com (2603:10a6:803:8c::18)
+ by VI1PR06MB5823.eurprd06.prod.outlook.com (2603:10a6:803:9a::31) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.16; Wed, 16 Oct
+ 2019 09:46:28 +0000
+Received: from VE1EUR01FT064.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::205) by VI1PR06CA0089.outlook.office365.com
+ (2603:10a6:803:8c::18) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.16 via Frontend
+ Transport; Wed, 16 Oct 2019 09:46:27 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ VE1EUR01FT064.mail.protection.outlook.com (10.152.3.34) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2347.16 via Frontend Transport; Wed, 16 Oct 2019 09:46:27 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 16 Oct 2019 10:46:23 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9G9kAsd027527;	Wed, 16 Oct
+ 2019 10:46:14 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9G9k207031682;	Wed, 16 Oct 2019 10:46:02 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9G9k2bB031681;	Wed, 16 Oct 2019 10:46:02 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9G9jr1O031598	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 16 Oct 2019 10:45:53
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9G9jaAC028809	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Wed, 16 Oct 2019 10:45:40
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9G9jT1d019205	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Wed, 16 Oct 2019 10:45:29 +0100
+Received: from tsmlib (tsmlib1 [172.16.250.61])	by cosma-x.cosma.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9G9jNsE015899	for
+ <cosma-support@durham.ac.uk>; Wed, 16 Oct 2019 10:45:24 +0100
+Message-ID: <201910160945.x9G9jNsE015899@cosma-x.cosma.dur.ac.uk>
+Subject: 3576-MTL - SN 1318345 - High Priority Problem
+From: tsmlib <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Date: Wed, 16 Oct 2019 10:38:47 +0000
+Reply-To: <library@adic.com>
+Content-Type: text/plain
+X-Mailer: email v2.3.2 (Linux 2.6.11-1 ppc [http://email.cleancode.org])
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9G9kAsd027527
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 16 Oct 2019 09:46:27.8968
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ e0df45b0-e1ef-4e50-35ae-08d7521db74c
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ VE1EUR01FT064.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ VE1EUR01FT064.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(189003)(199004)(40224003)(5660300002)(50466002)(8676002)(75640400001)(43066004)(156004)(26005)(51416003)(6862004)(450100002)(106002)(48376002)(1076003)(4006050)(336012)(36486004)(47776003)(476003)(126002)(8276002)(486006)(16586007)(6392003)(7846003)(6200100001)(2351001)(14444005)(6666004)(246002)(50226002)(305945005)(9686003)(57986006)(1096003)(356004)(8936002)(186003)(43062003);DIR:INB;SFP:;SCL:1;SRVR:VI1PR06MB5823;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: e0df45b0-e1ef-4e50-35ae-08d7521db74c
+X-MS-TrafficTypeDiagnostic: VI1PR06MB5823:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:826;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 Oct 2019 09:46:27.5886
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: e0df45b0-e1ef-4e50-35ae-08d7521db74c
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR06MB5823
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3142832
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2347.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?hkI5zo82+EG6L2G8jVbTI8U3eA+T/QxEqBO8UwTIDNV8a9gS/IIRgpkp5x?=
+ =?iso-8859-1?Q?WSr1nBW66kFoKljLb3tBwV2yXtezjW7H48nZZG65y/AbymF7vQfbvyU+G4?=
+ =?iso-8859-1?Q?5/Cp6PIm4yzWrnBpyY8WBmOVuIcCLCByAG4jLpZHQcFw+mzXjkhOfGxfkk?=
+ =?iso-8859-1?Q?H9LMKb2bzuVFHxYP+VDN4Rz615gjX0oAaO+i48NRLKFoGL3GNi4lQLTJYs?=
+ =?iso-8859-1?Q?bIk+oAQwSWKhUSxF0TuUZDshpOrjm0MkVtt+vgSJkkMk45V3nnoAn0sOaA?=
+ =?iso-8859-1?Q?4CJAMijT2VHNi1ttyd1wXLtRk/S1R5407lBjPoDxEYNh5dFRqrF8DOX4yk?=
+ =?iso-8859-1?Q?VGcGirC4mVmg2eSH3PTyGVekReH9TChe89Jw4tc49YVTVyEqCTPeQ0+O+R?=
+ =?iso-8859-1?Q?ucvBwPJgmh70oE2M2q6YUOSc5FaX5VVjm78/c+ii5/7cXv3jSwKVmxeiWi?=
+ =?iso-8859-1?Q?zR30CxZtxYYrwCqASvSZGIWlUtihmDHWmFk2+KXS6aQWh8436Y+IKpgw9I?=
+ =?iso-8859-1?Q?icPAg7e/90lctIRsQAzNYWx6xAmcwGjMrIgBYbpkGg0kngXL4P8gAbvna7?=
+ =?iso-8859-1?Q?JUv55xnL8zDt9x2zyZeOzQKpYFCXOzzorlsLyPqxCxX/mPvRpMddYL7o/D?=
+ =?iso-8859-1?Q?4cnRumm2f1ZEq0JUsqBVCQgSUBAs8G0ooZ5MVMmGwYm/Rin+r0xBrXLyKh?=
+ =?iso-8859-1?Q?sWYlpDSITKnsZm2yOzIcKFhSJu0ss2hqXQvgzAwnlOPwHCvxb3EjbzN/7E?=
+ =?iso-8859-1?Q?VCpwNKeGOav2xnM4xs+PcMZRs8i7kvfHa+eHILrto0Ps7SgEKvfBZC/uWS?=
+ =?iso-8859-1?Q?WW2nSlwhjxKcsHk2TY4ysofPvpoN3TLxoYsA86aZC4XFWw19LlttAZS/3i?=
+ =?iso-8859-1?Q?J3OyIJHbbH6eEyBIUjmFIHFvG4+sbX5KVeikiIL41Ct6pL3XX+i1QWRnnz?=
+ =?iso-8859-1?Q?0MZYyi2D+XfC5cK/lszzhyD9OBIoqLDEUe/2UxrBYflMzwSsCdWrrT+uLb?=
+ =?iso-8859-1?Q?cTsdAlphEGmRXD+syFKhzVzGQVW0vKB+W8T5MDNA1jazUAEdPKT3aoWZ5e?=
+ =?iso-8859-1?Q?X4bdiWJZ8MinXzj6zQWIq/X3neyy8CwVGkePlXS1EaWK7/3zAczLp79h20?=
+ =?iso-8859-1?Q?Vtk5Bp/g=3D=3D?=
+Status: RO
+X-Status: 
+X-Keywords:                 
+X-UID: 77
+
+========================================
+SR Serial Number: 1318345
+SR Problem Summary: T038 - Drive Tape Alert 9 - Write Protected
+SR Error Code: 38
+SR Severity: High
+    Drive Error Code: 0x0
+    Fault description:Tape Alert 9 Detected
+    Drive Location: [-2, 4]
+    Media Barcode: XG5565L5
+    Logical Library: library_a
+    Drive Serial Number: 10WT019151
+    Drive Firmware Version: G360   
+    Drive Description: IBM LTO-5 DUAL-FC
+========================================
+
+
+
+3576-MTL - SN 1318345 - High Priority Problem
+
+
+REASON FOR AUTOMATED E-MAIL
+    RAS Status Changed
+    LibraryTime: 10/16/2019 10:38:30
+
+
+TICKET SUMMARY
+    Ticket# 88
+    Name: T038 - Drive Tape Alert 9 - Write Protected
+    Description: The tape drive was requested to write to a write-protected tape.
+    Priority: High
+    State: UnOpened
+    Created: Date: Wed Oct 16 10:38:30
+    Type: Interactive Diagnostics Required
+
+
+REPAIR AND TROUBLESHOOTING INSTRUCTIONS
+    DR014generic
+
+
+TICKET DETAILS
+    Drive Error Code: 0x0
+    Fault description:Tape Alert 9 Detected
+    Drive Location: [-2, 4]
+    Media Barcode: XG5565L5
+    Logical Library: library_a
+    Drive Serial Number: 10WT019151
+    Drive Firmware Version: G360   
+    Drive Description: IBM LTO-5 DUAL-FC
+
+
+NETWORK DATA
+    Hostname: tsmlib
+	DHCP: disabled
+	IP Address: 172.16.250.61
+	Netmask: 255.255.0.0
+	Gateway: 172.16.0.1
+	Ethernet MAC: 00:30:8C:1A:46:6B
+	Speed: 1000Mb/s
+	Link: yes
+	
+
+LIBRARY VERSION
+    670G.GS003
+
+
+DRIVES 
+    Chassis:0, Sled Bay:2
+        Vendor: IBM
+        Model: ULT3580-TD5    
+        P-SN: 10WT018380
+        L-SN: 10WT018380
+        FW Rev: G360   
+        Status: Ready
+
+    Chassis:0, Sled Bay:1
+        Vendor: IBM
+        Model: ULT3580-TD5    
+        P-SN: 9368033126
+        L-SN: 9368033126
+        FW Rev: G360   
+        Status: Ready
+
+    Chassis:-1, Sled Bay:4
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 9368033126
+        FW Rev: 
+        Status: NotReady
+
+    Chassis:-1, Sled Bay:3
+        Vendor: IBM
+        Model: ULT3580-TD5    
+        P-SN: 9068803836
+        L-SN: 9068803836
+        FW Rev: G360   
+        Status: Ready
+
+    Chassis:-1, Sled Bay:2
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 9068803836
+        FW Rev: 
+        Status: NotReady
+
+    Chassis:-1, Sled Bay:1
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 9068803836
+        FW Rev: 
+        Status: NotReady
+
+    Chassis:-2, Sled Bay:4
+        Vendor: IBM
+        Model: ULT3580-TD5    
+        P-SN: 10WT019151
+        L-SN: 10WT019151
+        FW Rev: G360   
+        Status: Ready
+
+    Chassis:-2, Sled Bay:3
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 10WT019151
+        FW Rev: 
+        Status: NotReady
+
+    Chassis:-2, Sled Bay:2
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 10WT019151
+        FW Rev: 
+        Status: NotReady
+
+    Chassis:-2, Sled Bay:1
+        Vendor: UNKNOWN
+        Model: 
+        P-SN: 
+        L-SN: 10WT019151
+        FW Rev: 
+        Status: NotReady
+
+

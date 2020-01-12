@@ -1,0 +1,244 @@
+From ali@durham.ac.uk Fri Oct 18 03:16:06 2019 +0100
+MIME-Version: 1.0
+Received: from AM0PR06MB6210.eurprd06.prod.outlook.com (2603:10a6:802:16::47)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR07CA0160.EURPRD07.PROD.OUTLOOK.COM; Fri, 18 Oct 2019 02:16:05 +0000
+Received: from AM0PR06CA0108.eurprd06.prod.outlook.com (2603:10a6:208:fa::49)
+ by AM0PR06MB6210.eurprd06.prod.outlook.com (2603:10a6:208:16e::19) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2347.21; Fri, 18 Oct
+ 2019 02:16:04 +0000
+Received: from DB5EUR01FT035.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::206) by AM0PR06CA0108.outlook.office365.com
+ (2603:10a6:208:fa::49) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2347.16 via Frontend
+ Transport; Fri, 18 Oct 2019 02:16:04 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=none action=none header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ DB5EUR01FT035.mail.protection.outlook.com (10.152.4.243) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Fri, 18 Oct 2019 02:16:03 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Fri, 18 Oct 2019 03:16:01 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I2Fp24016279;	Fri, 18 Oct
+ 2019 03:15:55 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9I2FiZX001691;	Fri, 18 Oct 2019 03:15:44 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9I2Fi33001689;	Fri, 18 Oct 2019 03:15:44 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I2FYJU000902	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 18 Oct 2019 03:15:34
+ +0100
+Received: from smtphost3.dur.ac.uk (smtphost3.dur.ac.uk [129.234.7.145])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I2FN0A016109	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Fri, 18 Oct 2019 03:15:27
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9I2FGZD021823	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 03:15:16 +0100
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9I2FAYP000643	for
+ <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 03:15:10 +0100
+Received: from atempo1.pri.cosma7.alces.network
+ (atempo1.pri.cosma7.alces.network [172.17.175.101])	by
+ controller.pri.cosma7.alces.network (Postfix) with ESMTP id D9DA5222A1F	for
+ <cosma-support@durham.ac.uk>; Fri, 18 Oct 2019 03:15:10 +0100 (BST)
+Received: by atempo1.pri.cosma7.alces.network (Postfix)	id C4575E0134; Fri, 18
+ Oct 2019 03:15:10 +0100 (BST)
+Delivered-To: root@atempo1.pri.cosma7.alces.network
+Received: by atempo1.pri.cosma7.alces.network (Postfix, from userid 0)	id
+ 8BBAEE0131; Fri, 18 Oct 2019 03:15:10 +0100 (BST)
+To: <root@atempo1.pri.cosma7.alces.network>
+From: <logwatch@cosma-x.cosma.dur.ac.uk>
+Subject: Logwatch for atempo1.pri.cosma7.alces.network (Linux)
+Auto-Submitted: auto-generated
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+Message-ID: <20191018021510.8BBAEE0131@atempo1.pri.cosma7.alces.network>
+Date: Fri, 18 Oct 2019 03:15:03 +0100
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9I2Fp24016279
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 18 Oct 2019 02:16:03.5911
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 4178225f-1727-48ea-e6e4-08d753712061
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT035.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT035.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(189003)(199004)(63364002)(7192003)(75640400001)(1096003)(33656002)(4006050)(97876018)(8936002)(1076003)(246002)(14444005)(50466002)(8676002)(5660300002)(2876002)(486006)(70486001)(23756003)(126002)(8266002)(47776003)(476003)(2351001)(230700001)(9686003)(156004)(26005)(336012)(6266002)(356004)(106002)(450100002)(6666004)(42186006)(37006003)(7846003)(6392003)(36486004)(305945005)(6862004)(186003)(42882007);DIR:INB;SFP:;SCL:1;SRVR:AM0PR06MB6210;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;MX:1;A:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 4178225f-1727-48ea-e6e4-08d753712061
+X-MS-TrafficTypeDiagnostic: AM0PR06MB6210:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:538;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 18 Oct 2019 02:16:03.3549
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 4178225f-1727-48ea-e6e4-08d753712061
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM0PR06MB6210
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.4136216
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2347.014
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;ex:0;auth:0;dest:I;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?zvGVsPl1804fT9Ssmozde5jHH0Jh06ouyAnJwj9e8iX/rsYZpmmSUmY5Q5?=
+ =?iso-8859-1?Q?nAahWYk3CF61dfPfxpSGZ7g45dJQ+M5lWG3ZAOUmPtGWH7vgWoUWjVXBJH?=
+ =?iso-8859-1?Q?QuFPyUOfpv20v3GrgN++PgljOmXJz1V+HkhChHoT6QaHdBBAb8uT9wR4XD?=
+ =?iso-8859-1?Q?dyVhXr9hMCBzsO2WBH0U7VCRHqqewL4TI/kJuJDjiBWShp1aVymgrcEoVK?=
+ =?iso-8859-1?Q?JXT8wQIIyKZNLbsIsWiYs4ya9H9YmYc0sVx7NTYwGJ3DmsPv+rfU6J6L1z?=
+ =?iso-8859-1?Q?n80eTinJGMjhW1YI6mOaQzC2hVhsJBf+n+gvYOqb2qbYKIlyImvhyXPWVJ?=
+ =?iso-8859-1?Q?YyNPrRxjPsDMemVQmdrrNtbmHkMdJLUfJa2Ilt9z+6caw0Elq1decr15k/?=
+ =?iso-8859-1?Q?iLMvQmD0Iy3JjmdXL0jRC2nPCMX8f1FpWIvI0GOqYG/TZG1JNGTi77wp2h?=
+ =?iso-8859-1?Q?ObkjXDeaz9coJ7n1ltzQCs+lu1QeAPN9UJNt7gjX0MgCPbcVZH1fwD+Uyd?=
+ =?iso-8859-1?Q?OrT2J0Mh8+ifHaRMtKU62vu8kgg5DiDDcPW1f6yilJRQAppCejJV1FR65/?=
+ =?iso-8859-1?Q?1Z395VApshb73DMZWEL0n5yeNmA+mIB5pQMD3aqO0/xAP27ATgsHiV/Rz5?=
+ =?iso-8859-1?Q?8te2Z0nzfYUqz6l61VNJsgy9EQ4ZlwAy0vAcj9Z5qYsSsTX15t6rgQg/kN?=
+ =?iso-8859-1?Q?QZl2H81czd3P9A2r8Tqx3FJ4miJ+Uxmu8FX2/orEUMnQgdxunmwaNDg3Ze?=
+ =?iso-8859-1?Q?jVjmEjOxmAGth71Urzgimx+PVTLyzWLdRI8n9vmqz3TRkKV0BruaXHprSl?=
+ =?iso-8859-1?Q?l7jY6RuL+kN2ZlCZ9cKQ3wjkk1Pta/thvc8szV50k24T4pU54AYmEbcngg?=
+ =?iso-8859-1?Q?OSWmc4edF74y/IOspkfQ5erg8sIGJIbCazJn++QdBf9YglZDgmLA4O7N+n?=
+ =?iso-8859-1?Q?dvlHg/iqSZZdz40TlCgbeKUgIu3ymvhWXe10VA2S79PkFangPaCfs8KgPn?=
+ =?iso-8859-1?Q?v4mEKDDyqxMS4lFkpcayDFFkZ3Y074v4IZgVSX?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 228
+
+ 
+ ################### Logwatch 7.4.0 (03/01/11) #################### 
+        Processing Initiated: Fri Oct 18 03:15:03 2019
+        Date Range Processed: yesterday
+                              ( 2019-Oct-17 )
+                              Period is day.
+        Detail Level of Output: 0
+        Type of Output/Format: mail / text
+        Logfiles for Host: atempo1.pri.cosma7.alces.network
+ ################################################################## 
+ 
+ --------------------- Automount Begin ------------------------ 
+
+ **Unmatched Entries**
+ add_host_addrs: hostname lookup failed: Name or service not known: 144 Time(s)
+ 
+ ---------------------- Automount End ------------------------- 
+
+ 
+ --------------------- Kernel Begin ------------------------ 
+
+ 
+ WARNING:  Kernel Errors Present
+    st 17:0:1:0: [st4] tag#0 Sense Key : Recovered Error [current]  ...:  1 Time(s)
+ 
+ ---------------------- Kernel End ------------------------- 
+
+ 
+ --------------------- MDSTAT Begin ------------------------ 
+
+ Personalities : [raid1] 
+ md0 : active raid1 nvme1n1[1] nvme0n1[0]
+       976631488 blocks super 1.2 [2/2] [UU]
+       bitmap: 0/8 pages [0KB], 65536KB chunk
+ 
+ unused devices: <none>
+ 
+ ---------------------- MDSTAT End ------------------------- 
+
+ 
+ --------------------- Postfix Begin ------------------------ 
+
+    3.931K  Bytes accepted                               4,025
+    4.092K  Bytes sent via SMTP                          4,190
+    3.931K  Bytes forwarded                              4,025
+ ========   ==================================================
+ 
+        1   Accepted                                   100.00%
+ --------   --------------------------------------------------
+        1   Total                                      100.00%
+ ========   ==================================================
+ 
+        2   Removed from queue      
+        1   Sent via SMTP           
+        1   Forwarded               
+ 
+ 
+ ---------------------- Postfix End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    root:
+       172.17.170.23 (login7c.pri.cosma7.alces.network): 2 times
+ 
+ 
+ Received disconnect:
+    11: disconnected by user : 2 Time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem                                     Size  Used Avail Use% Mounted on
+ /dev/mapper/system-root                         16G  8.8G  6.1G  60% /
+ devtmpfs                                        47G     0   47G   0% /dev
+ /dev/md0                                       931G  489G  443G  53% /opt/atempoDB
+ /dev/sda1                                      3.9G  233M  3.4G   7% /boot
+ /dev/mapper/system-var                          16G  1.3G   14G   9% /var
+ /dev/mapper/system-tmp                          99G   67M   94G   1% /tmp
+ /dev/mapper/system-atempo                      483G   94G  369G  21% /opt/atempo
+ 172.17.170.15:/export/site                     197G  136G   52G  73% /opt/site
+ 172.17.170.16:/export/vol1                      37T  1.7T   35T   5% /cosma/home
+ 172.17.170.15:/export/gridware                 197G   93G   95G  50% /opt/gridware
+ 172.17.170.17:/export/vol2                      37T  340G   36T   1% /cosma/local
+ 172.17.170.15:/export/users                     34T  626G   32T   2% /users
+ 172.17.170.15:/export/apps                     197G   89M  187G   1% /opt/apps
+ 172.18.151.9@o2ib:172.18.151.10@o2ib:/scratch  2.5P  957T  1.6P  39% /cosma6
+ 172.18.175.201@o2ib:/cosma7                    3.1P  1.9P  1.1P  65% /cosma7
+ 172.18.175.201@o2ib:/madfs                     693T  265T  393T  41% /madfs
+ 172.18.175.201@o2ib:/snap7                     439T   13T  404T   3% /snap7
+ 
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+

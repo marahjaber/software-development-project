@@ -1,0 +1,181 @@
+From ali@durham.ac.uk Thu Dec  5 03:02:08 2019 +0000
+MIME-Version: 1.0
+Received: from DB8PR06MB6409.eurprd06.prod.outlook.com (2603:10a6:800:d5::17)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR08CA0139.EURPRD08.PROD.OUTLOOK.COM; Thu, 5 Dec 2019 03:02:08 +0000
+Received: from AM5PR0601CA0039.eurprd06.prod.outlook.com
+ (2603:10a6:203:68::25) by DB8PR06MB6409.eurprd06.prod.outlook.com
+ (2603:10a6:10:12f::17) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.13; Thu, 5 Dec
+ 2019 03:02:06 +0000
+Received: from DB5EUR01FT014.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e02::200) by AM5PR0601CA0039.outlook.office365.com
+ (2603:10a6:203:68::25) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.12 via Frontend
+ Transport; Thu, 5 Dec 2019 03:02:06 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.208)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.208 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.208; helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ DB5EUR01FT014.mail.protection.outlook.com (10.152.4.242) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Thu, 5 Dec 2019 03:02:05 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Thu, 5 Dec 2019 03:02:05 +0000
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB531pMt017434;	Thu, 5 Dec
+ 2019 03:01:55 GMT
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id xB531j29024181;	Thu, 5 Dec 2019 03:01:45 GMT
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id xB531jiO024180;	Thu, 5 Dec 2019 03:01:45 GMT
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes1.dur.ac.uk (hermes1.dur.ac.uk [129.234.7.138])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB531cE2024108	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 5 Dec 2019 03:01:38
+ GMT
+Received: from smtphost1.dur.ac.uk (smtphost1.dur.ac.uk [129.234.7.143])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB531R5T017299	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Thu, 5 Dec 2019 03:01:31
+ GMT
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB531HM9021525	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Thu, 5 Dec 2019 03:01:21 GMT
+Received: from controller.pri.cosma7.alces.network ([172.17.170.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB531HbX017505	for
+ <cosma-support@durham.ac.uk>; Thu, 5 Dec 2019 03:01:17 GMT
+Received: from localhost.localdomain (atempo1.pri.cosma7.alces.network
+ [172.17.175.101])	by controller.pri.cosma7.alces.network (Postfix) with ESMTP
+ id 4E391222CA9	for <cosma-support@durham.ac.uk>; Thu,  5 Dec 2019 03:01:17
+ +0000 (GMT)
+Content-Disposition: inline
+Content-Type: text/plain; charset="UTF-8"
+X-Mailer: MIME::Lite 3.022 (F2.76; T1.24; A2.04; B3.07_01; Q3.07)
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Subject: Atempo message - homeBackupDirect on dellnfs1 - OK
+Date: Thu, 5 Dec 2019 03:01:17 +0000
+Message-ID: <20191205030117.4E391222CA9@controller.pri.cosma7.alces.network>
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by franz1.dur.ac.uk id xB531ipP024169
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: xB531pMt017434
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB02.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB02.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 05 Dec 2019 03:02:06.0867
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 57d3f069-60e8-47a6-4717-08d7792f82c9
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ DB5EUR01FT014.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ DB5EUR01FT014.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:DB8PR06MB6409;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 57d3f069-60e8-47a6-4717-08d7792f82c9
+X-MS-TrafficTypeDiagnostic: DB8PR06MB6409:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:236;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 05 Dec 2019 03:02:05.8335
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 57d3f069-60e8-47a6-4717-08d7792f82c9
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DB8PR06MB6409
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:02.6508639
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2516.000
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?TkF1Q3lrTDE4QUloNWpuYkp0VFQ2NnNyRStyMDVhMDQ0WXp0bFV6T2J5YU1R?=
+ =?utf-8?B?WERha0IwMGRMNDVrZzJhenZIMElrdlBQa2JQc1cwcFZjZGgyd2lCV3grd2FW?=
+ =?utf-8?B?eGRLU1N6dU5DQ3pIeEVaYnRvT2ZsU1R5VjlkdURXV0NhZTlYakdnRTNVaG5o?=
+ =?utf-8?B?OXFaMkZTeVVNZWlUUUFTNitzckpzc0J2MGczZk1BOXczM3BnNmRIbDI0TVVK?=
+ =?utf-8?B?ME54endWRkRtdjRFZitQVFpWMWpkalM5VEFJNHF0SmlQYnRTdk1sRlNhOFpI?=
+ =?utf-8?B?Ui9YOS9DOUlSS2paTWJZU0Z4eW0xZVVIYVF2RElkZGlFaDBPMW8xVWxLYkQ0?=
+ =?utf-8?B?MVR3aWtkQjZrMzljbTRpRGFqdmpaY21MSWlpNm9sSlVhOHMrSE5HU2lpSU04?=
+ =?utf-8?B?WjhyUWt4dVJ0dDBZckVYZHZvYmFicjBRK0x6NGl4aFFJZFdOeHRGRDRldkFV?=
+ =?utf-8?B?N2NIWnBYUkVzOUJERHMrY3hmUm10VUVMZXptUHFhbWdHR1ovYzVUYnIxbkYx?=
+ =?utf-8?B?T2NGdExVVklNZ29rcFpDNERoNGN4UTMvbzFuV1BmZHhNREwxd0RHVm1Jbk0z?=
+ =?utf-8?B?cFJobGpGMGxHOWZEWWI2dzQwNUhqeEJSbmlCRGMvSllKeWJxS2dFUTkybzJp?=
+ =?utf-8?B?cFFJcmdCR1Ruc2xoajc0WEtSRGdNWCtDdSsyZzB2OTFUUS9ZVktPc29CL2Ns?=
+ =?utf-8?B?YWdtendYcWxkNEVhWDJHaEEwRHF2bWdzZmppK2hhV2NSVVMxUVpwc2ZPTjlR?=
+ =?utf-8?B?My9RQVZOeHNLMk4xcEFNdHZaZkVzRTRuaVRmck42UkRsNHQ4OXRHNy9RVW1Q?=
+ =?utf-8?B?Wk1GMVV4Vkt3eUcyUEtuNFd0V1UxY2twUlZCNmxKK01Md1VweFpYMnBKQ2J1?=
+ =?utf-8?B?NHNZbkRsNnZUbnR2N2llN29YRzNadDJQYzZBaWtqVSs4U1RPVnFVVDY1cFo1?=
+ =?utf-8?B?UzFnaWNzdVNqNVgyaEE5WXRFdE1RNWwzdnFsSllCbjhmTlROdGV0YWdtRTN0?=
+ =?utf-8?B?WmNUTW1iS1I5enRGMW5qVmx3NUVzUGRVdjk0Slp0dFhtTzlDbVlVQmFROE1W?=
+ =?utf-8?B?Vm1oMXQzUjUxanc1ZFJ1QkpaS2MvYlpDdEwrMEwvV2xPa3o4blJqYXVDYUNS?=
+ =?utf-8?B?Q1hPUXVnb3B4aHBiM3BpSVkyck45R1ZjUWxCTXZsbkdPb1VhSndoM2VIT0tx?=
+ =?utf-8?B?dmpNcDM4ME5mcWdQSGtmVXpyMW1MaEcreXZ4RVZieWJielloaEg1M21DQWgy?=
+ =?utf-8?B?TzJLY3pLbGd0dWpZRmcyMGNGUlNWd2EwdndENHFmd090ZmtIQWZNdGszWEJ6?=
+ =?utf-8?B?Q1YreFBNZkdJc3hLbG9hNmllbEFwK29YSC8xckFTbjUrL1hYelB1ejlkR0Rq?=
+ =?utf-8?B?Z2dBSVppMTI2dlFDQ2hNeWdWcmQvNWhCVzZmeEl3ZDlITGdJcFJZTjJhTXdI?=
+ =?utf-8?B?Qlgwdzk4WkNBNDBWdzFoSlhtSG5nYmJXRUxlRndDb1o3VFY3d3lSd0JOckVF?=
+ =?utf-8?B?R1FZU0R6V0d1N0IrK2xuOEhjWTJqZkM2QkE0RVpzSzFIL1lSR2xZSUQ2Z21y?=
+ =?utf-8?B?SmVWbk1vN09HSzJNVWh6Rzdackppb0M0cXBZZDdVdHJmczVzYjVVQ1BmL0Ju?=
+ =?utf-8?B?ZmV1cmJkdGxleHUyNFg3dDY5N2o3NlpBcnQ5a1R4d04zVVZxcEtHVldhb3Fq?=
+ =?utf-8?Q?iT52tZahcX1SJltzRzqm?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 64
+
+Task                                     : homeBackupDirect on dellnfs1
+ADA Instance Name                        : ADA
+Execution Platform                       : dellnfs1.pri.cosma7.alces.network
+Job Id/Sub Job Id                        : 4089/6576
+Ada Archive Destination                  : home
+Root Path                                : /export/vol1
+Rearchiving same files                   : No (Using Digest No, using Snapshot No, using FastScan No)
+Archive Empty Directories                : Yes
+Parallel Jobs                            : 1
+Jobs Creation if Volume greater than     : 2.00 TB
+Jobs Creation if number of files greater than : 2500000
+
+Information                              : 
+- Connected to host dellnfs1.pri.cosma7.alces.network with class ADA::ADA_FS_NONE
+- Use standard scan for root path /export/vol1 (Archive mode INCREMENTAL, Archive Symbolic Links, Snapshot disabled, FastScan disabled)
+- Archiving job number 4090 created
+
+Information                              : 
+ SCANNED FILES
+ Number         : 12700275 (597 files/s)
+ Volume         : 1.68 TB (82.73 MB/s, 290.86 GB/h)
+ Scanning time  : 0d 5h 54m 31s
+ ARCHIVED FILES
+ Number         : 26354 expected, 26317 archived (1 files/s)
+ Volume         : 2.41 GB expected, archived 2.41 GB (116.49 kB/s, 409.55 MB/h)
+ Archiving time : 0d 6h 01m 12s
+ NUMBER OF JOBS
+ Created        : 1
+ On warning     : 1
+
+

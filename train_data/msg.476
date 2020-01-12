@@ -1,0 +1,133 @@
+From ali@durham.ac.uk Sun Oct 20 01:51:56 2019 +0100
+MIME-Version: 1.0
+Received: from VI1PR06MB4736.eurprd06.prod.outlook.com (2603:10a6:803:12c::39)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR09CA0155.EURPRD09.PROD.OUTLOOK.COM; Sun, 20 Oct 2019 00:51:56 +0000
+Received: from DB6PR06CA0021.eurprd06.prod.outlook.com (2603:10a6:6:1::34) by
+ VI1PR06MB4736.eurprd06.prod.outlook.com (2603:10a6:803:91::22) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.2347.16; Sun, 20 Oct 2019 00:51:55 +0000
+Received: from VE1EUR01FT054.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e01::203) by DB6PR06CA0021.outlook.office365.com
+ (2603:10a6:6:1::34) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id 15.20.2367.21 via Frontend
+ Transport; Sun, 20 Oct 2019 00:51:55 +0000
+Authentication-Results: spf=pass (sender IP is 129.234.251.207)
+ smtp.mailfrom=durham.ac.uk; durhamuniversity.mail.onmicrosoft.com; dkim=none
+ (message not signed) header.d=none;durhamuniversity.mail.onmicrosoft.com;
+ dmarc=bestguesspass action=none header.from=durham.ac.uk;
+Received-SPF: Pass (protection.outlook.com: domain of durham.ac.uk designates
+ 129.234.251.207 as permitted sender) receiver=protection.outlook.com;
+ client-ip=129.234.251.207; helo=CISVIRHUB01.mds.ad.dur.ac.uk;
+Received: from CISVIRHUB01.mds.ad.dur.ac.uk (129.234.251.207) by
+ VE1EUR01FT054.mail.protection.outlook.com (10.152.2.169) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2367.14 via Frontend Transport; Sun, 20 Oct 2019 00:51:54 +0000
+Received: from hermes1.dur.ac.uk (129.234.7.138) by
+ CISVIRHUB01.mds.ad.dur.ac.uk (10.234.250.42) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Sun, 20 Oct 2019 01:51:51 +0100
+Received: from franz1.dur.ac.uk (franz1.dur.ac.uk [10.0.134.4])	by
+ hermes1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9K0pIrU013481;	Sun, 20 Oct
+ 2019 01:51:23 +0100
+Received: from franz1.dur.ac.uk (localhost [127.0.0.1])	by franz1.dur.ac.uk
+ (8.14.4/8.14.4) with ESMTP id x9K0p2rc013219;	Sun, 20 Oct 2019 01:51:02 +0100
+Received: (from majordom@localhost)	by franz1.dur.ac.uk (8.14.4/8.14.4/Submit)
+ id x9K0p2KA013218;	Sun, 20 Oct 2019 01:51:02 +0100
+X-Authentication-Warning: franz1.dur.ac.uk: majordom set sender to owner-cosma-support@durham.ac.uk using -f
+Received: from hermes2.dur.ac.uk (hermes2.dur.ac.uk [129.234.7.139])	by
+ franz1.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9K0oPlI012535	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sun, 20 Oct 2019 01:50:25
+ +0100
+Received: from smtphost4.dur.ac.uk (smtphost4.dur.ac.uk [129.234.7.146])	by
+ hermes2.dur.ac.uk (8.14.4/8.14.4) with ESMTP id x9K0o0m5011025	for
+ <cosma-support+durham.ac.uk@majordomo.dur.ac.uk>; Sun, 20 Oct 2019 01:50:04
+ +0100
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost4.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ x9K0nnMn000919	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <cosma-support@durham.ac.uk>; Sun, 20 Oct 2019 01:49:49 +0100
+Received: from [172.17.152.5] ([172.17.152.5])	by cosma-x.cosma.dur.ac.uk
+ (8.14.4/8.14.4) with SMTP id x9K0niWI009286	for cosma-support@durham.ac.uk;
+ Sun, 20 Oct 2019 01:49:44 +0100
+Message-ID: <201910200049.x9K0niWI009286@cosma-x.cosma.dur.ac.uk>
+From: <cosma-support@durham.ac.uk>
+To: <cosma-support@durham.ac.uk>
+Date: Sun, 20 Oct 2019 01:49:42 +0100
+Subject: Warning from cosma6  - ddn controller 5 & 6 Error LOG_RAID_UNCORRECTED_BAD_BLOCK
+X-DurhamAcUk-MailScanner: Found to be clean, Found to be clean, Found to be clean, Found to be clean, Found to be clean
+Sender: <owner-cosma-support@durham.ac.uk>
+Precedence: bulk
+X-DurhamAcUk-MailScanner-ID: x9K0pIrU013481
+Content-Type: text/plain
+Return-Path: owner-cosma-support@durham.ac.uk
+Received-SPF: Pass (CISVIRHUB01.mds.ad.dur.ac.uk: domain of
+ owner-cosma-support@durham.ac.uk designates 129.234.7.138 as permitted
+ sender) receiver=CISVIRHUB01.mds.ad.dur.ac.uk; client-ip=129.234.7.138;
+ helo=hermes1.dur.ac.uk;
+X-OrganizationHeadersPreserved: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 20 Oct 2019 00:51:54.8250
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 031d7f5f-21a6-4aab-d639-08d754f7b3e8
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: durham.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: Pass
+X-CrossPremisesHeadersPromoted:
+ VE1EUR01FT054.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ VE1EUR01FT054.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.207;IPV:NLI;CTRY:GB;EFV:NLI;SFV:NSPM;SFS:(4636009)(7192003)(199004)(189003)(48376002)(47776003)(1096003)(106002)(156004)(26005)(50466002)(336012)(36486004)(16586007)(8276002)(186003)(305945005)(246002)(51416003)(486006)(6862004)(126002)(356004)(1076003)(4006050)(9686003)(558084003)(8936002)(6200100001)(476003)(75640400001)(8676002)(4001150100001)(5660300002)(7846003)(2876002)(6392003)(450100002)(2351001)(58493002);DIR:INB;SFP:;SCL:1;SRVR:VI1PR06MB4736;H:CISVIRHUB01.mds.ad.dur.ac.uk;FPR:;SPF:Pass;LANG:en;PTR:smtp.dur.ac.uk;A:1;MX:1;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB01.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 031d7f5f-21a6-4aab-d639-08d754f7b3e8
+X-MS-TrafficTypeDiagnostic: VI1PR06MB4736:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Transport-Forked: True
+X-MS-Oob-TLC-OOBClassifiers: OLM:1728;
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 20 Oct 2019 00:51:54.5428
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 031d7f5f-21a6-4aab-d639-08d754f7b3e8
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.207];Helo=[CISVIRHUB01.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: VI1PR06MB4736
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.6652103
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2367.016
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(20160514016)(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?c3t1Lii6Zjn91enEiLOMU2h//GaCGOiUpObuROIwg2SNRUVteiPHGZfHmI?=
+ =?iso-8859-1?Q?VajRpdq6z/VYpDYKf/1X8QFUibTyFhcQjTCzoY+qqANS6exv4fSsU1RvC0?=
+ =?iso-8859-1?Q?XyfCTC8Fy72d5W6jy/ncaDvxKmE7GWf+NL/swPyD1gxasBAkUWAK6XR00a?=
+ =?iso-8859-1?Q?80EKSxGStAfHlPrCQtzQobEnJIaPRBHSoskL8K7jAlmKWBQ7ZOfxqSfEqs?=
+ =?iso-8859-1?Q?HGpQ0DKDkwDFlmlfFO27gMtjtzKML93SzBknivcgo/64JekVYovMkvYUmU?=
+ =?iso-8859-1?Q?HmXGZI9msnimfubCudWlmPoSw3BastV0oauVBC9tlqNs1s9DibRs+Ez+NY?=
+ =?iso-8859-1?Q?BERPk8AP/NCA17sQ0UMR9P52/5zYPOKj1ACGLTlx8QBd2so1UJhr14Mvo6?=
+ =?iso-8859-1?Q?NWoG+E7Fl3rhyA1ur5dMMtJdJvHN4L8DY+wxeavQNJfAjpSbFTT0ruq6E2?=
+ =?iso-8859-1?Q?LhXqN302L0ZUlqfFmJLV845t6rXm8A83UDYBsoGfb1tNgDA8YY5HjQ/lDP?=
+ =?iso-8859-1?Q?g2SBZs75RSsDJVOATRtGCnZGGhxFGQ2gXBpEUR8lFOFJsxKszrLuH8KZ+O?=
+ =?iso-8859-1?Q?tDff/mAASBbVGGs+p2GhIKMX5VlTUNtHOQ2/nD9QJp/mdf6OrTk5NB5ydW?=
+ =?iso-8859-1?Q?qOr+ePE14aTMt4aWMuILJcMc6KIyHgbfIWcTfVfQnwb0Y/I71OFB2Kq7GY?=
+ =?iso-8859-1?Q?vgIn8ocOU0sEEtI4+z9405V4fjbvStaj/Yw34B3SZm/c0nsqYRO9Niq0tP?=
+ =?iso-8859-1?Q?x7RyN4KwhYgaypf6j8P5juDjKNSiJ6Xm8DsD6ZvLeIaROkHxfWlsZBs21u?=
+ =?iso-8859-1?Q?ug7cL4M7aAhGTXG1D56fjvqS9MSjtfJhsh3/KwNmwqHD6yA4P+waVjY9QS?=
+ =?iso-8859-1?Q?a0eLne5umRCzZQtDf1LSVcKa8rTlEs1yUGzH4yBMNCcdrQIR9JGFms/RAT?=
+ =?iso-8859-1?Q?fYV4xGdRMsxsNo++n0FiLxoKp7hew1Zmxu2blHUsxkN3+u6S0nAKSbPCBf?=
+ =?iso-8859-1?Q?YOz3OoQgHYMNtO8PnAyQKX5llVBxnhiDfosrmX+352qWps1F5uHxRBg8Bg?=
+ =?iso-8859-1?Q?NhMfCb8sMHesDfcH6gdY4YXQTTIqB5A8F0DL0Tce/O2A?=
+Status: 
+X-Status: 
+X-Keywords:                   
+X-UID: 476
+
+054812 2019-10-20 01:49:32:3090209  G=61 S=2 T=1 RP=1 VP=05       LOG_RAID_UNCORRECTED_BAD_BLOCK   RAID IO:1123f6b6e0 RS:00021 LBA:5540c7f38 MEMBER:01 PBA:ad2b9574 VFX
+

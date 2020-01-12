@@ -1,0 +1,34 @@
+From cosma-support@durham.ac.uk  Mon Dec 16 09:36:57 2019
+Return-Path: <cosma-support@durham.ac.uk>
+Received: from durham.ac.uk (dothill2.cosma [172.17.1.242])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with SMTP id xB3BSmCN008129	for
+ root@console51.cosma; Tue, 3 Dec 2019 11:29:39 GMT
+Message-ID: <201912031129.xB3BSmCN008129@cosma-x.cosma.dur.ac.uk>
+Date: Tue, 3 Dec 2019 11:25:11 +0000
+From: <cosma-support@durham.ac.uk>
+To: <root@console51.cosma>
+Subject: R/Evo 2722-2R Error: FRU_PROBLEM
+MIME-Version: 1.0
+Content-Type: text/plain; charset="us-ascii"
+
+
+
+
+EVENT:
+There is a problem with a FRU. (FRU type: A/C PSU, Left, enclosure: 1, product ID: FRUKE01-01, SN: DHSIFRE-0943MW23TF, version: E, related event serial number: B5259, related event code: 168)
+EVENT ID:#B5260
+EVENT CODE:314
+EVENT SEVERITY:Error
+EVENT TIME:2019-12-03 11:25:12
+
+System Name: dothill
+System Location: ICC, Durham University
+System Contact: Dr Alastair Basden, Dr Peter Draper
+IP Address: 172.17.1.242
+
+
+
+
+
+--xB3G23g6030741.1575390092/cosma-x.cosma.dur.ac.uk--
+

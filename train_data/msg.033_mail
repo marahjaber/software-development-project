@@ -1,0 +1,150 @@
+From ali@durham.ac.uk Wed Dec  4 11:05:16 2019 +0000
+MIME-Version: 1.0
+Received: from AM6PR06MB4770.eurprd06.prod.outlook.com (2603:10a6:800:d3::23)
+ by VI1PR06MB4863.eurprd06.prod.outlook.com with HTTPS via
+ VI1PR08CA0097.EURPRD08.PROD.OUTLOOK.COM; Wed, 4 Dec 2019 11:05:16 +0000
+Received: from VI1PR0602CA0011.eurprd06.prod.outlook.com
+ (2603:10a6:800:bc::21) by AM6PR06MB4770.eurprd06.prod.outlook.com
+ (2603:10a6:20b:38::23) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.12; Wed, 4 Dec
+ 2019 11:05:15 +0000
+Received: from HE1EUR01FT045.eop-EUR01.prod.protection.outlook.com
+ (2a01:111:f400:7e1f::203) by VI1PR0602CA0011.outlook.office365.com
+ (2603:10a6:800:bc::21) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.2516.13 via Frontend
+ Transport; Wed, 4 Dec 2019 11:05:15 +0000
+Authentication-Results: spf=none (sender IP is 129.234.251.208)
+ smtp.helo=CISVIRHUB02.mds.ad.dur.ac.uk;
+ durhamuniversity.mail.onmicrosoft.com; dkim=none (message not signed)
+ header.d=none;durhamuniversity.mail.onmicrosoft.com; dmarc=none action=none
+ header.from=cosma-x.cosma.dur.ac.uk;
+Received-SPF: None (protection.outlook.com: CISVIRHUB02.mds.ad.dur.ac.uk does
+ not designate permitted sender hosts)
+Received: from CISVIRHUB02.mds.ad.dur.ac.uk (129.234.251.208) by
+ HE1EUR01FT045.mail.protection.outlook.com (10.152.0.239) with Microsoft SMTP
+ Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384) id
+ 15.20.2495.18 via Frontend Transport; Wed, 4 Dec 2019 11:05:15 +0000
+Received: from smtphost3.dur.ac.uk (129.234.7.145) by
+ CISVIRHUB02.mds.ad.dur.ac.uk (10.234.250.43) with Microsoft SMTP Server (TLS)
+ id 14.3.408.0; Wed, 4 Dec 2019 11:04:58 +0000
+Received: from cosma-x.cosma.dur.ac.uk (cosma-x.cosma.dur.ac.uk
+ [129.234.196.4])	by smtphost3.dur.ac.uk (8.14.4/8.14.4) with ESMTP id
+ xB4B237P030016	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-GCM-SHA384 bits=256
+ verify=NO)	for <a.g.basden@durham.ac.uk>; Wed, 4 Dec 2019 11:02:23 GMT
+Received: from localhost (localhost)	by cosma-x.cosma.dur.ac.uk
+ (8.14.4/8.14.4) id xB3I23BI014194;	Tue, 3 Dec 2019 18:20:06 GMT
+Date: Tue, 3 Dec 2019 18:20:06 +0000
+From: Mail Delivery Subsystem <MAILER-DAEMON@cosma-x.cosma.dur.ac.uk>
+Message-ID: <201912031820.xB3I23BI014194@cosma-x.cosma.dur.ac.uk>
+To: <a.g.basden@durham.ac.uk>
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="xB3I23BI014194.1575397206/cosma-x.cosma.dur.ac.uk"
+Subject: Warning: could not send message for past 4 hours
+Auto-Submitted: auto-generated (warning-timeout)
+X-DurhamAcUk-MailScanner-ID: xB4B237P030016
+X-DurhamAcUk-MailScanner: Found to be clean
+Return-Path: <>
+Received-SPF: None (CISVIRHUB02.mds.ad.dur.ac.uk:
+ MAILER-DAEMON@cosma-x.cosma.dur.ac.uk does not designate permitted sender
+ hosts)
+X-OrganizationHeadersPreserved: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-ExpirationStartTime: 04 Dec 2019 11:05:15.4692
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 3dbaaa4e-56e1-43a1-42f0-08d778a9d764
+X-EOPAttributedMessage: 0
+X-MS-Exchange-Organization-MessageDirectionality: Originating
+X-MS-Exchange-Organization-PRD: cosma-x.cosma.dur.ac.uk
+X-MS-Exchange-Organization-SenderIdResult: None
+X-CrossPremisesHeadersPromoted:
+ HE1EUR01FT045.eop-EUR01.prod.protection.outlook.com
+X-CrossPremisesHeadersFiltered:
+ HE1EUR01FT045.eop-EUR01.prod.protection.outlook.com
+X-Forefront-Antispam-Report:
+ CIP:129.234.251.208;IPV:NLI;CTRY:GB;EFV:NLI;SFV:SKN;SFS:;DIR:INB;SFP:;SCL:-1;SRVR:AM6PR06MB4770;H:CISVIRHUB02.mds.ad.dur.ac.uk;FPR:;SPF:None;LANG:en;
+X-MS-Exchange-Organization-AuthSource: CISVIRHUB02.mds.ad.dur.ac.uk
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-OriginatorOrg: durhamuniversity.onmicrosoft.com
+X-MS-PublicTrafficType: Email
+X-MS-Office365-Filtering-Correlation-Id: 3dbaaa4e-56e1-43a1-42f0-08d778a9d764
+X-MS-TrafficTypeDiagnostic: AM6PR06MB4770:
+X-MS-Exchange-Organization-BypassFocusedInbox: true
+X-MS-Exchange-Organization-SCL: -1
+X-MS-Oob-TLC-OOBClassifiers: OLM:53;
+X-Microsoft-Antispam: BCL:0;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 04 Dec 2019 11:05:15.1770
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3dbaaa4e-56e1-43a1-42f0-08d778a9d764
+X-MS-Exchange-CrossTenant-Id: 7250d88b-4b68-4529-be44-d59a2d8a6f94
+X-MS-Exchange-CrossTenant-OriginalAttributedTenantConnectingIp: TenantId=7250d88b-4b68-4529-be44-d59a2d8a6f94;Ip=[129.234.251.208];Helo=[CISVIRHUB02.mds.ad.dur.ac.uk]
+X-MS-Exchange-CrossTenant-FromEntityHeader: HybridOnPrem
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AM6PR06MB4770
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.5305783
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.2495.013
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:1;jmr:0;ex:0;auth:0;dest:C;OFR:CustomRules;ENG:(750127)(520002050)(944506383)(944626516);
+X-Microsoft-Antispam-Message-Info:
+	=?iso-8859-1?Q?PG/zmYShpyfqv+p9iTWtDhIzQL7gGk5T3KwkQnVuy/zSzr60nh0t+emQjj?=
+ =?iso-8859-1?Q?AxIUkcLaYfdR/tY3h+TtawhNVhmI5IErw8PfDLeTsCbGwG2UCGJcOF9vPf?=
+ =?iso-8859-1?Q?CaWa/pBsb+n2n0GqnU+S57+O9Xf7gEhBbhqGalxM9siqJSRtVy6nOmT0OG?=
+ =?iso-8859-1?Q?aZQX94ZvAzL+elq3LAJr7WnjJbUpa82AJOIi11jmvgDs6k0fE6Sth3Ze24?=
+ =?iso-8859-1?Q?pEPbYqjO1e2hJ5QUQD4ZTa1STWl4e6JeIZMR0UPB2l1QmE4+s1H+ATn78G?=
+ =?iso-8859-1?Q?9kaAavqGBIEEfF1swTyuSdYz6TkMk1tiUzWv1iODRrL2+V0lEDazWCGQUJ?=
+ =?iso-8859-1?Q?fCG9japhnrv6+ZGgy4oDwlz5+CpPkHcWwPyojP9AHwnsWzmlqBrJy9nUtL?=
+ =?iso-8859-1?Q?EAnonllUiEouHveDpgLMyFdG/IoXLi5+vzgTwnOXoVhJsdc8GQ0tN6ENWt?=
+ =?iso-8859-1?Q?VyXVfG9VWNfvRA56cJvnWfEHl4ecTRrvfnu2C32bCZAmJLnQRU1BaJeWCW?=
+ =?iso-8859-1?Q?2DQ9J/Z1gzs+uYxcvrQPH51ziHCi0BPlUDhowdS7ta10RZgNMR88mUUcip?=
+ =?iso-8859-1?Q?3gLViXXOIDQQBnnM/SnrDJBIRft1blh1V+g4f5TnaomF7e9zNEMP8FHmAQ?=
+ =?iso-8859-1?Q?4pJZIdyU6czpAtPicncMK3Ny05fvw8rDmELcJYmTjMk7dNAv4dJLttUpK7?=
+ =?iso-8859-1?Q?MUsPmIDmNUEyMGbSFBCx4mxyYgbe3O1yPfy7kM+S9wnkOKiqoqM9tlWXmP?=
+ =?iso-8859-1?Q?3lykz5JuzFlcGkHFdQAwrpW+Om8+oDAU0oAKVVc9BdW4gF299KT7kc3K6k?=
+ =?iso-8859-1?Q?Ync7SKXtoPVWOT1GzEqDELCiX+dU/ALkZ4khGnjN1NW91lJFC2PGy0UN7I?=
+ =?iso-8859-1?Q?k4oVnR/DAZkvZorM8JSwsKShxCzShGSaENXxd8V/4118gRFT/7/uJjruBu?=
+ =?iso-8859-1?Q?pJiU33c7Ob9/kZciqXP19oLCGLXnfowheDt6KDtOMsXFu02v//rgml2Biu?=
+ =?iso-8859-1?Q?9DRdpJKEapAPIlu8u9S1ZLs7JkYCwKSie/rAeWdB1DpTRmla3I/rMW+f6D?=
+ =?iso-8859-1?Q?c1wouEh+nGodORUXvDQq7LVa3WhPwo3j1u9hsFFI758QMxRiUfcFoZwHsH?=
+ =?iso-8859-1?Q?3ZVo4eGsBrycFGvyfb101iBEvE2u4sB695DBorrt2rML9xwewocItpcbCT?=
+ =?iso-8859-1?Q?56QSEhQcfGJ2fjkb3T7+422oLFuZAKwO9Mc=3D?=
+Status: R
+X-Status: 
+X-Keywords:                  
+X-UID: 30
+
+--xB3I23BI014194.1575397206/cosma-x.cosma.dur.ac.uk
+Content-Type: text/plain
+
+    **********************************************
+    **      THIS IS A WARNING MESSAGE ONLY      **
+    **  YOU DO NOT NEED TO RESEND YOUR MESSAGE  **
+    **********************************************
+
+The original message was received at Tue, 3 Dec 2019 13:40:41 GMT
+from [172.17.170.1]
+
+   ----- Transcript of session follows -----
+451 durham.ac.uk: Name server timeout
+451 durham.ac.uk: Name server timeout
+451 durham.ac.uk: Name server timeout
+Warning: message still undelivered after 4 hours
+Will keep trying until message is 5 days old
+451 durham.ac.uk: Name server timeout
+
+--xB3I23BI014194.1575397206/cosma-x.cosma.dur.ac.uk
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; cosma-x.cosma.dur.ac.uk
+Arrival-Date: Tue, 3 Dec 2019 13:40:41 GMT
+
+Original-Recipient: rfc822;cosma-support@durham.ac.uk
+Final-Recipient: RFC822; cosma-support@durham.ac.uk
+Action: delayed
+Status: 4.4.3
+Last-Attempt-Date: Tue, 3 Dec 2019 18:20:06 GMT
+Will-Retry-Until: Sun, 8 Dec 2019 13:40:41 GMT
+
+--xB3I23BI014194.1575397206/cosma-x.cosma.dur.ac.uk
+Content-Type: message/rfc822
+

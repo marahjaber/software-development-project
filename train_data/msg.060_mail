@@ -1,0 +1,202 @@
+From root@console51.cosma  Mon Dec 16 09:36:57 2019
+Return-Path: <root@console51.cosma>
+Received: from console51.cosma (localhost [127.0.0.1])	by
+ cosma-x.cosma.dur.ac.uk (8.14.4/8.14.4) with ESMTP id xB43bj5m008070	for
+ <root@console51.cosma>; Wed, 4 Dec 2019 03:37:45 GMT
+Received: (from root@localhost)	by console51.cosma (8.14.4/8.14.4/Submit) id
+ xB43bADE007324;	Wed, 4 Dec 2019 03:37:10 GMT
+Date: Wed, 4 Dec 2019 03:37:10 +0000
+Message-ID: <201912040337.xB43bADE007324@console51.cosma>
+To: <root@console51.cosma>
+From: <logwatch@console51.cosma>
+Subject: Logwatch for console51 (Linux)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Type: text/plain; charset="iso-8859-1"
+
+
+ ################### Logwatch 7.3.6 (05/19/07) #################### 
+        Processing Initiated: Wed Dec  4 03:37:10 2019
+        Date Range Processed: yesterday
+                              ( 2019-Dec-03 )
+                              Period is day.
+      Detail Level of Output: 0
+              Type of Output: unformatted
+           Logfiles for Host: console51
+  ################################################################## 
+ 
+ --------------------- DDN logs Begin ------------------------ 
+
+ 114001 2019-12-03 10:18:14:8738008  G=56 S=0 T=1 RP=0 VP=11                         LOG_ST_ALIVE  STATE KEEP ALIVE EVENT 0x       a000001fc 0x 440000080000000 0x8000000010000002
+ 089963 2019-12-03 19:11:04:8276285  G=56 S=0 T=1 RP=0 VP=11                         LOG_ST_ALIVE  STATE KEEP ALIVE EVENT 0x       a000003ff 0x 440000080000000 0xc000000210000142
+ 
+ ---------------------- DDN logs End ------------------------- 
+
+ 
+ --------------------- iptables firewall Begin ------------------------ 
+
+ 
+ Listed by source hosts:
+ Logged 42 packets on interface eth1
+   From 35.247.157.95 - 1 packet to tcp(22) 
+   From 45.67.15.137 - 1 packet to tcp(22) 
+   From 49.88.112.109 - 1 packet to tcp(22) 
+   From 60.172.95.182 - 1 packet to tcp(22) 
+   From 71.6.167.142 - 1 packet to tcp(22) 
+   From 80.85.84.75 - 1 packet to tcp(22) 
+   From 83.97.20.46 - 1 packet to tcp(22) 
+   From 84.101.59.29 - 1 packet to tcp(22) 
+   From 88.214.26.8 - 1 packet to tcp(22) 
+   From 89.38.145.142 - 1 packet to tcp(22) 
+   From 89.248.168.62 - 1 packet to tcp(22) 
+   From 94.102.53.10 - 1 packet to tcp(22) 
+   From 103.127.241.14 - 1 packet to tcp(22) 
+   From 103.141.138.117 - 1 packet to tcp(22) 
+   From 104.244.72.98 - 1 packet to tcp(22) 
+   From 104.244.75.179 - 1 packet to tcp(22) 
+   From 104.244.76.14 - 1 packet to tcp(22) 
+   From 112.29.172.224 - 2 packets to tcp(22) 
+   From 112.83.95.195 - 1 packet to tcp(22) 
+   From 116.240.199.86 - 1 packet to tcp(22) 
+   From 122.228.19.79 - 1 packet to tcp(22) 
+   From 139.220.192.57 - 1 packet to tcp(22) 
+   From 157.245.216.88 - 1 packet to tcp(22) 
+   From 164.52.24.164 - 1 packet to tcp(22) 
+   From 167.99.176.95 - 1 packet to tcp(22) 
+   From 184.154.189.94 - 1 packet to tcp(22) 
+   From 185.43.209.231 - 1 packet to tcp(22) 
+   From 185.175.93.78 - 1 packet to tcp(22) 
+   From 185.193.125.213 - 3 packets to tcp(22) 
+   From 185.219.134.221 - 1 packet to tcp(22) 
+   From 192.64.4.53 - 1 packet to tcp(22) 
+   From 196.52.43.126 - 1 packet to tcp(22) 
+   From 198.108.66.193 - 1 packet to tcp(22) 
+   From 198.108.67.96 - 1 packet to tcp(22) 
+   From 208.100.26.228 - 1 packet to tcp(22) 
+   From 208.115.103.161 - 1 packet to tcp(22) 
+   From 213.194.129.153 - 1 packet to tcp(22) 
+   From 223.71.167.155 - 1 packet to tcp(22) 
+   From 223.255.10.6 - 1 packet to tcp(22) 
+ 
+ ---------------------- iptables firewall End ------------------------- 
+
+ 
+ --------------------- Named Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    client 172.17.1.6 error sending response: host unreachable: 1 Time(s)
+    clients-per-query decreased to 10: 1 Time(s)
+    clients-per-query decreased to 11: 1 Time(s)
+    clients-per-query decreased to 12: 1 Time(s)
+    clients-per-query decreased to 13: 1 Time(s)
+    clients-per-query decreased to 14: 1 Time(s)
+    clients-per-query increased to 15: 1 Time(s)
+ 
+ ---------------------- Named End ------------------------- 
+
+ 
+ --------------------- Connections (secure-log) Begin ------------------------ 
+
+ 
+ **Unmatched Entries**
+    rkhunter: Rootkit hunter check started (version 1.4.4): 1 Time(s)
+    rkhunter: Scanning took 3 minutes and 5 seconds: 1 Time(s)
+ 
+ ---------------------- Connections (secure-log) End ------------------------- 
+
+ 
+ --------------------- sendmail Begin (detail=3) ------------------------ 
+
+ 
+ 
+ STATISTICS
+ ----------
+ 
+ Messages To Recipients:  336
+ Addressed Recipients:    343
+ Bytes Transferred:       1220609
+ Messages No Valid Rcpts: 611
+ 
+ SMTP SESSION, MESSAGE, OR RECIPIENT ERRORS
+ ------------------------------------------
+ 
+ Client quit before communicating: [Occurrences >= 1]
+ 	Total:  144
+ 
+ Unresolveable or non-existent domains: [Occurrences >= 1]
+ 	Total:  11
+ 
+ Errors during Collect:
+     Total: 16
+ 
+ Mail Deferred:
+ 	Total:  296
+ 
+ Total SMTP Session, Message, and Recipient Errors handled by Sendmail:  467
+ 
+ **Unmatched Entries**
+    gethostbyaddr(169.254.95.120) failed: 1: 6 Time(s)
+ 
+ ---------------------- sendmail End ------------------------- 
+
+ 
+ --------------------- SSHD Begin ------------------------ 
+
+ 
+ Users logging in through sshd:
+    root:
+       129.234.184.205: 10 times
+       172.17.110.1 (console51): 10 times
+       172.17.170.23: 4 times
+       129.234.184.29: 2 times
+       172.17.100.24 (cosma-a): 2 times
+       172.17.151.12 (cosma-i): 2 times
+       172.17.170.21: 2 times
+       172.17.170.22: 2 times
+ 
+ 
+ Received disconnect:
+    disconnected by user : 32 Time(s)
+ 
+ **Unmatched Entries**
+ userauth_hostbased mismatch: client sends console51, but we resolve 172.17.110.1 to console51.cosma : 20 time(s)
+ 
+ ---------------------- SSHD End ------------------------- 
+
+ 
+ --------------------- Sudo (secure-log) Begin ------------------------ 
+
+ 
+ ==============================================================================
+ 
+ rpcuser => root
+ ---------------
+ /etc/ctdb/statd-callout - 99 Times.
+ 
+ ---------------------- Sudo (secure-log) End ------------------------- 
+
+ 
+ --------------------- Disk Space Begin ------------------------ 
+
+ Filesystem            Size  Used Avail Use% Mounted on
+ /dev/mapper/systemvg-root
+                        20G   17G  2.3G  88% /
+ /dev/sda1              97M   28M   65M  30% /boot
+ /dev/mapper/systemvg-install
+                        99G   90G  3.6G  97% /install
+ /dev/mapper/systemvg-var
+                       148G   32G  110G  23% /var
+ /dev/gpfs             2.4P  2.2P  243T  91% /cosma5
+ 
+ /dev/gpfs => 91% Used. Warning. Disk Filling up.
+ 
+ ---------------------- Disk Space End ------------------------- 
+
+ 
+ ###################### Logwatch End ######################### 
+
+ 
+
+--xB4823sZ024791.1575448939/cosma-x.cosma.dur.ac.uk--
+
