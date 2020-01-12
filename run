@@ -2,5 +2,7 @@ module unload python/2.7.15
 module load pythonconda3/4.5.4
 cd pre_stage
 python3 run.py
-cd ../stage_1_20191222
+cd ../stage_1
 python3 run.py 
+cd ../stage_2
+python3 run.py
