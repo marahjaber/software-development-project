@@ -161,9 +161,9 @@ def clean_text(text):
 # function to remove stopwords
 def remove_stopwords(text):
     #define custom stop words for our logs
-    stop_words = "qb qc qd qe wv ya yp ym qh qi qu zl za jan feb mar apr may jun jul aug sep oct nov dec ql yh ve ms smtp esmtp ut with id BST bst utf iso tue dc he dev cosma uk durham dur ac nb utf iso zz sat us ascii jf jd iu it is org ib tue np tue qm ip eu sat fri mon thu wed owner mon tue wed thu fri sat sun with id oct ib eu"
+    stop_words = "ipz qb qc qd qe wv ya yp ym qh qi qu zl za jan feb mar apr may jun jul aug sep oct nov dec ql yh ve ms smtp esmtp ut with id BST bst utf iso tue dc he dev cosma uk durham dur ac nb utf iso zz sat us ascii jf jd iu it is org ib tue np tue qm ip eu sat fri mon thu wed owner mon tue wed thu fri sat sun with id oct ib eu"
     
-    #stop_words = "jan feb mar apr may jun jul aug sep oct nov dec smtp esmtp ut with id BST bst utf iso tue dev cosma uk durham dur ac sat us ascii org ipeu sat fri mon thu wed owner mon tue wed thu fri sat sun with id oct eu"
+    
 
     stop_words = stop_words.split(" ")
     without_stop_words = [w for w in text.split() if not w in stop_words]
@@ -181,20 +181,20 @@ def prepare_data(xtrain,xval):
 def train(X_train,y_train):
     lr = LogisticRegression(C=30, penalty='l1', dual=False, solver='liblinear')
     model = OneVsRestClassifier(lr)
-    model.fit(X_train, y_train)
 
     kf = KFold(n_splits=10, random_state = 42, shuffle = True)
     scores = cross_val_score(model, X_train, y_train, cv = kf)
     
     print('\nCross-validation scores:', scores)
     print('Cross-validation accuracy: {:.4f} (+/- {:.4f})\n'.format(scores.mean(), scores.std() * 2))
+    model.fit(X_train, y_train)
     return model
 
 def report(actual, predictions):       
     print ("\n\033[1m Performance Report \033[0m\033[50m\n")
     print('f1 score: ',str(round(f1_score(actual, predictions, average="micro"),3)))
 
-    #print (multilabel_confusion_matrix(np.array(actual), np.array(predictions)))
+    
     print (classification_report(actual, predictions, target_names=multilabel_binarizer.classes_))
     print ('Accuracy: ' + str(round(accuracy_score(actual, predictions), 3)))
 
@@ -203,7 +203,7 @@ def report(actual, predictions):
 source_data_dir = '../train_data'
 test_data_dir = '../test_data'
 data_dir = 'copied'
-
+print('pre stage start')
 print ('read data start')
 if os.path.exists(data_dir):
         shutil.rmtree(data_dir)
@@ -214,7 +214,7 @@ print ('read data end')
 print ('prepare data start')
 multilabel_binarizer = MultiLabelBinarizer()
 multilabel_binarizer.fit(log_collection['labels'])
-print ('train test split start')
+
 y_train = multilabel_binarizer.transform(log_collection['labels'])
 y_test =  multilabel_binarizer.transform(test_data['labels'])
 X_train = log_collection['clean_text']
@@ -223,7 +223,7 @@ id_train = np.arange(len(log_collection['clean_text']))
 id_test = np.arange(len(test_data['clean_text']))
 X_train,X_test,tfidf_vocab = prepare_data(X_train,X_test)
 tfidf_reversed_vocab = {i:word for word,i in tfidf_vocab.items()}
-print ('train test split end')
+
 print ('prepare data end')
 
 # Training
@@ -327,4 +327,5 @@ def print_words_for_tag(classifier, tag, tags_classes, index_to_words):
 
 print("\n")
 print_words_for_tag(model, 'stage1', multilabel_binarizer.classes_, tfidf_reversed_vocab)
-print_words_for_tag(model, 'stage2', multilabel_binarizer.classes_, tfidf_reversed_vocab)			
+print_words_for_tag(model, 'stage2', multilabel_binarizer.classes_, tfidf_reversed_vocab)
+print('pre stage end')			
