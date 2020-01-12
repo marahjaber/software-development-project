@@ -135,11 +135,91 @@ def report(actual, predictions):
     print(classification_report(actual, predictions))
     print("Accuracy: " + str(round(accuracy_score(actual, predictions),2)))
     print
+    
+    #stage 1-2
+def func_stopwords(text, standard_stop):
 
+    for item in standard_stop:
+        if item in text:
+            text = text.replace(item, '')
+
+    remove_digits = str.maketrans('','',digits)
+    text = text.translate(remove_digits)
+
+    return text
+
+def add_priority(text, priority_list):
+
+    raw = copy.deepcopy(text)
+    for keyword in priority_list:
+        for line in raw:
+            if keyword in line:
+                for i in range(len(text)):
+                    text.append(keyword)
+                break
+    return text
+
+def read_logs(logfile_path):
+
+    #read stopwords
+    stopwords = []
+    if(os.path.exists('./Config/stopwords.txt')):
+        fp = open('./Config/stopwords.txt', 'r')
+        for line in fp.readlines():
+            stopwords.append(line.rstrip())
+        fp.close()
+
+    #read input abnormal event from stage 1-1 
+    text = []
+    fp = open(logfile, 'r')
+    for line in fp.readlines():
+        string_split = line.rstrip().split("logfilenameis:", 2)
+        raw_file_name = string_split[1].split(",", 2)
+        raw_line_number = raw_file_name[1].split("=", 2)
+        raw_fp = open(raw_file_name[0])
+        raw_text = raw_fp.readlines()
+        join = ''
+        for index in range(max(int(raw_line_number[1])-5,0), min(int(raw_line_number[1])+5, len(raw_text))):
+            join = join + raw_text[index].rstrip() + "\n"
+        text.append(func_stopwords(join, stopwords))
+    fp.close()
+
+    return text
+
+def read_priority_list():
+
+    #read priority list from user
+    if(os.path.exists("./Config/priority_list")):
+        priority_list = []
+        fp = open("./Config/priority_list", 'r')
+        for line in fp.readlines():
+            priority_list.append(line.rstrip())
+        fp.close()
+
+    return priority_list
+
+def func_tfidf(output_file, text):
+
+    vectorizer = TfidfVectorizer(stop_words='english',
+                                 max_features=10,
+                                 min_df=1,
+                                 analyzer='word')
+    X = vectorizer.fit_transform(text)
+    feature_names = vectorizer.get_feature_names()
+
+    total_tf_idf = X.sum(axis = 1)
+
+    dense = X.todense()
+    denselist = dense.tolist()
+    df = pd.DataFrame(denselist, columns=feature_names)
+    df.to_csv(output_file)
+
+    return feature_names
 
 #MAIN Code Start
 stage = 7
 disable_stage_1_1 = 0
+disable_stage_1_2 = 0
 train_file_path = "../train_data/*"
 test_file_path = "../pre_stage/output/stage1/*"
 
@@ -223,3 +303,33 @@ if((stage > 5) and (disable_stage_1_1 == 0)):
             shutil.move(index_label, "./Debug/"+index_label)
         else:
             shutil.move(index_label, "./Stage_1_1_Result/"+index_label)
+
+if((stage > 6) and (disable_stage_1_2 == 0)):
+    print("Stage_1_2: TFIDF start")
+    if not(os.path.exists("./Stage_1_2_Result")):
+        os.mkdir("./Stage_1_2_Result")
+
+    priority_list = read_priority_list()
+
+    out_fp = open("./Stage_1_2_Result/keyword_list.txt", 'w')
+
+    logfiles = glob.glob("./Stage_1_1_Result/*")
+    for logfile in logfiles:
+        string_split = logfile.split("/")
+        text = read_logs(logfile)
+        if(len(text) == 0):
+            continue
+        text = add_priority(text, priority_list)
+        feature_names = func_tfidf("./Stage_1_2_Result/verbose_"+string_split[-1], text)
+        print("keywords in", string_split[-1], ":", feature_names)
+
+        out_fp.writelines("keywords in ")
+        out_fp.writelines(string_split[-1])
+        out_fp.writelines(":\n")
+        for i in range(len(feature_names)):
+            out_fp.writelines(feature_names[i])
+            out_fp.writelines(" ")
+        out_fp.writelines("\n\n")
+
+    out_fp.close()
+
