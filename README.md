@@ -8,24 +8,14 @@ Download python3, the version used while implementing the project is pythonconda
 > module load pythonconda3/4.5.4
 
 ### Usage
-To run the project stages:
-- execute pre-stage, use 
-```
-cd pre_stage 
-python3 run.py
-```
-- execute stage1, use 
-```
-cd stage_1 
-python3 run.py
-```
-- execute stage2, use 
-```
-cd stage_2
-python3 run.py
-```
+
+- Use training data folder `train_data`
+- Use testing data folder `test_data`
+
+- run the project:
 
 Using the bash script `sh run` to run all the stages in COSMA
+
 bash script will execute these commands:
 
 ```
