@@ -4,7 +4,7 @@ This project presents an artificial intelligence algorithm to recognize abnormal
 ##  Getting Started 
 
 ### Prerequisites
-Download python3, the version used while implementing the project is pythonconda3/4.5.4 in COSMA system. 
+Download python3, the version used while implementing the project is pythonconda3/4.5.4 in COSMA5 system. 
 > module load pythonconda3/4.5.4
 
 ### Usage
@@ -29,3 +29,8 @@ cd ../stage_2
 python3 run.py
 ```
 
+## Output
+
+- pre_stage output: output log files will be in `pre_stage/output/stage1` and `pre_stage/output/stage2` 
+- stage_1 output: output will be in `stage_1/Stage_1_1_Result` and `stage_1/Stage_1_2_Result`
+- stage_2 output: plot created will be in `stage_2/stage2.pdf`
